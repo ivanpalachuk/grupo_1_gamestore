@@ -1,1 +1,0 @@
-Este repositorio se creo a fin de poder coordinar la primera parte de sprint 1
