@@ -23,7 +23,8 @@ Amenaza; la pagina es muy replicable y ante falta de capital para difusiones y p
 
 SOBRE LOS DESARROLLADORES
 
-Macarena Bernal
+Macarena Bernal 
+Una visionaria que confía que la educación es el arma más poderosa para cambiar el mundo. Fanática de los videojuegos y madre de 3 gatos. Videojuego favorito: Gravity Rush.
 
 Esteban Vazquez
 
