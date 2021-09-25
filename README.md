@@ -34,7 +34,12 @@ Apasionado de la tecnología y fanático de los deportes. Consumidor de Podcast 
 Ivan Palachuk
 Un optimista empedernido, apasionado del voley y los juegos de logica, intento leer en mis ratos libres, pero todo intento termina en una pelicula. Hace poco me hice fan de los gatos y tik tok. El video juego que creo que todos deberian jugar : "Metal Gear Solid"
 
-
+Páginas de inspiración:
+https://store.playstation.com/
+https://www.epicgames.com/
+https://store.steampowered.com/
+https://www.humblebundle.com/
+https://www.xbox.com/
 
 
 
