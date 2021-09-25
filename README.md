@@ -29,6 +29,7 @@ Una visionaria que confía que la educación es el arma más poderosa para cambi
 Esteban Vazquez
 
 Marcos Garcia
+Apasionado de la tecnología y fanático de los deportes. Consumidor de Podcast y Youtube a niveles preocupantes. Cuando tengo tiempo estudio Ingeniería. Videojuego favorito: Call of Duty.
 
 Ivan Palachuk
 Un optimista empedernido, apasionado del voley y los juegos de logica, intento leer en mis ratos libres, pero todo intento termina en una pelicula. Hace poco me hice fan de los gatos y tik tok. El video juego que creo que todos deberian jugar : "Metal Gear Solid"
