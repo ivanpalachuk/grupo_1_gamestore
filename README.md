@@ -27,6 +27,7 @@ Macarena Bernal
 Una visionaria que confía que la educación es el arma más poderosa para cambiar el mundo. Fanática de los videojuegos y madre de 3 gatos. Videojuego favorito: Gravity Rush.
 
 Esteban Vazquez
+Soñador incanzable y todologo. Otaku en vias de desarrollo. busco nuevas formas de ver el mundo. Para entenderme mejor tenes que jugar a: Dungeon Crawl (en consola, sin graficos)
 
 Marcos Garcia
 Apasionado de la tecnología y fanático de los deportes. Consumidor de Podcast y Youtube a niveles preocupantes. Cuando tengo tiempo estudio Ingeniería. Videojuego favorito: Call of Duty.
