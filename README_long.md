@@ -19,14 +19,13 @@ Oportunidades; La situacion pandemica, presenta una gran masa de nuevos jugadore
 Debilidades; Si bien creemos que el servicio puede ser excelente a medida que nuestros clientes crezcan como jugadores es probable que migren a paginas con mayores descuentos, donde el asesoramiento no sea un diferencial
 Amenaza; la pagina es muy replicable y ante falta de capital para difusiones y publicidad corre peligro de posicionamiento.
 
-
-
 SOBRE LOS DESARROLLADORES
 
 Macarena Bernal 
 Una visionaria que confía que la educación es el arma más poderosa para cambiar el mundo. Fanática de los videojuegos y madre de 3 gatos. Videojuego favorito: Gravity Rush.
 
 Esteban Vazquez
+Soñador incanzable y todologo. Otaku en vias de desarrollo, busco nuevas formas de ver el mundo.  Para entenderme tenes que jugar a: Dungeon Crawl (en consola, sin graficos)
 
 Marcos Garcia
 Apasionado de la tecnología y fanático de los deportes. Consumidor de Podcast y Youtube a niveles preocupantes. Cuando tengo tiempo estudio Ingeniería. Videojuego favorito: Call of Duty.
