@@ -1,4 +1,4 @@
-# grupo_1_gamestore
+# Grupo_1_GameStore
 
 ### Sobre gamestore
 
