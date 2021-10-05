@@ -30,6 +30,8 @@ Esperamos poder convertir a jugadores casuales en jugadores habituales, permitie
  - https://www.humblebundle.com/
  - https://www.xbox.com/
 
+### Tablero Trello:
 
+- https://trello.com/b/tuVxiFcw/digital-house-gamestore
 
 
