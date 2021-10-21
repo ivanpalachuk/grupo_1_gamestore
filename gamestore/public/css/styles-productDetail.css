@@ -1,0 +1,81 @@
+* {
+    font-family: 'Lato';
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29, 26, 26);
+}
+
+body{}
+
+.img-principal{
+    max-width: 90vw;
+    margin-left: 5%;
+}
+
+button{
+    background-color: #FF00d6;
+    width: 80%;
+    border-radius: 8px;
+    padding: 5px;
+    margin:auto;
+    margin-left: 20%;
+}
+.descripcion-producto, .requisitos-pc, .datos-tecnicos{
+    padding-inline: 1em 2em;
+    border-radius: 8px;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.requisitos-pc{
+
+}
+
+.esrb{
+    max-width: 60px;
+}
+
+.resumen{
+    display: none;
+}
+
+@media (min-width: 769px){
+    .img-product{
+        width: 50vw;
+
+    }
+
+    .main-descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        border: solid red 5px;
+        justify-content: space-between;
+    }
+
+    .resumen{
+        padding: 10px;
+        border-radius: 8px;
+        max-width: 80%;
+        padding-inline: 1em 2em;
+        margin: auto;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    .datos-tecnicos{
+        display: flex;
+        justify-content: flex-end;
+        max-width: 400px;
+        background-color: black;
+        padding-inline: 1em 2em;
+        font-weight: bold;
+        border-radius: 8px;
+
+    }
+}
