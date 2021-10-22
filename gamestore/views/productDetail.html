@@ -8,30 +8,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-        <title>Detalle de Producto</title>
+        <title>GameStore</title>
     </head>
     <body>
         <main>
+            <p>
             <img class="img-principal" src="/images/family-disruption1.jpg" alt="Family Disruption">
-        </main>
-        <section class="main-descripcion">
-            <article class="descripcion-producto">
-                <h2>Nine Witches: Family Disruption</h2>
-                <h6>BLOWFISH STUDIOS PTY LTD</h6>
-                <p>PS4/ PS5 / PC</p>
-                <p>$225</p>
-                <article>
-                    <p>1 jugador</p>
-                    <p>
-                        <img class="esrb" src="/images/ESRB-Teen.png" alt="ESRB Teen"><br>
-                        <p>ESRB: Adolescentes</p>
-                        <p>Consumo de alcohol y tabaco, Derramamiento de sangre, Humor negro, Lenguaje moderado, Temas sugerentes, Violencia</p>
-                    </p>
-                </article>
-                <button>Agregar al carrito</button>
+        </p>
+    </main>
+    <section class="main-descripcion">
+        <article class="descripcion-producto">
+            <h2>Nine Witches: Family Disruption</h2>
+            <h6>BLOWFISH STUDIOS PTY LTD</h6>
+            <p>PS4/ PS5 / PC</p>
+        </article>
+        <p class="precio">$225</p>
+        <article class="esrb-buy">
+            <div class="buy">
+                <button>Agregar al carrito <i id="cart" class="fas fa-cart-plus"></i></button>
+            </div>
+            <div class="esrb">
+                <img class="esrb-photo" src="/images/ESRB-Teen.png" alt="ESRB Teen"><br>
+                <p class="esrb-detail">ESRB: Adolescentes</p>
+            </div>
             </article>
         <article class="datos-tecnicos">
+            <p>1 jugador</p>
             <p>Plataforma: PS4/PS5/PC</p>
             <p>Lanzamiento: 4/12/2020</p>
             <p>Editor: BLOWFISH STUDIOS PTY LTD</p>
@@ -41,15 +45,18 @@
         <article class="requisitos-pc">
             <h4>REQUISITOS DEL SISTEMA</h4>
             <h6>MÍNIMO:</h6>
-            <p>Requiere un procesador y un sistema operativo de 64 bits</p>
-            <p>SO: Windows 7</p>
-            <p>Procesador: Intel i5 Quad-Core</p>
-            <p>Memoria: 1 GB de RAM</p>
-            <p>Gráficos: Intel HD 4000</p>
-            <p>DirectX: Versión 10</p>
-            <p>Almacenamiento: 2 GB de espacio disponible</p>
-            <h6>RECOMENDADO:</h6>
-            <p>Requiere un procesador y un sistema operativo de 64 bits</p>
+            <div class="requisitos-min"> 
+                <p>Requiere un procesador y un sistema operativo de 64 bits</p>
+                <p>SO: Windows 7</p>
+                <p>Procesador: Intel i5 Quad-Core</p>
+                <p>Memoria: 1 GB de RAM</p>
+                <p>Gráficos: Intel HD 4000</p>
+                <p>DirectX: Versión 10</p>
+                <p>Almacenamiento: 2 GB de espacio disponible</p>
+            </div>
+                <h6>RECOMENDADO:</h6>
+                <p class="requisitos-min">Requiere un procesador y un sistema operativo de 64 bits</p>
+            </div>
         </article>
     </section>
     <section>
@@ -83,19 +90,19 @@
             - Habla con los muertos.
         </article>
     </section>
-    <section>
+    <section class="version">
         <h4>Ediciones</h4>
         <article>
             <h4>Standard</h4>
 
         </article>
     </section>
-    <section>
+    <section class="complementos">
         <h4>Complementos</h4>
     </section>
     <section>
         <article class="informacion-legal">
-            Copyright © 2017 Indiesruption
+            Copyright © 2017 Indiesruption<br>
             <a href="https://www.blowfishstudios.com/privacy">BLOWFISH STUDIOS PTY LTD Privacy Policy & EULA</a>
         </article>  
     </section>

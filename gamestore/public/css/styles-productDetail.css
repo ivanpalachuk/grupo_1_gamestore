@@ -1,48 +1,144 @@
 * {
     font-family: 'Lato';
     color: white;
-    font-weight: bold;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(29, 26, 26);
 }
 
-body{}
+body{
+    margin: 4%;
+    background-color: rgb(29, 26, 26);
+    font-weight: bold;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 .img-principal{
-    max-width: 90vw;
-    margin-left: 5%;
+    max-width: 80vw;
+    padding:0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.img-principal:hover{
+        box-shadow: 0px 0px 10px #FF00d6;
+}
+
+h4{
+    text-align: center;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #FF00d6;
+}
+
+.precio{
+    background-color: rgba(0, 0, 0, 0.925);
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.precio:hover{
+    box-shadow: 0px 0px 10px #FF00d6;
+}
+
+.esrb-buy{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+}
+
+.buy{
+    flex-wrap: wrap;
+    
 }
 
 button{
     background-color: #FF00d6;
-    width: 80%;
+    width: 200px;
+    height: 35px;
+    border-color: #FF00d6;
     border-radius: 8px;
-    padding: 5px;
-    margin:auto;
-    margin-left: 20%;
-}
-.descripcion-producto, .requisitos-pc, .datos-tecnicos{
-    padding-inline: 1em 2em;
-    border-radius: 8px;
-    max-width: 90%;
-    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    
 }
 
-.requisitos-pc{
-
+button:active{
+    background-color: #8F4DB5;
+    border-color: #8F4DB5;
+    transition: 1000ms;
 }
 
 .esrb{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    flex-wrap: wrap;
+}
+
+.esrb-photo{
     max-width: 60px;
+}
+
+.esrb-detail{
+    max-width: 60px;
+    font-weight: normal;
+    font-size: 0.75em;
+    text-align: left;
+}
+
+.descripcion-producto, .requisitos-pc, .datos-tecnicos{
+    margin-left: 5%;
+    line-height: 1.5em;
+    border-radius: 8px;
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+.datos-tecnicos{
+    font-size: 0.75rem;
+}
+
+.requisitos-min{
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 0.70rem;
+    margin: 2%;
 }
 
 .resumen{
     display: none;
 }
 
-@media (min-width: 769px){
+.version{
+    display: none;
+}
+
+.complementos{
+    display: none;
+}
+
+.informacion-legal{
+    margin-top: 10%;
+    margin-left: 2%;
+    line-height: 1em;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+@media (min-width: 769px) {
     .img-product{
         width: 50vw;
 
@@ -78,4 +174,9 @@ button{
         border-radius: 8px;
 
     }
+}
+
+
+@media (min-width: 1280px){
+
 }
