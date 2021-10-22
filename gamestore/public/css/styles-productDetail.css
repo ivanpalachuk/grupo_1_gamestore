@@ -1,15 +1,48 @@
 * {
     font-family: 'Lato';
-    color: white;
+    color: #d9d9d9;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    margin: 4%;
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+#relleno {
+    height: 70px;  
+  }
+
+.img-logo-header{
+    padding: 10px;
+
+}
+
+#logo-header{
+    width: 50%;
+}
+
+.menu-desplegable{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.menu-desplegable:hover{
+    color: #8F4DB5;
+    transition: 1000ms;
+}
+
+main{
     background-color: rgb(29, 26, 26);
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 a:link, a:visited, a:active {
@@ -21,6 +54,8 @@ a:link, a:visited, a:active {
     padding:0;
     border-radius: 5px;
     margin-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 10vw;
 }
 
 .img-principal:hover{
@@ -42,6 +77,7 @@ h4{
     padding: 5px;
     text-align: center;
     margin-bottom: 10px;
+    margin-left: 15px;
 
 }
 
@@ -70,6 +106,7 @@ button{
     align-items: center;
     margin-top: 20px;
     font-weight: bold;
+    margin-left: 15px;
     
 }
 
@@ -84,6 +121,7 @@ button:active{
     flex-direction: column;
     max-width: 40%;
     flex-wrap: wrap;
+    width: 5%;
 }
 
 .esrb-photo{
@@ -98,7 +136,7 @@ button:active{
 }
 
 .descripcion-producto, .requisitos-pc, .datos-tecnicos{
-    margin-left: 5%;
+    margin:auto;
     line-height: 1.5em;
     border-radius: 8px;
     max-width: 80%;
@@ -115,7 +153,6 @@ button:active{
     border-radius: 5px;
     font-weight: normal;
     font-size: 0.70rem;
-    margin: 2%;
 }
 
 .resumen{
@@ -136,6 +173,28 @@ button:active{
     line-height: 1em;
     font-size: 0.75em;
     font-weight: normal;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    border-top: solid 2px #00FFF0;
+}
+
+.img-logo-footer{
+    margin: 4%;
+}
+
+#redes{
+    color:rgb(54, 53, 53);
+    font-size: 2em;
+    margin: 5px;
+}
+
+.links-footer{
+    margin: 10px;
 }
 
 @media (min-width: 769px) {
