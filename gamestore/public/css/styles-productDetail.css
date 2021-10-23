@@ -27,16 +27,27 @@ header{
     width: 50%;
 }
 
+#find{
+    display: none;
+}
+
+#search{
+    display: none;
+}
+
 .menu-desplegable{
-    text-align: center;
+    margin-right: 5px;
     font-size: 2rem;
     margin-top: 15px;
-    margin-right: 5px;
 }
 
 .menu-desplegable:hover{
     color: #8F4DB5;
     transition: 1000ms;
+}
+
+.main-navbar{
+    display: none;
 }
 
 main{
@@ -198,6 +209,96 @@ footer{
 }
 
 @media (min-width: 769px) {
+
+    .img-logo-header{
+        margin-right: 0;
+    }
+
+    .barra-busqueda{
+        display: flex;
+        flex-grow: 0.40;
+        justify-content: flex-end;
+        margin-right: 5px;
+    }
+    
+    #search{
+        display: unset;
+        margin-left: 20px;
+        flex-grow: 0.50;
+        max-height: 25px;
+        max-width: 50%;
+        min-width: 150px;
+        margin-top: 15px;
+        padding: 0;
+        border: solid #d9d9d9 3px;
+        background-color: #d9d9d9;
+        opacity: 0.5;
+        border-radius: 3px;
+    }
+    
+    #find{
+        display: unset;
+        padding-top: 3px;
+        text-align: center;
+        width: 25px;
+        max-height: 25px;
+        margin-top: 15px;
+        background-color: #d9d9d9;
+        opacity: 0.5;
+        color: #666;
+        border: solid #d9d9d9 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        
+    }
+
+    .menu-desplegable{
+        display: none;
+    }
+
+    .main-navbar{
+        display: flex;
+        text-align: start;
+    }
+
+    .main-navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .main-navbar li{
+        display: inline-block;
+        padding-left: 5px;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+    
+    .primer-color:hover{
+        color:#FFE500;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .segundo-color:hover{
+        color:#1CFF00;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .tercer-color:hover{
+        color:#00FFF0;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .cuarto-color:hover{
+        color:#FF00d6;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
     .img-product{
         width: 50vw;
 
@@ -210,6 +311,28 @@ footer{
         justify-content: space-between;
     }
 
+    .descripcion-producto{
+        margin-left: 5px;
+    }
+
+    .precio{
+        margin-right: 15%;
+    }
+    
+    .datos-tecnicos{
+        display: flex;
+        justify-content: flex-end;
+        max-width: 400px;
+        background-color: black;
+        padding: 1em 2em;
+        font-weight: bold;
+        border-radius: 8px;
+        
+    }
+}
+
+
+@media (min-width: 1280px){
     .resumen{
         padding: 10px;
         border-radius: 8px;
@@ -222,20 +345,5 @@ footer{
         align-items: center;
         background-color: black;
     }
-
-    .datos-tecnicos{
-        display: flex;
-        justify-content: flex-end;
-        max-width: 400px;
-        background-color: black;
-        padding-inline: 1em 2em;
-        font-weight: bold;
-        border-radius: 8px;
-
-    }
-}
-
-
-@media (min-width: 1280px){
-
+    
 }
