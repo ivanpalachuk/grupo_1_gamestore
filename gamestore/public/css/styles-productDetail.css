@@ -35,6 +35,10 @@ header{
     display: none;
 }
 
+.log-sign{
+    display: none;
+}
+
 .menu-desplegable{
     margin-right: 5px;
     font-size: 2rem;
@@ -61,12 +65,12 @@ a:link, a:visited, a:active {
 }
 
 .img-principal{
-    max-width: 80vw;
+    max-width: 70vw;
     padding:0;
     border-radius: 5px;
     margin-bottom: 15px;
     margin-top: 30px;
-    margin-left: 10vw;
+    margin-left: 15vw;
 }
 
 .img-principal:hover{
@@ -75,14 +79,19 @@ a:link, a:visited, a:active {
 
 h4{
     text-align: center;
-    margin: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 25px;
     border-radius: 5px;
+    padding: 3px;
+    height: 30px;
+    width: 250px;
     box-shadow: 0px 0px 10px #FF00d6;
 }
 
 .precio{
     background-color: rgba(0, 0, 0, 0.925);
-    width: 25%;
+    width: 150px;
     margin-top: 10px;
     border-radius: 8px;
     padding: 5px;
@@ -155,7 +164,7 @@ button:active{
 }
 
 .datos-tecnicos{
-    font-size: 0.75rem;
+    font-size: 0.70rem;
 }
 
 .requisitos-min{
@@ -178,9 +187,9 @@ button:active{
     display: none;
 }
 
-.informacion-legal{
-    margin-top: 10%;
-    margin-left: 2%;
+.informacion-legal, .informacion-legal-footer{
+    margin-top: 20px;
+    margin-left: 15px;
     line-height: 1em;
     font-size: 0.75em;
     font-weight: normal;
@@ -216,7 +225,6 @@ footer{
 
     .barra-busqueda{
         display: flex;
-        flex-grow: 0.40;
         justify-content: flex-end;
         margin-right: 5px;
     }
@@ -224,7 +232,6 @@ footer{
     #search{
         display: unset;
         margin-left: 20px;
-        flex-grow: 0.50;
         max-height: 25px;
         max-width: 50%;
         min-width: 150px;
@@ -236,6 +243,11 @@ footer{
         border-radius: 3px;
     }
     
+    #search:hover,
+    #search:active{
+        border-color: #8F4DB5;
+    }
+
     #find{
         display: unset;
         padding-top: 3px;
@@ -263,9 +275,8 @@ footer{
 
     .main-navbar ul{
         list-style: none;
-        margin: 0;
-        padding: 0;
         font-weight: bold;
+        margin: auto;
     }
     
     .main-navbar li{
@@ -299,16 +310,11 @@ footer{
         transition: all 1000ms;
     }
 
-    .img-product{
-        width: 50vw;
-
-    }
-
     .main-descripcion{
         display: flex;
         flex-wrap: wrap;
-        border: solid red 5px;
         justify-content: space-between;
+        margin: 10px;
     }
 
     .descripcion-producto{
@@ -316,34 +322,94 @@ footer{
     }
 
     .precio{
-        margin-right: 15%;
+        margin-right: 50px;
+        padding: 15px;
+        margin-top: 10px;
     }
     
-    .datos-tecnicos{
-        display: flex;
-        justify-content: flex-end;
-        max-width: 400px;
-        background-color: black;
-        padding: 1em 2em;
-        font-weight: bold;
-        border-radius: 8px;
+    .esrb-buy{
+        min-width: 90vw;
+    }
         
+
+    .tecnicos{
+        margin-left: auto;
+        max-width: 250px;
+    }
+
+    .datos-tecnicos{
+        background-color: rgba(0, 0, 0, 0.925);
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 0.70rem;
+        font-weight: normal;
+        margin-top: 45px;
+        
+    }
+
+    .requisitos-min{
+        background-color: rgba(0, 0, 0, 0.925);
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 0.70rem;
     }
 }
 
 
 @media (min-width: 1280px){
+
+    .main-navbar li{
+        padding-left: 25px;
+    }
+
     .resumen{
         padding: 10px;
         border-radius: 8px;
-        max-width: 80%;
-        padding-inline: 1em 2em;
+        max-width: 50%;
         margin: auto;
+        margin-top: 50px;
         font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: black;
+        line-height: 2em;
     }
     
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 55px;
+    }
+    
+    .redes-sociales{
+        width: 30%;
+        padding: 15px;
+        margin: 15px;
+        font-size: 0.70em;
+    }
+
+    .links-footer{
+        margin-right: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .first-column, .second-column{
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        min-width: 30vw;
+        text-align: start;
+
+    }
+    
+    .informacion-legal-footer{
+        width: 100%;
+        margin: 0;
+        padding-top: 30px;
+    }
 }
