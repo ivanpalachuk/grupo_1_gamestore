@@ -1,0 +1,51 @@
+* {
+    font-family: 'Lato';
+    color: #d9d9d9;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.img-logo-header{
+    padding: 10px;
+}
+
+#logo-header{
+    width: 50%;
+}
+
+.main-navbar{
+    display: none;
+}
+
+
+
+footer{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    border-top: solid 2px #00FFF0;
+}
+
+.img-logo-footer{
+    margin: 4%;
+}
+
+#redes{
+    color:rgb(54, 53, 53);
+    font-size: 2em;
+    margin: 5px;
+}
+
+.links-footer{
+    margin: 10px;
+}
