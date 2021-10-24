@@ -5,28 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='/css/styles-shoppingcart.css' rel="stylesheet">
+    <link href='/css/styles-shoppingCart.css' rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
     <title>Tu carrito</title>
 </head>
 
 <body>
-    <main> prueba tipografia
-        <div class="contenedor-productos-carro"></div>
-        <article></article>
-        <article></article>
-        <article></article>
-        <div class="contenedor-caja-totales"></div>
-        <div class="sub"></div>
-        <div class="tax"></div>
-        <div class="total"></div>
-        <div class="cupondescuento"></div>
-        <div class="pagar"></div>
+    <header>
+        "HEADER"
+    </header>
+    <main>
+        <div class="contenedor-productos-carro">
+            <article>
+                <div class="contenedor-imagenes"><img src="/images/age-2.jpg" alt="juego"></div>
+                <div>Age of Empires
+                </div>
+                <p>Un clasico de la estrategia medieval</p>
+                <div class="contenedor-precio">$35</div>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                <a href="#" class="sumar-Addon">Sumale un add-on</a>
+            </article>
+            <article>
+                <div class="contenedor-imagenes"><img src="/images/family-disruption1.jpg" alt="juego"></div>
+                <h3>Nine Witches</h3>
+                <p>Indie nac-pop, de los buenos</p>
+                <div class="contenedor-precio">$20</div>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                <a href="#" class="sumar-Addon">Sumale un add-on</a>
+            </article>
+            <article>
+                <div class="contenedor-imagenes"><img src="/images/limbo.jpg" alt="juego"></div>
+                <h3>LIMBO</h3>
+                <p>Indie monocromatico y emotivo</p>
+                <div class="contenedor-precio">$8</div>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                <a href="#" class="sumar-Addon">Sumale un add-on</a>
+            </article>
+        </div>
+        <div class="contenedor-caja-totales">
+            <div class="sub">Subtotal</div>
+            <div class="tax">Impuestos</div>
+            <div class="total">Total</div>
+            <div class="cupondescuento">
+                <input type="text" name="cupon" placeholder="Aplica tu cupon">
+                <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
+            </div>
+            <div class="pagar"><a href="#">Ir a poner la mosca</a></div>
+        </div>
     </main>
-
+    <footer>"FOOTER"</footer>
 </body>
 
 </html>
