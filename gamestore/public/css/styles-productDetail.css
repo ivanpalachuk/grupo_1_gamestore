@@ -347,7 +347,7 @@ footer{
     }
 
     .esrb-photo{
-        margin:auto
+        margin:auto;
     }
 
     .esrb-detail{
@@ -357,6 +357,7 @@ footer{
     .tecnicos{
         margin-left: auto;
         max-width: 250px;
+        margin-top: 26px;
     }
 
     .datos-tecnicos{
@@ -365,13 +366,12 @@ footer{
         border-radius: 5px;
         font-size: 0.70rem;
         font-weight: normal;
-        margin-top: 45px;
         
     }
 
     .requisitos-min{
         background-color: rgba(0, 0, 0, 0.925);
-        padding: 5px;
+        padding: 6px;
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
