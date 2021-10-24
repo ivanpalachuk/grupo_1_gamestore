@@ -416,6 +416,16 @@ footer{
         line-height: 2em;
     }
     
+    .datos-tecnicos{
+        font-size: 1em;
+        transition: all 1000ms;
+    }
+
+    .requisitos-min{
+        font-size: 1em;
+        transition: all 1000ms;
+    }
+
     footer{
         display: flex;
         justify-content: space-between;
