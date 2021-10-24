@@ -94,7 +94,8 @@ h4{
     width: 150px;
     margin-top: 10px;
     border-radius: 8px;
-    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -193,6 +194,7 @@ button:active{
     line-height: 1em;
     font-size: 0.75em;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 footer{
@@ -226,17 +228,16 @@ footer{
     .barra-busqueda{
         display: flex;
         justify-content: flex-end;
+        flex-direction: column;
         margin-right: 5px;
     }
     
     #search{
         display: unset;
-        margin-left: 20px;
         max-height: 25px;
-        max-width: 50%;
         min-width: 150px;
         margin-top: 15px;
-        padding: 0;
+        padding: 2px;
         border: solid #d9d9d9 3px;
         background-color: #d9d9d9;
         opacity: 0.5;
@@ -244,17 +245,17 @@ footer{
     }
     
     #search:hover,
-    #search:active{
+    #search:active,
+    .log-sign:hover{
         border-color: #8F4DB5;
     }
 
     #find{
         display: unset;
-        padding-top: 3px;
+        padding:2px;
         text-align: center;
-        width: 25px;
+        width: 35px;
         max-height: 25px;
-        margin-top: 15px;
         background-color: #d9d9d9;
         opacity: 0.5;
         color: #666;
@@ -262,6 +263,15 @@ footer{
         border-radius: 3px;
         cursor: pointer;
         
+    }
+
+    .log-sign{
+        display: block;
+        margin-top: 15px;
+        margin-right: 10px;
+        font-family: 'Press Start 2P';
+        font-size: 0.80em;
+        padding: 7px;
     }
 
     .menu-desplegable{
@@ -275,15 +285,15 @@ footer{
 
     .main-navbar ul{
         list-style: none;
-        font-weight: bold;
         margin: auto;
     }
     
     .main-navbar li{
+        font-family: 'Press Start 2P';
+        font-size: 0.55em;
         display: inline-block;
-        padding-left: 5px;
         margin-top: 40px;
-        margin-right: 15px;
+        margin-right: 10px;
     }
     
     .primer-color:hover{
@@ -314,7 +324,8 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 10px;
+        margin-top: 10px;
+        margin-left: 50px;
     }
 
     .descripcion-producto{
@@ -322,15 +333,29 @@ footer{
     }
 
     .precio{
-        margin-right: 50px;
-        padding: 15px;
+        margin-right: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 160px;
         margin-top: 10px;
+        transition: all 1000ms;
     }
     
     .esrb-buy{
         min-width: 90vw;
     }
         
+    .esrb{
+        width: 50%;
+    }
+
+    .esrb-photo{
+        margin:auto
+    }
+
+    .esrb-detail{
+        margin:auto;
+    }
 
     .tecnicos{
         margin-left: auto;
@@ -363,24 +388,38 @@ footer{
         padding-left: 25px;
     }
 
+    #search{
+    }
+
+    .precio{
+        width: 250px;
+        transition: all 1000ms;
+    }
+
+    .main-navbar li{
+        font-family: 'Press Start 2P';
+        font-size: 0.80em;
+        margin-right: 15px;
+        transition: all 1000ms;;
+    }
+
     .resumen{
         padding: 10px;
         border-radius: 8px;
         max-width: 50%;
         margin: auto;
         margin-top: 50px;
-        font-weight: bold;
+        font-weight: normal;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
         line-height: 2em;
     }
     
     footer{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 55px;
+        padding: 20px
     }
     
     .redes-sociales{
@@ -410,6 +449,5 @@ footer{
     .informacion-legal-footer{
         width: 100%;
         margin: 0;
-        padding-top: 30px;
     }
 }
