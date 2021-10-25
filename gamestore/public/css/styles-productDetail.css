@@ -355,9 +355,8 @@ footer{
     }
 
     .requisitos{
-        display: inline-block;
-        width: 90%;
-        margin: 0;
+        display: flex;
+        width: 100%;
     }
 
     .tecnicos{
@@ -366,8 +365,7 @@ footer{
     }
 
     .requisitos-pc{
-        width: 50%;
-
+        width: 30%;
     }
 
     .datos-tecnicos{
