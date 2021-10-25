@@ -333,7 +333,7 @@ footer{
         margin-right: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 160px;
+        width: 150px;
         margin-top: 10px;
         transition: all 1000ms;
     }
@@ -361,7 +361,7 @@ footer{
 
     .tecnicos{
         max-width: 250px;
-        margin-top: 26px;
+        margin-top: 10px;
     }
 
     .requisitos-pc{
@@ -370,10 +370,11 @@ footer{
 
     .datos-tecnicos{
         background-color: rgba(0, 0, 0, 0.925);
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
         font-size: 0.70rem;
         font-weight: normal;
+        opacity: 0.75;
         
     }
 
@@ -383,6 +384,7 @@ footer{
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
+        opacity: 0.75;
     }
 }
 

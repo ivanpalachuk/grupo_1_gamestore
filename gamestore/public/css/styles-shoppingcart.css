@@ -91,25 +91,35 @@ main {
     padding: 15px;
 }
 
-.contenedor-montos-sumatorias>div {
+.total, .cajatotal{
+    padding-top: 7px;
+    font-size: 2em;
+}
+
+.sub, .dis, .tax, .cajasub, .cajadis, .cajatax{
     font-size: 15px;
+    padding: 5px;
+}
+.contenedor-montos-sumatorias>div {
     background-color: rgba(0, 0, 0, 0.925);
-    border: #00FFF0 1px solid;
+    opacity: 0.75;
+    border-bottom: #00FFF0 1px solid;
     border-radius: 3px;
     height: auto;
     text-align: right;
-    padding: 5px;
+    font-weight: normal;
 }
 
 .contenedor-titulos-sumatorias>div {
-    font-size: 15px;
     background-color: rgba(0, 0, 0, 0.925);
-    border: #00FFF0 1px solid;
+    opacity: 0.75;
+    border-bottom: #00FFF0 1px solid;
     border-radius: 3px;
     height: auto;
     text-align: center;
-    padding: 5px;
+    font-weight: normal;
 }
+
 
 .contenedor-flex-caja {
     display: flex;
@@ -486,6 +496,16 @@ footer {
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
+    }
+
+    .contenedor-montos-sumatorias>div {
+        transition: all 1000ms;
+        width: 150px;
+    }
+    
+    .contenedor-titulos-sumatorias>div {
+        transition: all 1000ms;
+        width: 150px;
     }
 }
 
