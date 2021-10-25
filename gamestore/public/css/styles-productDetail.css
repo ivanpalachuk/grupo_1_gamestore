@@ -156,11 +156,11 @@ button:active{
     text-align: left;
 }
 
-.descripcion-producto, .requisitos-pc, .datos-tecnicos{
-    margin:auto;
+.descripcion-producto, .requisitos-pc, .tecnicos{
+    margin: auto;
     line-height: 1.5em;
     border-radius: 8px;
-    max-width: 80%;
+    max-width: 90%;
     border-radius: 8px;
 }
 
@@ -354,10 +354,20 @@ footer{
         margin:auto;
     }
 
+    .requisitos{
+        display: inline-block;
+        width: 90%;
+        margin: 0;
+    }
+
     .tecnicos{
-        margin-left: auto;
         max-width: 250px;
         margin-top: 26px;
+    }
+
+    .requisitos-pc{
+        width: 50%;
+
     }
 
     .datos-tecnicos{
@@ -412,7 +422,11 @@ footer{
         align-items: center;
         line-height: 2em;
     }
-    
+
+    .requisitos-pc{
+        max-width: 50%;
+    }
+
     .datos-tecnicos{
         font-size: 1em;
         transition: all 1000ms;
