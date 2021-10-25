@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const publicPath = path.resolve(__dirname, "./public");
+const port = process.env.PORT || 4022;
 
 let home = "./views/home.html"
 let shopcart = "./views/shoppingcart.html"
@@ -10,7 +11,7 @@ let signUp = "./views/signUp.html"
 
 
 app.use(express.static(publicPath))
-app.listen(4022, () => {
+app.listen(port, () => {
     console.log("Servidor prueba Gamestore corriendo en puerto 4022")
 })
 app.get("/", (req, res) => {

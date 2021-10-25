@@ -91,6 +91,31 @@ main {
     padding: 15px;
 }
 
+.contenedor-montos-sumatorias>div {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.925);
+    border: #00FFF0 1px solid;
+    border-radius: 3px;
+    height: auto;
+    text-align: right;
+    padding: 5px;
+}
+
+.contenedor-titulos-sumatorias>div {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.925);
+    border: #00FFF0 1px solid;
+    border-radius: 3px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.contenedor-flex-caja {
+    display: flex;
+    justify-content: space-around;
+}
+
 .contenedor-imagenes a:link,
 a:visited,
 a:active {
@@ -189,6 +214,13 @@ button:active {
     ;
 }
 
+#boton-linkcobro {
+    text-decoration: none;
+    background-color: #00FFF0;
+    border-color: #00FFF0;
+    color: rgba(0, 0, 0, 0.925);
+}
+
 .contenedor-productos-carro a:link,
 a:visited,
 a:active {
@@ -200,7 +232,6 @@ article {
     flex-wrap: wrap;
     border-bottom: 2px solid #8F4DB5;
     margin-bottom: 10px;
-    justify-content: ;
 }
 
 .titulo-descripcion {
@@ -214,6 +245,27 @@ article {
 
 p {
     font-size: 14px
+}
+
+.cupondescuento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#caja-validacion {
+    min-width: 200px;
+    min-height: 35px;
+    border: 1px solid #00FFF0;
+    background-color: rgba(0, 0, 0, 0.925);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor-sumatorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .esrb {

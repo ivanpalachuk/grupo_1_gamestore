@@ -49,42 +49,53 @@
                 <div class="titulo-descripcion">
                     <div class="titulo-juego">Call of Duty
                     </div>
-                    <p>Accion en primera persona</p>
+                    <p>PS4/ PS5 / PC</p>
                     <div class="precio">$35</div>
                 </div>
                 <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                <button type="submit" value=1 id="boton-remove"><div id="remove">Agregar a lista de deseos</div></button>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
             </article>
             <article>
                 <div class="contenedor-imagenes"><img src="/images/nine-shopcart.jpg" alt="juego"></div>
                 <div class="titulo-descripcion">
                     <div class="titulo-juego">Nine Witches</div>
-                    <p>Indie nac-pop, de los buenos</p>
+                    <p>PS4/ PS5 / PC</p>
                     <div class="precio">$20</div>
                 </div>
                 <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                <button type="submit" value=1 id="boton-remove"><div id="remove">Agregar a lista de deseos</div></button>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
             </article>
             <article>
                 <div class="contenedor-imagenes"><img src="/images/limbo-shopcart.jpg" alt="juego"></div>
                 <div class="titulo-descripcion">
                     <div class="titulo-juego">LIMBO</div>
-                    <p>Monocromatico y Emotivo</p>
+                    <p>PS4/ PS5 / PC</p>
                     <div class="precio">$8</div>
                 </div>
                 <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                <button type="submit" value=1 id="boton-remove"><div id="remove">Agregar a lista de deseos</div></button>
+                <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
             </article>
         </div>
         <div class="contenedor-caja-totales">
-            <div class="sub">Subtotal</div>
-            <div class="tax">Impuestos</div>
-            <div class="total">Total</div>
-            <div class="cupondescuento">
-                <input type="text" name="cupon" placeholder="Aplica tu cupon">
-                <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
+            <div class="contenedor-flex-caja">
+                <div class="contenedor-titulos-sumatorias">
+                    <div class="sub">Subtotal</div>
+                    <div class="dis">Descuentos</div>
+                    <div class="tax">Impuestos</div>
+                    <div class="total">Total</div>
+                </div>
+                <div class="contenedor-montos-sumatorias">
+                    <div class="cajasub">$63</div>
+                    <div class="cajadis">$0</div>
+                    <div class="cajatax">$14</div>
+                    <div class="cajatotal">$77</div>
+                </div>
             </div>
-            <div class="pagar"><a href="#">Ir a poner la mosca</a></div>
+            <div class="cupondescuento">
+                <input type="text" name="cupon" placeholder="Aplica tu cupon" id="caja-validacion">
+                <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
+                <button id="boton-linkcobro"><div class="pagar"><a href="#" id="boton-linkcobro">Pagar</a></div></button>
+            </div>
         </div>
     </main>
 
