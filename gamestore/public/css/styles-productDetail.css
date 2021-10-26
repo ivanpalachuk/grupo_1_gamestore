@@ -155,11 +155,21 @@ button:active {
 .descripcion-producto,
 .requisitos-pc,
 .tecnicos {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.5em;
     border-radius: 8px;
     max-width: 90%;
     border-radius: 8px;
+    margin-top: 15px;
+}
+
+.tecnicos{
+    height: 100%;
+}
+
+.requisitos-pc{
+    margin-top: 30px;
 }
 
 .datos-tecnicos {
@@ -333,26 +343,24 @@ footer {
     .requisitos {
         display: flex;
         width: 100%;
-        margin-left: auto;
     }
     .tecnicos {
         width: 30%;
-        height: 100%;
-        padding-top: 2px;
-
+        padding: 20px;
     }
+
     .requisitos-pc {
         width: 30%;
     }
     .datos-tecnicos {
         background-color: rgba(0, 0, 0, 0.925);
-        padding: 10px;
         border-radius: 5px;
         font-size: 0.70rem;
         font-weight: normal;
         text-align: center;
-        height: 80%;
         padding-top: 10%;
+        margin-left: 10px;
+        height: 350px;
     }
     .requisitos-min {
         background-color: rgba(0, 0, 0, 0.925);
@@ -360,6 +368,7 @@ footer {
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
+        height: 350px;
     }
 }
 
@@ -433,6 +442,9 @@ footer {
     .datos-tecnicos {
         font-size: 1em;
         transition: all 1000ms;
+        padding-top: 60px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .requisitos-min {
         font-size: 1em;
