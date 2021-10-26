@@ -81,6 +81,7 @@ main {
     object-fit: contain;
     width: 100px;
     height: 100px;
+    flex-grow: 0.33;
 }
 
 .contenedor-caja-totales {
@@ -91,15 +92,22 @@ main {
     padding: 15px;
 }
 
-.total, .cajatotal{
+.total,
+.cajatotal {
     padding-top: 7px;
     font-size: 2em;
 }
 
-.sub, .dis, .tax, .cajasub, .cajadis, .cajatax{
+.sub,
+.dis,
+.tax,
+.cajasub,
+.cajadis,
+.cajatax {
     font-size: 15px;
     padding: 5px;
 }
+
 .contenedor-montos-sumatorias>div {
     background-color: rgba(0, 0, 0, 0.925);
     opacity: 0.75;
@@ -119,7 +127,6 @@ main {
     text-align: center;
     font-weight: normal;
 }
-
 
 .contenedor-flex-caja {
     display: flex;
@@ -159,14 +166,14 @@ h4 {
 
 .precio {
     background-color: rgba(0, 0, 0, 0.925);
-    width: 150px;
-    margin-top: 10px;
+    min-width: 50px;
+    max-width: 100px;
     border-radius: 8px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    margin-bottom: 10px;
-    margin-left: 15px;
+    align-self: center;
+    justify-content: end;
 }
 
 .precio:hover {
@@ -211,7 +218,6 @@ button:active {
     border-radius: 8px;
     margin-bottom: 15px;
     align-items: center;
-    margin-top: 10px;
     font-weight: bold;
     transition: all;
     margin-left: auto;
@@ -247,6 +253,8 @@ article {
 .titulo-descripcion {
     display: flex;
     flex-direction: column;
+    flex-grow: 0.33;
+    width: 100px;
 }
 
 .titulo-juego {
@@ -270,12 +278,19 @@ p {
     background-color: rgba(0, 0, 0, 0.925);
     margin-top: 20px;
     text-align: center;
+    height: 35px;
 }
 
 .contenedor-sumatorias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.botonera-carrito {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .esrb {
@@ -460,11 +475,12 @@ footer {
     }
     .precio {
         margin-right: 200px;
-        padding-top: 15px;
         padding-bottom: 15px;
         width: 160px;
         margin-top: 10px;
         transition: all 1000ms;
+        flex-grow: 0.3;
+        height: 50px;
     }
     .esrb-buy {
         min-width: 90vw;
@@ -497,12 +513,10 @@ footer {
         font-weight: normal;
         font-size: 0.70rem;
     }
-
     .contenedor-montos-sumatorias>div {
         transition: all 1000ms;
         width: 150px;
     }
-    
     .contenedor-titulos-sumatorias>div {
         transition: all 1000ms;
         width: 150px;

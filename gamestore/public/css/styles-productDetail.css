@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-header{
+header {
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -15,69 +15,70 @@ header{
 }
 
 #relleno {
-    height: 70px;  
-  }
-
-.img-logo-header{
-    padding: 10px;
-
+    height: 70px;
 }
 
-#logo-header{
+.img-logo-header {
+    padding: 10px;
+}
+
+#logo-header {
     width: 50%;
 }
 
-#find{
+#find {
     display: none;
 }
 
-#search{
+#search {
     display: none;
 }
 
-.log-sign{
+.log-sign {
     display: none;
 }
 
-.menu-desplegable{
+.menu-desplegable {
     margin-right: 5px;
     font-size: 2rem;
     margin-top: 15px;
 }
 
-.menu-desplegable:hover{
+.menu-desplegable:hover {
     color: #8F4DB5;
     transition: 1000ms;
 }
 
-.main-navbar{
+.main-navbar {
     display: none;
 }
 
-main{
+main {
     background-color: rgb(29, 26, 26);
     font-weight: bold;
     padding-bottom: 50px;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
 }
 
-.img-principal{
+.img-principal {
     max-width: 70vw;
-    padding:0;
+    padding: 0;
     border-radius: 5px;
     margin-bottom: 15px;
     margin-top: 30px;
     margin-left: 15vw;
 }
 
-.img-principal:hover{
-        box-shadow: 0px 0px 10px #FF00d6;
+.img-principal:hover {
+    box-shadow: 0px 0px 10px #FF00d6;
 }
 
-h4{
+h4 {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
@@ -89,35 +90,27 @@ h4{
     box-shadow: 0px 0px 10px #FF00d6;
 }
 
-.precio{
+.precio {
     background-color: rgba(0, 0, 0, 0.925);
     width: 150px;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-left: 15px;
-
+    height: 50px;
 }
 
-.precio:hover{
+.precio:hover {
     box-shadow: 0px 0px 10px #FF00d6;
 }
 
-.esrb-buy{
+.esrb-buy {
     display: flex;
     justify-content: space-between;
     max-width: 75vw;
 }
 
-.buy{
+.buy {
     flex-wrap: wrap;
-    
 }
 
-button{
+button {
     background-color: #FF00d6;
     width: 200px;
     height: 35px;
@@ -128,16 +121,15 @@ button{
     margin-top: 20px;
     font-weight: bold;
     margin-left: 15px;
-    
 }
 
-button:active{
+button:active {
     background-color: #8F4DB5;
     border-color: #8F4DB5;
     transition: 1000ms;
 }
 
-.esrb{
+.esrb {
     display: flex;
     flex-direction: column;
     max-width: 40%;
@@ -145,18 +137,20 @@ button:active{
     width: 5%;
 }
 
-.esrb-photo{
+.esrb-photo {
     max-width: 60px;
 }
 
-.esrb-detail{
+.esrb-detail {
     max-width: 60px;
     font-weight: normal;
     font-size: 0.75em;
     text-align: left;
 }
 
-.descripcion-producto, .requisitos-pc, .tecnicos{
+.descripcion-producto,
+.requisitos-pc,
+.tecnicos {
     margin: auto;
     line-height: 1.5em;
     border-radius: 8px;
@@ -164,11 +158,11 @@ button:active{
     border-radius: 8px;
 }
 
-.datos-tecnicos{
+.datos-tecnicos {
     font-size: 0.70rem;
 }
 
-.requisitos-min{
+.requisitos-min {
     background-color: rgba(0, 0, 0, 0.925);
     padding: 5px;
     border-radius: 5px;
@@ -176,19 +170,20 @@ button:active{
     font-size: 0.70rem;
 }
 
-.resumen{
+.resumen {
     display: none;
 }
 
-.version{
+.version {
     display: none;
 }
 
-.complementos{
+.complementos {
     display: none;
 }
 
-.informacion-legal, .informacion-legal-footer{
+.informacion-legal,
+.informacion-legal-footer {
     margin-top: 20px;
     margin-left: 15px;
     line-height: 1em;
@@ -197,7 +192,7 @@ button:active{
     padding-bottom: 10px;
 }
 
-footer{
+footer {
     background-color: #000;
     width: 100%;
     text-align: center;
@@ -205,34 +200,31 @@ footer{
     border-top: solid 2px #00FFF0;
 }
 
-.img-logo-footer{
+.img-logo-footer {
     margin: 4%;
 }
 
-#redes{
-    color:rgb(54, 53, 53);
+#redes {
+    color: rgb(54, 53, 53);
     font-size: 2em;
     margin: 5px;
 }
 
-.links-footer{
+.links-footer {
     margin: 10px;
 }
 
 @media (min-width: 769px) {
-
-    .img-logo-header{
+    .img-logo-header {
         margin-right: 0;
     }
-
-    .barra-busqueda{
+    .barra-busqueda {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
         margin-right: 5px;
     }
-    
-    #search{
+    #search {
         display: unset;
         max-height: 25px;
         min-width: 150px;
@@ -242,16 +234,14 @@ footer{
         background-color: #000;
         border-radius: 3px;
     }
-    
     #search:hover,
     #search:active,
-    .log-sign:hover{
+    .log-sign:hover {
         border-color: #8F4DB5;
     }
-
-    #find{
+    #find {
         display: unset;
-        padding:2px;
+        padding: 2px;
         text-align: center;
         width: 35px;
         max-height: 25px;
@@ -259,10 +249,8 @@ footer{
         color: #666;
         border-radius: 3px;
         cursor: pointer;
-        
     }
-
-    .log-sign{
+    .log-sign {
         display: block;
         margin-top: 15px;
         margin-right: 10px;
@@ -270,66 +258,55 @@ footer{
         font-size: 0.80em;
         padding: 7px;
     }
-
-    .menu-desplegable{
+    .menu-desplegable {
         display: none;
     }
-
-    .main-navbar{
+    .main-navbar {
         display: flex;
         text-align: start;
     }
-
-    .main-navbar ul{
+    .main-navbar ul {
         list-style: none;
         margin: auto;
     }
-    
-    .main-navbar li{
+    .main-navbar li {
         font-family: 'Press Start 2P';
         font-size: 0.55em;
         display: inline-block;
         margin-top: 40px;
         margin-right: 10px;
     }
-    
-    .primer-color:hover{
-        color:#FFE500;
+    .primer-color:hover {
+        color: #FFE500;
         opacity: 0.7;
         transition: all 1000ms;
     }
-
-    .segundo-color:hover{
-        color:#1CFF00;
+    .segundo-color:hover {
+        color: #1CFF00;
         opacity: 0.7;
         transition: all 1000ms;
     }
-
-    .tercer-color:hover{
-        color:#00FFF0;
+    .tercer-color:hover {
+        color: #00FFF0;
         opacity: 0.7;
         transition: all 1000ms;
     }
-
-    .cuarto-color:hover{
-        color:#FF00d6;
+    .cuarto-color:hover {
+        color: #FF00d6;
         opacity: 0.7;
         transition: all 1000ms;
     }
-
-    .main-descripcion{
+    .main-descripcion {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 10px;
         margin-left: 50px;
     }
-
-    .descripcion-producto{
+    .descripcion-producto {
         margin-left: 5px;
     }
-
-    .precio{
+    .precio {
         margin-right: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -337,48 +314,38 @@ footer{
         margin-top: 10px;
         transition: all 1000ms;
     }
-    
-    .esrb-buy{
+    .esrb-buy {
         min-width: 90vw;
     }
-        
-    .esrb{
+    .esrb {
         width: 50%;
     }
-
-    .esrb-photo{
-        margin:auto;
+    .esrb-photo {
+        margin: auto;
     }
-
-    .esrb-detail{
-        margin:auto;
+    .esrb-detail {
+        margin: auto;
     }
-
-    .requisitos{
+    .requisitos {
         display: flex;
         width: 100%;
     }
-
-    .tecnicos{
+    .tecnicos {
         max-width: 250px;
         margin-top: 10px;
     }
-
-    .requisitos-pc{
+    .requisitos-pc {
         width: 30%;
     }
-
-    .datos-tecnicos{
+    .datos-tecnicos {
         background-color: rgba(0, 0, 0, 0.925);
         padding: 10px;
         border-radius: 5px;
         font-size: 0.70rem;
         font-weight: normal;
         opacity: 0.75;
-        
     }
-
-    .requisitos-min{
+    .requisitos-min {
         background-color: rgba(0, 0, 0, 0.925);
         padding: 6px;
         border-radius: 5px;
@@ -388,29 +355,23 @@ footer{
     }
 }
 
-
-@media (min-width: 1280px){
-
-    .main-navbar li{
+@media (min-width: 1280px) {
+    .main-navbar li {
         padding-left: 25px;
     }
-
-    #search{
-    }
-
-    .precio{
+    #search {}
+    .precio {
         width: 250px;
         transition: all 1000ms;
     }
-
-    .main-navbar li{
+    .main-navbar li {
         font-family: 'Press Start 2P';
         font-size: 0.80em;
         margin-right: 15px;
-        transition: all 1000ms;;
+        transition: all 1000ms;
+        ;
     }
-
-    .resumen{
+    .resumen {
         padding: 10px;
         border-radius: 8px;
         max-width: 50%;
@@ -422,52 +383,44 @@ footer{
         align-items: center;
         line-height: 2em;
     }
-
-    .requisitos-pc{
+    .requisitos-pc {
         max-width: 50%;
     }
-
-    .datos-tecnicos{
+    .datos-tecnicos {
         font-size: 1em;
         transition: all 1000ms;
     }
-
-    .requisitos-min{
+    .requisitos-min {
         font-size: 1em;
         transition: all 1000ms;
     }
-
-    footer{
+    footer {
         display: flex;
         justify-content: space-between;
         padding: 20px
     }
-    
-    .redes-sociales{
+    .redes-sociales {
         width: 30%;
         padding: 15px;
         margin: 15px;
         font-size: 0.70em;
     }
-
-    .links-footer{
+    .links-footer {
         margin-right: 10px;
         margin-left: 40px;
         display: flex;
         justify-content: center;
         width: 60%;
     }
-
-    .first-column, .second-column{
+    .first-column,
+    .second-column {
         text-align: center;
         justify-content: center;
         padding: 5px;
         min-width: 30vw;
         text-align: start;
-
     }
-    
-    .informacion-legal-footer{
+    .informacion-legal-footer {
         width: 100%;
         margin: 0;
     }
