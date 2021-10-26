@@ -395,9 +395,8 @@ footer {
         min-width: 150px;
         margin-top: 15px;
         padding: 2px;
-        border: solid #d9d9d9 3px;
-        background-color: #d9d9d9;
-        opacity: 0.5;
+        border-bottom: solid #8F4DB5 3px;
+        background-color: #000;
         border-radius: 3px;
     }
     #search:hover,
@@ -411,10 +410,8 @@ footer {
         text-align: center;
         width: 35px;
         max-height: 25px;
-        background-color: #d9d9d9;
-        opacity: 0.5;
+        background-color: transparent;
         color: #666;
-        border: solid #d9d9d9 3px;
         border-radius: 3px;
         cursor: pointer;
     }
@@ -424,7 +421,7 @@ footer {
         margin-right: 10px;
         font-family: 'Press Start 2P';
         font-size: 0.80em;
-        padding: 7px;
+        padding-bottom: 7px;
     }
     .menu-desplegable {
         display: none;
@@ -529,11 +526,44 @@ footer {
     }
     .contenedor-productos-carro,
     .contenedor-caja-totales {
-        width: 50%;
+        width: 49%;
         height: fit-content;
     }
     .contenedor-caja-totales {
         margin-top: 10px;
+    }
+    footer {
+        transition: all 1000ms;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .redes-sociales {
+        width: 30%;
+        padding: 15px;
+        margin: 15px;
+        font-size: 0.70em;
+    }
+    .links-footer {
+        margin-right: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+    .first-column,
+    .second-column {
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        min-width: 20vw;
+        text-align: start;
+    }
+    .informacion-legal-footer {
+        width: 100%;
+        margin: 0;
+        padding-left: 7px;
+        padding-top: 15px;
     }
 }
 
