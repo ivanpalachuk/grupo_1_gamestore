@@ -22,9 +22,111 @@ header{
     width: 50%;
 }
 
+#find{
+    display: none;
+}
+
+#search{
+    display: none;
+}
+
+.log-sign{
+    display: none;
+    text-align: end;
+}
+
+.menu-desplegable{
+    margin-right: 5px;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.menu-desplegable:hover{
+    color: #8F4DB5;
+    transition: 1000ms;
+}
+
 .main-navbar{
     display: none;
 }
+
+#cart{
+    background-color: #8F4DB5;
+    width: 60px;
+    height: 60px;
+    border-color: #8F4DB5;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10%;
+    left: 80%;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 3px;
+    font-size: 1.5em;
+}
+
+main{
+    padding-top: 100px;
+    background-color: rgb(29, 26, 26);
+    font-weight: bold;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+/*Fianriel start*/
+.registro-box{
+    margin: 10px;
+    border: 2px solid;
+    padding: 10px;
+    border-color: #8F4DB5;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    
+}
+
+input{
+    min-width: 200px;
+    min-height: 35px;
+    border: 1px solid #00FFF0;
+    background-color: rgba(0, 0, 0, 0.925);
+    text-align: center;
+    height: 35px;
+}
+
+select{
+    min-width: 200px;
+    min-height: 35px;
+    border: 1px solid #00FFF0;
+    background-color: rgba(0, 0, 0, 0.925);
+    text-align: center;
+    height: 35px;
+}
+
+
+.send-buttom {
+    background-color: #FF00d6;
+    height: 35px;
+    border-color: #FF00d6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.send-buttom:active {
+    background-color: #8F4DB5;
+    border-color: #8F4DB5;
+    transition: 1000ms;
+}
+/*Fianriel end*/
 
 
 
@@ -49,3 +151,188 @@ footer{
 .links-footer{
     margin: 10px;
 }
+
+@media (min-width: 360px){
+    article{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    article *{
+        margin-top: 5px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .img-logo-header{
+        margin-right: 0;
+    }
+
+    .barra-busqueda{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-right: 5px;
+    }
+    
+    #search{
+        display: unset;
+        max-height: 25px;
+        min-width: 150px;
+        margin-top: 15px;
+        padding: 2px;
+        border-bottom: solid #8F4DB5 3px;
+        background-color: #000;
+        border-radius: 3px;
+    }
+    
+    #search:hover,
+    #search:active,
+    .log-sign:hover{
+        border-color: #8F4DB5;
+    }
+
+    #find{
+        display: unset;
+        padding:2px;
+        text-align: center;
+        width: 35px;
+        max-height: 25px;
+        background-color: transparent;
+        color: #666;
+        border-radius: 3px;
+        cursor: pointer;
+        
+    }
+
+    .log-sign{
+        display: block;
+        margin-top: 15px;
+        margin-right: 10px;
+        font-family: 'Press Start 2P';
+        font-size: 0.80em;
+        padding: 7px;
+    }
+
+    .menu-desplegable{
+        display: none;
+    }
+
+    .main-navbar{
+        display: flex;
+        text-align: start;
+    }
+
+    .main-navbar ul{
+        list-style: none;
+        margin: auto;
+    }
+    
+    .main-navbar li{
+        font-family: 'Press Start 2P';
+        font-size: 0.55em;
+        display: inline-block;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    
+    .primer-color:hover{
+        color:#FFE500;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .segundo-color:hover{
+        color:#1CFF00;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .tercer-color:hover{
+        color:#00FFF0;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    .cuarto-color:hover{
+        color:#FF00d6;
+        opacity: 0.7;
+        transition: all 1000ms;
+    }
+
+    #cart{
+        transition: all 1000ms;
+        bottom: 40%;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        bottom: 5%;
+        left: 90%;
+    }
+    
+    footer {
+        transition: all 1000ms;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .redes-sociales {
+        width: 30%;
+        padding: 15px;
+        margin: 15px;
+        font-size: 0.70em;
+    }
+    .links-footer {
+        margin-right: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+    .first-column,
+    .second-column {
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        min-width: 20vw;
+        text-align: start;
+    }
+    .informacion-legal-footer {
+        width: 100%;
+        margin: 0;
+        padding-left: 7px;
+        padding-top: 15px;
+    }
+/*Fianriel start*/
+    article{
+        text-align: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+/*Fianriel end*/
+}
+
+
+@media (min-width: 1280px){
+
+    .main-navbar li{
+        padding-left: 25px;
+    }
+
+    .main-navbar li{
+        font-family: 'Press Start 2P';
+        font-size: 0.80em;
+        margin-right: 15px;
+        transition: all 1000ms;;
+    }
+
+    #cart{
+        left: 93%;
+    }
+}
+    
