@@ -344,13 +344,15 @@ footer {
         display: flex;
         width: 100%;
     }
+
     .tecnicos {
         width: 30%;
-        padding: 20px;
+        margin-top: 0;
     }
 
     .requisitos-pc {
         width: 30%;
+        margin-top: 0;
     }
     .datos-tecnicos {
         background-color: rgba(0, 0, 0, 0.925);
@@ -358,25 +360,28 @@ footer {
         font-size: 0.70rem;
         font-weight: normal;
         text-align: center;
-        padding-top: 10%;
-        margin-left: 10px;
+        padding-top: 70px;
         height: 350px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .requisitos-min {
         background-color: rgba(0, 0, 0, 0.925);
-        padding: 10px;
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
         height: 350px;
+        text-align: center;
+        padding:10px;
     }
 }
 
 @media (min-width: 859px) {
+
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 20px
+        padding: 10px;
     }
     .redes-sociales {
         width: 30%;
@@ -443,12 +448,11 @@ footer {
         font-size: 1em;
         transition: all 1000ms;
         padding-top: 60px;
-        padding-left: 5px;
-        padding-right: 5px;
     }
     .requisitos-min {
         font-size: 1em;
         transition: all 1000ms;
+        padding-top: 15px;
     }
     
     .first-column,
