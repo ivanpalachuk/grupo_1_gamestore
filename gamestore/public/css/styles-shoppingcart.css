@@ -167,13 +167,14 @@ h4 {
 .precio {
     background-color: rgba(0, 0, 0, 0.925);
     min-width: 50px;
-    max-width: 100px;
+    max-width: 150px;
     border-radius: 8px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     align-self: center;
     justify-content: end;
+    width: 30%;
 }
 
 .precio:hover {
@@ -474,13 +475,13 @@ footer {
         margin-left: 5px;
     }
     .precio {
-        margin-right: 200px;
         padding-bottom: 15px;
         width: 160px;
         margin-top: 10px;
         transition: all 1000ms;
         flex-grow: 0.3;
         height: 50px;
+        margin-left: 110px
     }
     .esrb-buy {
         min-width: 90vw;
@@ -520,6 +521,19 @@ footer {
     .contenedor-titulos-sumatorias>div {
         transition: all 1000ms;
         width: 150px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contenedor-productos-carro,
+    .contenedor-caja-totales {
+        width: 50%;
+        height: fit-content;
+    }
+    .contenedor-caja-totales {
+        margin-top: 10px;
     }
 }
 
