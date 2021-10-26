@@ -114,7 +114,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-button {
+.cart {
     background-color: #FF00d6;
     width: 200px;
     height: 35px;
@@ -131,6 +131,26 @@ button:active {
     background-color: #8F4DB5;
     border-color: #8F4DB5;
     transition: 1000ms;
+}
+
+#cart{
+    background-color: #8F4DB5;
+    width: 60px;
+    height: 60px;
+    border-color: #8F4DB5;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10%;
+    left: 80%;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 3px;
+    font-size: 1.5em;
+}
+
+#cart:active{
+    border-color: #FF00d6;
+    background-color: #FF00d6;
 }
 
 .esrb {
@@ -317,8 +337,19 @@ footer {
         margin-top: 10px;
         margin-left: 50px;
     }
+
+    #cart{
+        transition: all 1000ms;
+        bottom: 40%;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        bottom: 5%;
+        left: 90%;
+    }
+
     .descripcion-producto {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .precio {
         margin-right: 200px;
@@ -374,11 +405,9 @@ footer {
         text-align: center;
         padding:10px;
     }
-}
-
-@media (min-width: 859px) {
 
     footer {
+        transition: all 1000ms;
         display: flex;
         justify-content: space-between;
         padding: 10px;
@@ -412,12 +441,11 @@ footer {
     }
 }
 
-
 @media (min-width: 1280px) {
     .main-navbar li {
         padding-left: 25px;
     }
-    #search {}
+
     .precio {
         width: 250px;
         transition: all 1000ms;
@@ -427,8 +455,12 @@ footer {
         font-size: 0.80em;
         margin-right: 15px;
         transition: all 1000ms;
-        ;
     }
+
+    #cart{
+        left: 93%;
+    }
+
     .resumen {
         padding: 10px;
         border-radius: 8px;
