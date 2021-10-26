@@ -8,6 +8,7 @@ let home = "./views/home.html"
 let shopcart = "./views/shoppingcart.html"
 let productDetail = "./views/productDetail.html"
 let signUp = "./views/signUp.html"
+let signIn = "./views/signIn.html"
 
 
 app.use(express.static(publicPath))
@@ -28,4 +29,7 @@ app.get("/product-detail", (req, res) => {
 })
 app.get("/sign-up", (req, res) => {
     res.sendFile(path.resolve(__dirname, signUp))
+})
+app.get("/sign-in", (req, res) => {
+    res.sendFile(path.resolve(__dirname, signIn))
 })
