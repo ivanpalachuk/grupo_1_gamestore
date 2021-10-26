@@ -92,8 +92,12 @@ h4 {
 
 .precio {
     background-color: rgba(0, 0, 0, 0.925);
+    border-radius: 5px;
+    text-align: center;
     width: 150px;
     height: 50px;
+    padding-top: 15px;
+    margin: 15px;
 }
 
 .precio:hover {
@@ -329,10 +333,13 @@ footer {
     .requisitos {
         display: flex;
         width: 100%;
+        margin-left: auto;
     }
     .tecnicos {
-        max-width: 250px;
-        margin-top: 10px;
+        width: 30%;
+        height: 100%;
+        padding-top: 2px;
+
     }
     .requisitos-pc {
         width: 30%;
@@ -343,17 +350,53 @@ footer {
         border-radius: 5px;
         font-size: 0.70rem;
         font-weight: normal;
-        opacity: 0.75;
+        text-align: center;
+        height: 80%;
+        padding-top: 10%;
     }
     .requisitos-min {
         background-color: rgba(0, 0, 0, 0.925);
-        padding: 6px;
+        padding: 10px;
         border-radius: 5px;
         font-weight: normal;
         font-size: 0.70rem;
-        opacity: 0.75;
     }
 }
+
+@media (min-width: 859px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px
+    }
+    .redes-sociales {
+        width: 30%;
+        padding: 15px;
+        margin: 15px;
+        font-size: 0.70em;
+    }
+    .links-footer {
+        margin-right: 10px;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+    .first-column,
+    .second-column {
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        min-width: 20vw;
+        text-align: start;
+    }
+    .informacion-legal-footer {
+        width: 100%;
+        margin: 0;
+        padding-left: 7px;
+    }
+}
+
 
 @media (min-width: 1280px) {
     .main-navbar li {
@@ -394,34 +437,10 @@ footer {
         font-size: 1em;
         transition: all 1000ms;
     }
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px
-    }
-    .redes-sociales {
-        width: 30%;
-        padding: 15px;
-        margin: 15px;
-        font-size: 0.70em;
-    }
-    .links-footer {
-        margin-right: 10px;
-        margin-left: 40px;
-        display: flex;
-        justify-content: center;
-        width: 60%;
-    }
+    
     .first-column,
     .second-column {
-        text-align: center;
-        justify-content: center;
-        padding: 5px;
         min-width: 30vw;
-        text-align: start;
     }
-    .informacion-legal-footer {
-        width: 100%;
-        margin: 0;
-    }
+
 }
