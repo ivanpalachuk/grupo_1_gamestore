@@ -42,62 +42,62 @@
         </div>
     </header>
 
-    <main>
+    <main  class="main-fianriel">
         <button id="cart"><i class="fas fa-shopping-cart"></i></button>
-        <form action="/registro" method="POST" class="registro-box">
+        <form action="/registro" method="POST" class="registro-box-fianriel">
             <h1>
                 Formulario de Registro
             </h1>
             <br>
-            <section>
-                <article>
+            <section class="section-fianriel">
+                <article class="article-fianriel"> 
                     <div>
                         <label>Nombre</label><br>
-                        <input name="nombre" type="text" placholder="Tu Nombre" required>
+                        <input name="nombre" type="text" placholder="Tu Nombre" required class="input-fianriel">
                     </div>
 
                     <div>
                         <label>Apellido</label><br>
-                        <input name="apellido" type="text" placholder="Tu Apellido" required>
+                        <input name="apellido" type="text" placholder="Tu Apellido" required class="input-fianriel">
                     </div>
                     <div>
                         <label>DNI</label><br>
-                        <input name="dni" type="number" required>
+                        <input name="dni" type="number" required class="input-fianriel">
                     </div>
                 </article>
 
                 <br>
 
-                <article>
+                <article class="article-fianriel">
                     <div>
                         <label>Usuario</label><br>
-                        <input required placholder="Te dicen...." type="text" name="usuario">
+                        <input required placholder="Te dicen...." type="text" name="usuario" class="input-fianriel">
                     </div>
 
                     <div>
                         <label>Email</label><br>
-                        <input required placholder="..@dominio." type="email" name="email">
+                        <input required placholder="..@dominio." type="email" name="email" class="input-fianriel">
                     </div>
                 </article>
                 <br>
-                <article>
+                <article class="article-fianriel">
 
                     <div>
                         <label>Clave</label><br>
-                        <input required placholder="" type="password" name="clave">
+                        <input required placholder="" type="password" name="clave" class="input-fianriel">
                     </div>
                     <div>
                         <label>Confirmar Clave</label><br>
-                        <input required placholder="" type="password" name="clave2">
+                        <input required placholder="" type="password" name="clave2" class="input-fianriel">
                     </div>
                 </article>
 
                 <br>
 
-                <article>
+                <article class="article-fianriel">
                     <div>
                         <label>País</label><br>
-                        <select name="pais">
+                        <select name="pais" class="input-fianriel">
                             <option selected>Argentina</option>
                             <option>Brasil</option>
                             <option>Uruguay</option>
@@ -108,7 +108,7 @@
                     </div>
                     <div>
                         <label>Provincia</label><br>
-                        <select name="provincia">
+                        <select name="provincia" class="input-fianriel">
                             <option selected>CABA</option>
                             <option>Che</option>
                             <option>Como</option>
@@ -122,32 +122,34 @@
 
                 <br>
 
-                <article>
+                <article class="article-fianriel">
                     <div>
                         <label>Dirección</label><br>
-                        <input type="text" name="direccion">
+                        <input type="text" name="direccion" class="input-fianriel">
                     </div>
                     <div>
                         <label>Numero</label><br>
-                        <input type="number" name="numero">
+                        <input type="number" name="numero" class="input-fianriel">
                     </div>
                     <div>
                         <label>C.P.</label><br>
-                        <input type="number" name="cp">
+                        <input type="number" name="cp" class="input-fianriel">
                     </div>
                 </article>
 
                 <br>
 
-                <article>
+                <article class="article-fianriel">
                     <div>
-                        <input required type="checkbox" name="tcno" value="tyc"></input>
-                        <label>Acepto Términos y Condiciones</label>
+                        <input required type="checkbox" name="tcno" value="tyc" id="checks-fianriel"></input>
+                        <label class="legales-fianriel">Acepto Términos y Condiciones</label>
 
                         <br>
 
-                        <input type="checkbox" name="tyno" value="nyo"></button>
-                        <label>Me gustaria recibir noticias y ofertas especiales de GameStore</label>
+                        
+                        <input type="checkbox" name="tyno" value="nyo" id="checks-fianriel"></button>
+                        <label class="legales-fianriel">Me gustaria recibir noticias y ofertas especiales de GameStore</label>
+                        
                     </div>
                 </article>
 

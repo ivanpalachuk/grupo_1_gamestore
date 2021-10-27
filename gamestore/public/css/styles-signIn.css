@@ -75,7 +75,8 @@ main{
 }
 /*Fianriel start*/
 .registro-box{
-    margin: 10px;
+    height: fit-content;
+    margin: auto;
     border: 2px solid;
     padding: 10px;
     border-color: #8F4DB5;
@@ -335,4 +336,10 @@ footer{
         left: 93%;
     }
 }
-    
+/*Fianriel start*/
+@media (min-height: 680px){
+    main{
+        height: 85vh;
+    }
+}
+/*Fianriel end*/
