@@ -39,6 +39,7 @@ header {
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
 }
@@ -64,7 +65,7 @@ header {
 
 .menu-desplegable {
     margin-right: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.9rem;
     margin-top: 1.5rem;
 }
 
@@ -81,6 +82,7 @@ header {
 
 main {
     background: var(--fondo);
+    padding-top: 8rem;
 }
 .container,
 .game {
@@ -90,6 +92,14 @@ main {
 }
 .lanzamientos {
     padding: 1.5rem 0;
+}
+.img-lanzamiento {
+    border-radius: 1rem;
+    border-color: var(--fondo);
+    transition: all 450ms;
+}
+.img-lanzamiento:hover {
+    box-shadow: 0px 0px 10px #FF00d6;
 }
 .container-bs,
 .container-cs {
@@ -179,30 +189,44 @@ main {
 
 footer {
     background-color: #000;
-    width: 100%;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 2.3rem;
     border-top: solid 0.2rem #00FFF0;
+    padding: 2rem;
 }
 .img-logo-footer {
-    margin: 4%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
-
+.redes-sociales {
+    pad: 1rem;
+}
 #redes {
     color: rgb(54, 53, 53);
-    font-size: 2em;
+    font-size: 3rem;
     margin: 0.5rem;
 }
-
+.informacion-legal-footer {
+    line-height: 1.2rem;
+}
 .links-footer {
     margin: 1rem;
+    font-size: 1.6rem;
 }
 
 @media (min-width: 769px) {
     /* HEADER */
+
     .img-logo-header {
-        margin-right: 0;
+        /* margin-right: 0; */
+        /* width: px; */
+        height: 75px;
     }
+    .img-logo-header img {
+        width: 100%;
+    }    
     .barra-busqueda {
         display: flex;
         justify-content: flex-end;
@@ -237,11 +261,11 @@ footer {
     }
     .log-sign {
         display: block;
-        margin-top: 15px;
-        margin-right: 10px;
+        margin-top: 1.5rem;
+        margin-right: 0.5rem;
         font-family: 'Press Start 2P';
-        font-size: 0.80em;
-        padding-bottom: 7px;
+        font-size: 1rem;
+        padding-bottom: 0.7rem;
     }
     .menu-desplegable {
         display: none;
@@ -256,10 +280,10 @@ footer {
     }
     .main-navbar li {
         font-family: 'Press Start 2P';
-        font-size: 0.55em;
+        font-size: 0.9rem;
         display: inline-block;
-        margin-top: 40px;
-        margin-right: 10px;
+        margin-top: 4rem;
+        margin-right: 1rem;
     }
     .primer-color:hover {
         color: #FFE500;
@@ -292,8 +316,9 @@ footer {
     /* MAIN */
     .tittle {
         font-size: 3.2rem;
-        /* margin-top: 1rem; */
+        margin-top: 1rem;
     }
+
     .best-seller,
     .comming-soon {
         display: grid;
@@ -305,57 +330,50 @@ footer {
     }
     .container-bs {
         border-bottom: 0.2rem solid var(--magenta);
+        border-top: 0.2rem solid var(--magenta);
     }
 
     /* FOOTER */
+
     footer {
         transition: all 1000ms;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem;
     }
-    .redes-sociales {
-        width: 30%;
-        padding: 1.5rem;
-        margin: 1.5rem;
-        font-size: 0.70em;
+    .img-logo-footer{
+        width: 12rem;
+        max-width: 12rem;
+        
+        padding: 0;
+        margin: 0 auto;
+    }
+    .logo-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .informacion-legal-footer{
+        width: 33%;
     }
     .links-footer {
-        margin-right: 10px;
-        margin-left: 40px;
-        display: flex;
-        justify-content: center;
-        width: 60%;
-    }
-    .first-column,
-    .second-column {
-        text-align: center;
-        justify-content: center;
-        padding: 0.5rem;
-        min-width: 20vw;
-        text-align: start;
-    }
-    .informacion-legal-footer {
-        width: 100%;
-        margin: 0;
-        padding-left: 0.7rem;
-        padding-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 40%;
     }
 }
+
 
 @media (min-width: 1280px) {
     /* HEADER */
     .main-navbar li {
         padding-left: 2.5rem;
         font-family: 'Press Start 2P';
-        font-size: 0.80em;
+        font-size: 1.12rem;
         margin-right: 1.5rem;
         transition: all 1000ms;
     }
 
-    /* FOOTER */
-    .first-column,
-    .second-column {
-        min-width: 30vw;
-    }
+
+    
 }
