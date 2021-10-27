@@ -97,7 +97,7 @@ h4 {
     width: 150px;
     height: 50px;
     padding-top: 15px;
-    margin: 15px;
+    margin: 10px;
 }
 
 .precio:hover {
@@ -179,9 +179,17 @@ button:active {
     margin-right: auto;
     line-height: 1.5em;
     border-radius: 8px;
-    max-width: 90%;
     border-radius: 8px;
     margin-top: 15px;
+}
+
+.descripcion-esrb-buy{
+    padding-left: 15px;
+}
+
+.requisitos-pc,
+.tecnicos {
+    max-width: 90%;
 }
 
 .tecnicos{
@@ -287,7 +295,7 @@ footer {
     .log-sign {
         display: block;
         margin-top: 15px;
-        margin-right: 10px;
+        margin-right: 8px;
         font-family: 'Press Start 2P';
         font-size: 0.80em;
         padding-bottom: 7px;
@@ -331,11 +339,9 @@ footer {
         transition: all 1000ms;
     }
     .main-descripcion {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 10px;
-        margin-left: 50px;
+        width: 90vw;
+        margin-left: 25px;
     }
 
     #cart{
@@ -348,32 +354,51 @@ footer {
         left: 90%;
     }
 
-    .descripcion-producto {
-        margin-left: 10px;
+    .cart{
+        margin-top: 40px;
+        margin-right: 40px;
     }
+
+    .descripcion-producto {
+        margin-left: 5px;
+        max-width: 50%;
+    }
+
+
+    .descripcion-esrb-buy{
+        display: flex;
+    }
+
+    .ersb{
+        margin-left: 5px;
+        padding-right: 20px;
+    }
+
     .precio {
-        margin-right: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 150px;
+        width: 200px;
         margin-top: 10px;
         transition: all 1000ms;
+        margin-top: auto;
+        margin-bottom: auto;
     }
+
+    .esrb-photo{
+        padding-right: 15px;
+    }
+
     .esrb-buy {
-        min-width: 90vw;
+        width: 40vw;
     }
     .esrb {
         width: 50%;
     }
-    .esrb-photo {
-        margin: auto;
-    }
-    .esrb-detail {
-        margin: auto;
-    }
+
     .requisitos {
         display: flex;
         width: 100%;
+        padding-top: 50px;
     }
 
     .tecnicos {
@@ -393,7 +418,8 @@ footer {
         text-align: center;
         padding-top: 70px;
         height: 350px;
-        padding-left: 5px;
+        margin-left: 15px;
+        padding-left: 7px;
         padding-right: 5px;
     }
     .requisitos-min {
@@ -404,6 +430,8 @@ footer {
         height: 350px;
         text-align: center;
         padding:10px;
+        margin-left: 17px;
+        padding-left: 7px;
     }
 
     footer {
@@ -446,10 +474,42 @@ footer {
         padding-left: 25px;
     }
 
+    .log-sign{
+        font-size: 0.85em;
+    }
+
+    .main-descripcion{
+        justify-content: center;
+        width: 100vw;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1000ms;
+        background-color: rgba(36, 35, 35, 0.925)
+    }
+
+    .descripcion-producto{
+        max-width: 300px;
+    }
+
+    .esrb-buy{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .esrb-photo{
+        margin-left: 150px;
+    }
+
+    .esrb-detail{
+        margin-left: 150px;
+    }
+
     .precio {
-        width: 250px;
+        width: 450px;
         transition: all 1000ms;
     }
+
     .main-navbar li {
         font-family: 'Press Start 2P';
         font-size: 0.80em;
