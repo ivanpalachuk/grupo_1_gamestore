@@ -17,10 +17,6 @@ header {
     width: 100%;
 }
 
-#relleno {
-    height: 70px;
-}
-
 .img-logo-header {
     padding: 10px;
 }
@@ -90,6 +86,7 @@ main {
     border-radius: 8px;
     box-shadow: 4px 10px 5px 0px rgba(191, 191, 191, 0.75);
     padding: 15px;
+    flex-direction: column;
 }
 
 .total,
@@ -139,31 +136,6 @@ a:active {
     text-decoration: none;
 }
 
-.img-principal {
-    max-width: 70vw;
-    padding: 0;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    margin-top: 30px;
-    margin-left: 15vw;
-}
-
-.img-principal:hover {
-    box-shadow: 0px 0px 10px #FF00d6;
-}
-
-h4 {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 25px;
-    border-radius: 5px;
-    padding: 3px;
-    height: 30px;
-    width: 250px;
-    box-shadow: 0px 0px 10px #FF00d6;
-}
-
 .precio {
     background-color: rgba(0, 0, 0, 0.925);
     min-width: 50px;
@@ -181,23 +153,12 @@ h4 {
     box-shadow: 0px 0px 10px #FF00d6;
 }
 
-.esrb-buy {
-    display: flex;
-    justify-content: space-between;
-    max-width: 75vw;
-}
-
-.buy {
-    flex-wrap: wrap;
-}
-
 button {
     background-color: #FF00d6;
     width: 200px;
     height: 35px;
     border-color: #FF00d6;
     border-radius: 8px;
-    margin-bottom: 10px;
     align-items: center;
     margin-top: 20px;
     font-weight: bold;
@@ -249,6 +210,7 @@ article {
     flex-wrap: wrap;
     border-bottom: 2px solid #8F4DB5;
     margin-bottom: 10px;
+    justify-content: space-around;
 }
 
 .titulo-descripcion {
@@ -270,16 +232,19 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
 #caja-validacion {
-    min-width: 200px;
+    width: 200px;
     min-height: 35px;
     border: 1px solid #00FFF0;
     background-color: rgba(0, 0, 0, 0.925);
     margin-top: 20px;
     text-align: center;
     height: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contenedor-sumatorias {
@@ -292,59 +257,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.esrb {
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    flex-wrap: wrap;
-    width: 5%;
-}
-
-.esrb-photo {
-    max-width: 60px;
-}
-
-.esrb-detail {
-    max-width: 60px;
-    font-weight: normal;
-    font-size: 0.75em;
-    text-align: left;
-}
-
-.descripcion-producto,
-.requisitos-pc,
-.datos-tecnicos {
-    margin: auto;
-    line-height: 1.5em;
-    border-radius: 8px;
-    max-width: 80%;
-    border-radius: 8px;
-}
-
-.datos-tecnicos {
-    font-size: 0.70rem;
-}
-
-.requisitos-min {
-    background-color: rgba(0, 0, 0, 0.925);
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: normal;
-    font-size: 0.70rem;
-}
-
-.resumen {
-    display: none;
-}
-
-.version {
-    display: none;
-}
-
-.complementos {
-    display: none;
 }
 
 .informacion-legal,
@@ -473,43 +385,10 @@ footer {
     }
     .precio {
         padding-bottom: 15px;
-        width: 160px;
         margin-top: 10px;
         transition: all 1000ms;
         flex-grow: 0.3;
         height: 50px;
-        margin-left: 110px
-    }
-    .esrb-buy {
-        min-width: 90vw;
-    }
-    .esrb {
-        width: 50%;
-    }
-    .esrb-photo {
-        margin: auto
-    }
-    .esrb-detail {
-        margin: auto;
-    }
-    .tecnicos {
-        margin-left: auto;
-        max-width: 250px;
-    }
-    .datos-tecnicos {
-        background-color: rgba(0, 0, 0, 0.925);
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 0.70rem;
-        font-weight: normal;
-        margin-top: 45px;
-    }
-    .requisitos-min {
-        background-color: rgba(0, 0, 0, 0.925);
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: normal;
-        font-size: 0.70rem;
     }
     .contenedor-montos-sumatorias>div {
         transition: all 1000ms;
@@ -528,9 +407,11 @@ footer {
     .contenedor-caja-totales {
         width: 49%;
         height: fit-content;
+        flex-direction: column;
     }
     .contenedor-caja-totales {
         margin-top: 10px;
+        flex-direction: column;
     }
     footer {
         transition: all 1000ms;
