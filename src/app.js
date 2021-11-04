@@ -1,37 +1,36 @@
-const { debug } = require("console");
-const express = require("express");
+/*------------------------------------------Utils-ini------------------------------------------*/
+const { debug } = require("console");                                                               //esto que hace?? es pra hacer solo log() en vez de console.log() -fianriel
+const { runMain } = require("module");                                                              //y eto?? - fianriel
 const path = require("path");
-const app = express();
-const publicPath = path.resolve(__dirname, "../public");
-const port = process.env.PORT || 4022;
+/*------------------------------------------Utils-fin------------------------------------------*/
 
-let home = "./views/home.html"
-let shopcart = "./views/shoppingcart.html"
-let productDetail = "./views/productDetail.html"
-let signUp = "./views/signUp.html"
-let signIn = "./views/signIn.html"
+/*------------------------------------------Config-ini-----------------------------------------*/
+const express = require("express");
+const app = express();
 
 app.set('view engine', 'ejs');
+
+const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath))
 
+const port = process.env.PORT || 4022;
+/*------------------------------------------Config-fin-----------------------------------------*/
+
+/*------------------------------------------Routes-ini-----------------------------------------*/
+const rutasMain = require ('../routes/main.js')
+const rutasCart = require ('../routes/cart.js')
+const rutasProducto = require ('../routes/product.js')
+const rutasUser = require ('../routes/user.js')
+
+app.use('/',rutasMain);
+app.use('/',rutasCart);
+app.use('/',rutasProducto);
+app.use('/',rutasUser);
+/*------------------------------------------Routes-fin-----------------------------------------*/
+
+
+/*------------------------------------------Server-ini-----------------------------------------*/
 app.listen(port, () => {
     console.log("Servidor prueba Gamestore corriendo en puerto 4022")
 })
-app.get("/", (req, res) => {
-    res.render('home')
-})
-app.get("/home", (req, res) => {
-    res.render('home')
-})
-app.get("/shopping-cart", (req, res) => {
-    res.render('shopcart')
-})
-app.get("/product-detail", (req, res) => {
-    res.render('productDetail')
-})
-app.get("/sign-up", (req, res) => {
-    res.render('signUp')
-})
-app.get("/sign-in", (req, res) => {
-    res.render('signIn')
-})
+/*------------------------------------------Server-fin--------------------------------------*/
