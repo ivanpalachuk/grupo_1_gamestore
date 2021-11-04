@@ -1,0 +1,22 @@
+{
+  "name": "gurpo_1_gamerstore",
+  "version": "1.0.0",
+  "description": "Gamestore es una pagina joven, publicada en el 2021, la misma esta desarollada por jugadores experimentados para aquellos que no lo son. Este E-Commerce brinda asistencia y consejos para aquellos clientes casuales, que necesitan una guia o no saben por donde empezar en el amplio mundo de los videjuegos, en su seccion de compra, no solo podemos visualizar de manera comoda los productos sino que tambien podremos encontrar una breve reseña o consejo para poder decidir la compra.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanpalachuk/grupo_1_gamestore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanpalachuk/grupo_1_gamestore/issues"
+  },
+  "homepage": "https://github.com/ivanpalachuk/grupo_1_gamestore#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
