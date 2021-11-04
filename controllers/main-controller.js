@@ -1,7 +1,7 @@
 const mainController = {
-    index: (req,res) => {
+    home: (req,res) => {
         res.render('home');
     }
 };
 
-module.exports = mainController
+module.exports = mainController;
