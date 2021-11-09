@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+<%- include('./partials/head') %>
     <%- include('./partials/header') %>
-<body>
-        <main>
-            <div class="contenedor-productos-carro">
-                <article>
-                    <div class="contenedor-imagenes"><img src="/images/call-of-duty.jpg" alt="juego"></div>
-                    <div class="titulo-descripcion">
-                        <div class="titulo-juego">Call of Duty
+
+        <body class="body_shopping_cart">
+            <main class="main_shopping_cart">
+                <div class="contenedor-productos-carro">
+                    <article>
+                        <div class="contenedor-imagenes"><img src="/images/call-of-duty.jpg" alt="juego"></div>
+                        <div class="titulo-descripcion">
+                            <div class="titulo-juego">Call of Duty
+                            </div>
+                            <p class="p_shopping_cart">PS4/ PS5 / PC</p>
                         </div>
-                        <p>PS4/ PS5 / PC</p>
-                    </div>
-                    <div class="precio">$35</div>
-                    <div class="botonera-carrito">
-                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                    </div>
-                </article>
-                <article>
-                    <div class="contenedor-imagenes"><img src="/images/nine-shopcart.jpg" alt="juego"></div>
-                    <div class="titulo-descripcion">
-                        <div class="titulo-juego">Nine Witches</div>
-                        <p>PS4/ PS5 / PC</p>
-                    </div>
-                    <div class="precio">$20</div>
-                    <div class="botonera-carrito">
-                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                    </div>
-                </article>
-                <article>
-                    <div class="contenedor-imagenes"><img src="/images/limbo-shopcart.jpg" alt="juego"></div>
-                    <div class="titulo-descripcion">
-                        <div class="titulo-juego">LIMBO</div>
-                        <p>PS4/ PS5 / PC</p>
-                    </div>
-                    <div class="precio">$8</div>
-                    <div class="botonera-carrito">
-                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                    </div>
-                </article>
+                        <div class="precio">$35</div>
+                        <div class="botonera-carrito">
+                            <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                            <button type="submit" value=1 id="boton-remove"><div id="remove">X</div></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="contenedor-imagenes"><img src="/images/nine-shopcart.jpg" alt="juego"></div>
+                        <div class="titulo-descripcion">
+                            <div class="titulo-juego">Nine Witches</div>
+                            <p class="p_shopping_cart">PS4/ PS5 / PC</p>
+                        </div>
+                        <div class="precio">$20</div>
+                        <div class="botonera-carrito">
+                            <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                            <button type="submit" value=1 id="boton-remove"><div id="remove">X</div></button>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="contenedor-imagenes"><img src="/images/limbo-shopcart.jpg" alt="juego"></div>
+                        <div class="titulo-descripcion">
+                            <div class="titulo-juego">LIMBO</div>
+                            <p class="p_shopping_cart">PS4/ PS5 / PC</p>
+                        </div>
+                        <div class="precio">$8</div>
+                        <div class="botonera-carrito">
+                            <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                            <button type="submit" value=1 id="boton-remove"><div id="remove">X</div></button>
+                        </div>
+                    </article>
 
-            </div>
-            <div class="contenedor-caja-totales">
-                <div class="contenedor-flex-caja">
-                    <div class="contenedor-titulos-sumatorias">
-                        <div class="sub">Subtotal</div>
-                        <div class="dis">Descuentos</div>
-                        <div class="tax">Impuestos</div>
-                        <div class="total">Total</div>
+                </div>
+                <div class="contenedor-caja-totales">
+                    <div class="contenedor-flex-caja">
+                        <div class="contenedor-titulos-sumatorias">
+                            <div class="sub">Subtotal</div>
+                            <div class="dis">Descuentos</div>
+                            <div class="tax">Impuestos</div>
+                            <div class="total">Total</div>
+                        </div>
+                        <div class="contenedor-montos-sumatorias">
+                            <div class="cajasub">$63</div>
+                            <div class="cajadis">$0</div>
+                            <div class="cajatax">$14</div>
+                            <div class="cajatotal">$77</div>
+                        </div>
                     </div>
-                    <div class="contenedor-montos-sumatorias">
-                        <div class="cajasub">$63</div>
-                        <div class="cajadis">$0</div>
-                        <div class="cajatax">$14</div>
-                        <div class="cajatotal">$77</div>
+                    <div class="cupondescuento">
+                        <input type="text" name="cupon" placeholder="Aplica tu cupon" id="caja-validacion">
+                        <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
+                        <button id="boton-linkcobro"><div class="pagar"><a href="#" id="boton-linkcobro">Pagar</a></div></button>
                     </div>
                 </div>
-                <div class="cupondescuento">
-                    <input type="text" name="cupon" placeholder="Aplica tu cupon" id="caja-validacion">
-                    <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
-                    <button id="boton-linkcobro"><div class="pagar"><a href="#" id="boton-linkcobro">Pagar</a></div></button>
-                </div>
-            </div>
-        </main>
+            </main>
 
-        <%- include('./partials/footer') %> 
+            <%- include('./partials/footer') %>
 
-</body>
+        </body>
 
 </html>

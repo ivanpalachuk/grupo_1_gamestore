@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+.body_shopping_cart {
     background-color: rgb(29, 26, 26);
 }
 
@@ -52,7 +52,7 @@ header {
     display: none;
 }
 
-main {
+.main_shopping_cart {
     background-color: rgb(29, 26, 26);
     font-weight: bold;
     padding-bottom: 50px;
@@ -173,23 +173,22 @@ button:active {
 }
 
 #boton-remove {
-    background-color: rgb(29, 26, 26);
-    width: 200px;
-    height: 35px;
+    background-color: rgba(0, 0, 0, 0.925);
+    width: 25%;
     border-color: #8F4DB5;
-    border-radius: 8px;
+    border-radius: 50%;
     margin-bottom: 15px;
     align-items: center;
     font-weight: bold;
     transition: all;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 #boton-remove:hover {
     background-color: #dd1111;
     border-color: #dd1111;
-    ;
 }
 
 #boton-linkcobro {
@@ -224,7 +223,7 @@ article {
     font-size: 18px;
 }
 
-p {
+.p_shopping_cart {
     font-size: 14px
 }
 
