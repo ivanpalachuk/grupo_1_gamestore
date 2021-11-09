@@ -303,7 +303,7 @@ footer {
         margin-top: 15px;
         margin-right: 8px;
         font-family: 'Press Start 2P';
-        font-size: 0.80em;
+        font-size: 12px;
         padding-bottom: 7px;
     }
     .menu-desplegable {
@@ -346,8 +346,13 @@ footer {
     }
     .main-descripcion-mc {
         margin-top: 10px;
-        width: 90vw;
-        margin-left: 25px;
+        justify-content: center;
+        width: 100vw;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1000ms;
+        background-color: rgba(36, 35, 35, 0.925);
     }
 
     #cart{
@@ -407,14 +412,20 @@ footer {
         padding-top: 50px;
     }
 
+    .h4-mc{
+        margin-left: 8%;
+        margin-right: 10%;
+    }
+
     .tecnicos {
-        width: 30%;
         margin-top: 0;
+
     }
 
     .requisitos-pc {
-        width: 30%;
         margin-top: 0;
+        margin-left: 15px;
+
     }
     .datos-tecnicos {
         background-color: rgba(0, 0, 0, 0.925);
@@ -424,8 +435,7 @@ footer {
         text-align: center;
         padding-top: 70px;
         height: 350px;
-        width: 400px;
-        margin-left: 15px;
+        width: 300px;
         padding-left: 7px;
         padding-right: 5px;
     }
@@ -435,11 +445,10 @@ footer {
         font-weight: normal;
         font-size: 0.70rem;
         height: 350px;
-        width: 400px;
+        width: 300px;
         margin-top: 5px;
         text-align: center;
         padding:10px;
-        margin-left: 17px;
         padding-left: 7px;
     }
 
@@ -485,16 +494,6 @@ footer {
 
     .log-sign{
         font-size: 0.85em;
-    }
-
-    .main-descripcion-mc{
-        justify-content: center;
-        width: 100vw;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: all 1000ms;
-        background-color: rgba(36, 35, 35, 0.925)
     }
 
     .descripcion-producto-mc{
