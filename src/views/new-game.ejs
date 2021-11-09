@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link href='/css/normalize.css' rel="stylesheet">
+    <link href='/css/cargar.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+</head>
+
+<body class="body-new-game">
+    <main class="container-m">
+        <form action="/new-game" method="POST" class="container-form">
+            <h1>Añadir Nuevo Juego</h1>
+            <div class="box-container">
+                <label class="tittle-m block">Nombre</label>
+                <input name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+            </div>
+
+            <div class="box-container">
+                <label class="tittle-m block">Precio</label>
+                <input name="price" type="number" required class="input-style">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Descuento</label>
+                <input name="discount" type="number" class="input-style">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Características</label>
+                <input name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Dificultad</label>
+                <select name="dificult" class="input-style">
+                    <option selected>Fácil</option>
+                    <option>Intermedia</option>
+                    <option>Dificil</option>
+                </select>
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Edades</label>
+                <select name="ages" class="input-style">
+                    <option selected>Todas</option>
+                    <option>Mayores de 8 años</option>
+                    <option>Mayores de 13 años</option>
+                    <option>Mayores de 18 años</option>
+                    <option>Mayores de 21 años</option>
+                </select>
+            </div>
+
+            <div class="box-container">
+                <label class="block tittle-m" for="interes" name="interes">Categorías</label>
+                <div class="box-category">
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">Shooter
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">Sports
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">Acción
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">Terror
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">Estrategia
+                    </label>
+                </div>
+            </div>
+            <div class="box-container">
+                <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
+                <div class="box-category">
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">PS4
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">PS5
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">PC
+                    </label>
+
+                    <label id=category-option>
+                        <input type="checkbox" name="category-option" class="category-option">XBOX
+                    </label>
+                </div>
+            </div>
+            <div class="box-container photo-game">
+                <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen del VideoJuego</label>
+                <input class="block" type="file" name="photoGame">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Datos Técnicos</label>
+                <input name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Requisitos del Sistema</label>
+                <input name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+            </div>
+            <div class="box-container">
+                <label class="tittle-m block">Información Legal del Desarrollador</label>
+                <input name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+            </div>
+
+        
+            <div class="box-buttom">
+                <button type="submit" class="send-buttom-m">Añadir Juego</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>

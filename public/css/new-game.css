@@ -1,0 +1,115 @@
+/* Globales */
+:root {
+    --violeta : #8F4DB5;
+    --negro : #0F0F0F;
+    --gris : #d9d9d9;
+    --amarillo: #FFE500; 
+    --verde : #1CFF00;
+    --cian : #00FFF0;
+    --magenta: #FF00d6;
+    --fondo: #1d1a1a;
+
+    --main-font: 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    color: var(--gris);
+  }
+*,
+*:before, *:after {
+    box-sizing: inherit;
+}
+.body-new-game {
+    font-size: 16px;
+    font-family: var(--main-font);
+    color: var(--gris);
+    background-color: var(--fondo);
+}
+
+.container-m{
+    padding-top: 100px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.container-form{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid;
+    padding: 10px;
+    border-color: var(--violeta);
+    border-radius: 10px;
+}
+.container-form h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.box-container {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.block {
+    display: block;
+}
+.tittle-m {
+    padding-bottom: 10px;
+}
+.input-style {
+    width: 100%;
+    height: 35px;
+    color: var(--gris);
+    border: 1px solid var(--cian);
+    background-color: rgba(0, 0, 0, 0.925);
+    text-align: center;
+}
+
+.box-category {
+    display: flex;
+    flex-direction: column;
+}
+.box-category label {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.category-option {
+    margin-right: 5px;
+}
+.photo-game input {
+    font-size: 10px;
+
+}
+.box-buttom {
+    text-align: center;
+    padding: 10px 0 25px;
+}
+.send-buttom-m {
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    color: var(--gris);
+    background-color: var(--magenta);
+    transition: all 450ms;
+}
+.send-buttom-m:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    -moz-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+}
+
+
+
+
+
+
