@@ -1,71 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='/css/styles-productDetail.css' rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-        <title>GameStore</title>
-    </head>
-    <header>
-        <div class="img-logo-header">
-            <img id="logo-header"src="/images/favicon-96x96.png" alt="GameStore">
-        </div>
-        <nav class="main-navbar">
-            <ul>
-                <li class="primer-color">Plataforma <i class="fas fa-caret-down"></i></li>
-                <li class="segundo-color">Edades <i class="fas fa-caret-down"></i></li>
-                <li class="tercer-color">Dificultad <i class="fas fa-caret-down"></i></li>
-                <li class="cuarto-color">Categorías <i class="fas fa-caret-down"></i></li>
-            </ul>
-        </nav>
-        <div class="barra-busqueda">
-            <div>
-            <input type="search" id="search">
-                <i id="find" class="fas fa-search"></i><br>
-            </div>
-                <div class="log-sign">
-                    Log in / Sign up <i class="fas fa-gamepad"></i>
-                </div>
-            </div>
-        <div class= "menu-desplegable">
-            <i class="fas fa-caret-square-down"></i>
-        </div>
-    </header>
-    <div id="relleno"></div>
+    <%- include('./partials/head') %>
+    <%- include('./partials/header') %>
     <body>
-        <main>
+        <main class="main-mc">
             <p>
-            <img class="img-principal" src="/images/family-disruption1.jpg" alt="Family Disruption">
+            <img class="img-principal-mc" src="/images/family-disruption1.jpg" alt="Family Disruption">
         </p>  
-    <section class="main-descripcion">
+    <section class="main-descripcion-mc">
         <div class="descripcion-esrb-buy">
-        <article class="descripcion-producto">
+        <div class="descripcion-producto-mc">
             <h2>Nine Witches: Family Disruption</h2>
             <h6>BLOWFISH STUDIOS PTY LTD</h6>
             <p>PS4/ PS5 / PC</p>
-        </article>
-        <p class="precio">$225</p>
-        <article class="esrb-buy">
-            <div class="buy">
-                <button class="cart">Agregar al carrito <i class="fas fa-cart-plus"></i></button>
+        </div>
+        <p class="precio-mc">$225</p>
+        <div class="esrb-buy">
+            <div class="buy-mc">
+                <button class="cart-mc">Agregar al carrito <i class="fas fa-cart-plus"></i></button>
             </div>
             <div class="esrb">
                 <img class="esrb-photo" src="/images/ESRB-Teen.png" alt="ESRB Teen"><br>
                 <p class="esrb-detail">ESRB: Adolescentes</p>
             </div>
-        </article>
+        </div>
         </div>
         </section>
         <section class="requisitos">
-            <article class="tecnicos">
-            <h4>Datos técnicos</h4>
+            <div class="tecnicos">
+            <h4 class="h4-mc">Datos técnicos</h4>
                 <div class="datos-tecnicos">
                     <p>1 jugador</p>
                     <p>Plataforma: PS4/PS5/PC</p>
@@ -73,10 +36,10 @@
                     <p>Editor: BLOWFISH STUDIOS PTY LTD</p>
                     <p>Género: Aventura</p>
                     <p>Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.</p>
-                </article>
+                </div>
             </div>
-            <article class="requisitos-pc">
-            <h4>Requisitos del sistema</h4>
+            <div class="requisitos-pc">
+            <h4 class="h4-mc">Requisitos del sistema</h4>
             <div class="requisitos-min"> 
                 <h6>MÍNIMO:</h6>
                 <p>Requiere un procesador y un sistema operativo de 64 bits</p>
@@ -89,11 +52,10 @@
                 <h6>RECOMENDADO:</h6>
                 <p>Requiere un procesador y un sistema operativo de 64 bits</p>
                 </div>
-            </article>
+            </div>
+        </section>
     </section>
-    </section>
-    <section>
-        <article class="resumen">
+        <div class="resumen-mc">
             Características:<br>
             
             - Una historia verdaderamente original y única (99,999999 % GARANTIZADO).<br>
@@ -111,51 +73,24 @@
             - Habla con los muertos.<br>
 
             ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!<br>
-        </article>
-    </section>
+        </div>
     <section class="version">
-        <h4>Ediciones</h4>
-        <article>
-            <h4>Standard</h4>
+        <h4 class="h4-mc">Ediciones</h4>
+        <aiv>
+            <h4 class="h4-mc">Standard</h4>
 
-        </article>
+        </div>
     </section>
     <section class="complementos">
-        <h4>Complementos</h4>
+        <h4 class="h4-mc">Complementos</h4>
     </section>
-        <article class="informacion-legal">
+        <div class="informacion-legal-developer">
             Copyright © 2017 Indiesruption<br>
             <a href="https://www.blowfishstudios.com/privacy">BLOWFISH STUDIOS PTY LTD Privacy Policy & EULA</a>
-        </article>
+        </div>
     </section>
     <button id="cart"><i class="fas fa-shopping-cart"></i></button>
 </main>
-    <footer>
-        <div>
-            <img class="img-logo-footer" src="/images/favicon-96x96.png" alt="GameStore"> 
-        </div>
-        <div class="redes-sociales">
-            <i id="redes"class="fab fa-twitter-square"></i>
-            <i id="redes"class="fab fa-facebook-square"></i>
-            <i id="redes"class="fab fa-instagram-square"></i>
-        </div>
-        <div class="links-footer">
-            <div class="first-column">
-                <p>Publicar en GameStore</p>
-                <p>Trabajá con nosotros</p>
-                <p>Acerca de la compañía</p>
-                <p>Política de privacidad</p>
-            </div>
-            <div class="second-column">
-            <p>Política de reembolso de la tienda</p>
-            <p>Seguridad de la cuenta</p>
-            <p>Club GameStore</p>
-            <p>Newsletter</p>
-        </div>
-        </div>
-        <div class="informacion-legal-footer">
-            © 2021, Game Store, Inc. Todos los derechos reservados. El logotipo de GameStore es una marca comercial o marca registrada de Game Store, Inc. tanto en Argentina como en el resto del mundo. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios. Las transacciones fuera de Argentina se realizan a través de GameStore International, S.A.   
-        </div>
-    </footer>
+    <%- include('./partials/footer') %> 
 </body>
 </html>
