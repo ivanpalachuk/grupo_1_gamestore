@@ -16,123 +16,74 @@
 </head>
 
 <body>
-    <header>
-        <div class="img-logo-header">
-            <img id="logo-header" src="/images/favicon-96x96.png" alt="GameStore">
-        </div>
-        <nav class="main-navbar">
-            <ul>
-                <li class="primer-color">Plataforma <i class="fas fa-caret-down"></i></li>
-                <li class="segundo-color">Edades <i class="fas fa-caret-down"></i></li>
-                <li class="tercer-color">Dificultad <i class="fas fa-caret-down"></i></li>
-                <li class="cuarto-color">Categorías <i class="fas fa-caret-down"></i></li>
-            </ul>
-        </nav>
-        <div class="barra-busqueda">
-            <div>
-                <input type="search" id="search">
-                <i id="find" class="fas fa-search"></i><br>
-            </div>
-            <div class="log-sign">
-                Log in / Sign up
-            </div>
-        </div>
-        <div class="menu-desplegable">
-            <i class="fas fa-caret-square-down"></i>
-        </div>
-    </header>
 
-    <main>
-        <div class="contenedor-productos-carro">
-            <article>
-                <div class="contenedor-imagenes"><img src="/images/call-of-duty.jpg" alt="juego"></div>
-                <div class="titulo-descripcion">
-                    <div class="titulo-juego">Call of Duty
+    <%- include('./partials/head') %>
+
+        <main>
+            <div class="contenedor-productos-carro">
+                <article>
+                    <div class="contenedor-imagenes"><img src="/images/call-of-duty.jpg" alt="juego"></div>
+                    <div class="titulo-descripcion">
+                        <div class="titulo-juego">Call of Duty
+                        </div>
+                        <p>PS4/ PS5 / PC</p>
                     </div>
-                    <p>PS4/ PS5 / PC</p>
-                </div>
-                <div class="precio">$35</div>
-                <div class="botonera-carrito">
-                    <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                    <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                </div>
-            </article>
-            <article>
-                <div class="contenedor-imagenes"><img src="/images/nine-shopcart.jpg" alt="juego"></div>
-                <div class="titulo-descripcion">
-                    <div class="titulo-juego">Nine Witches</div>
-                    <p>PS4/ PS5 / PC</p>
-                </div>
-                <div class="precio">$20</div>
-                <div class="botonera-carrito">
-                    <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                    <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                </div>
-            </article>
-            <article>
-                <div class="contenedor-imagenes"><img src="/images/limbo-shopcart.jpg" alt="juego"></div>
-                <div class="titulo-descripcion">
-                    <div class="titulo-juego">LIMBO</div>
-                    <p>PS4/ PS5 / PC</p>
-                </div>
-                <div class="precio">$8</div>
-                <div class="botonera-carrito">
-                    <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
-                    <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
-                </div>
-            </article>
+                    <div class="precio">$35</div>
+                    <div class="botonera-carrito">
+                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="contenedor-imagenes"><img src="/images/nine-shopcart.jpg" alt="juego"></div>
+                    <div class="titulo-descripcion">
+                        <div class="titulo-juego">Nine Witches</div>
+                        <p>PS4/ PS5 / PC</p>
+                    </div>
+                    <div class="precio">$20</div>
+                    <div class="botonera-carrito">
+                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                    </div>
+                </article>
+                <article>
+                    <div class="contenedor-imagenes"><img src="/images/limbo-shopcart.jpg" alt="juego"></div>
+                    <div class="titulo-descripcion">
+                        <div class="titulo-juego">LIMBO</div>
+                        <p>PS4/ PS5 / PC</p>
+                    </div>
+                    <div class="precio">$8</div>
+                    <div class="botonera-carrito">
+                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Sumale un add-on</a></button>
+                        <button type="submit" value=1 id="boton-remove"><div id="remove">Eliminar</div></button>
+                    </div>
+                </article>
 
-        </div>
-        <div class="contenedor-caja-totales">
-            <div class="contenedor-flex-caja">
-                <div class="contenedor-titulos-sumatorias">
-                    <div class="sub">Subtotal</div>
-                    <div class="dis">Descuentos</div>
-                    <div class="tax">Impuestos</div>
-                    <div class="total">Total</div>
+            </div>
+            <div class="contenedor-caja-totales">
+                <div class="contenedor-flex-caja">
+                    <div class="contenedor-titulos-sumatorias">
+                        <div class="sub">Subtotal</div>
+                        <div class="dis">Descuentos</div>
+                        <div class="tax">Impuestos</div>
+                        <div class="total">Total</div>
+                    </div>
+                    <div class="contenedor-montos-sumatorias">
+                        <div class="cajasub">$63</div>
+                        <div class="cajadis">$0</div>
+                        <div class="cajatax">$14</div>
+                        <div class="cajatotal">$77</div>
+                    </div>
                 </div>
-                <div class="contenedor-montos-sumatorias">
-                    <div class="cajasub">$63</div>
-                    <div class="cajadis">$0</div>
-                    <div class="cajatax">$14</div>
-                    <div class="cajatotal">$77</div>
+                <div class="cupondescuento">
+                    <input type="text" name="cupon" placeholder="Aplica tu cupon" id="caja-validacion">
+                    <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
+                    <button id="boton-linkcobro"><div class="pagar"><a href="#" id="boton-linkcobro">Pagar</a></div></button>
                 </div>
             </div>
-            <div class="cupondescuento">
-                <input type="text" name="cupon" placeholder="Aplica tu cupon" id="caja-validacion">
-                <button type="submit" id="validar-cupon"><div id="icono-validar cupon">Valida</div></button>
-                <button id="boton-linkcobro"><div class="pagar"><a href="#" id="boton-linkcobro">Pagar</a></div></button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <img class="img-logo-footer" src="/images/favicon-96x96.png" alt="GameStore">
-        </div>
-        <div class="redes-sociales">
-            <i id="redes" class="fab fa-twitter-square"></i>
-            <i id="redes" class="fab fa-facebook-square"></i>
-            <i id="redes" class="fab fa-instagram-square"></i>
-        </div>
-        <div class="links-footer">
-            <div class="first-column">
-                <p>Publicar en GameStore</p>
-                <p>Trabajá con nosotros</p>
-                <p>Acerca de la compañía</p>
-                <p>Política de privacidad</p>
-            </div>
-            <div class="second-column">
-                <p>Política de reembolso de la tienda</p>
-                <p>Seguridad de la cuenta</p>
-                <p>Club GameStore</p>
-                <p>Newsletter</p>
-            </div>
-        </div>
-        <div class="informacion-legal-footer">
-            © 2021, Game Store, Inc. Todos los derechos reservados. El logotipo de GameStore es una marca comercial o marca registrada de Game Store, Inc. tanto en Argentina como en el resto del mundo. Otras marcas o nombres de productos son marcas comerciales de
-            sus respectivos propietarios. Las transacciones fuera de Argentina se realizan a través de GameStore International, S.A.
-        </div>
-    </footer>
+        </main>
+
+        <%- include('./partials/header') %>
 
 </body>
 
