@@ -17,15 +17,12 @@
     margin: 0;
     padding: 0;
 }
-html {
+.html-marcos {
     box-sizing: border-box;
     color: var(--gris);
   }
-*,
-*:before, *:after {
-    box-sizing: inherit;
-}
-body {
+
+.body-marcos {
     font-size: 12px;
     font-family: var(--main-font);
 }
