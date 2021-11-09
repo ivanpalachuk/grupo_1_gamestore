@@ -397,7 +397,7 @@ footer {
         transition: all 1000ms;
         width: 150px;
     }
-    main {
+    .main_shopping_cart {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
