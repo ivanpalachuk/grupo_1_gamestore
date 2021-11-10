@@ -173,16 +173,15 @@ button:active {
 
 #boton-remove {
     background-color: rgba(0, 0, 0, 0.925);
-    width: 25%;
+    width: 12%;
+    height: 20px;
     border-color: #8F4DB5;
-    border-radius: 50%;
+    border-radius: 8%;
     margin-bottom: 15px;
-    align-items: center;
-    font-weight: bold;
+    align-items: flex-end;
     transition: all;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
+    font-size: 10px;
 }
 
 #boton-remove:hover {
