@@ -74,9 +74,16 @@ header{
     justify-content: space-around;
 }
 /*Fianriel start*/
+
+.h1-fianriel{
+    font-size: 20px;
+    text-align: center;
+}
+
 .registro-box-fianriel{
     height: fit-content;
-    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
     border: 2px solid;
     padding: 10px;
     border-color: #8F4DB5;
@@ -86,15 +93,15 @@ header{
 .section-fianriel{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
-    
+    flex-wrap: nowrap;    
 }
 
 
 .input-fianriel{
     min-width: 200px;
     min-height: 35px;
-    border: 1px solid #00FFF0;
+    border-bottom: 1px solid #00FFF0;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.925);
     text-align: center;
     height: 35px;
@@ -140,7 +147,6 @@ header{
     font-weight: lighter;
 }
 /*Fianriel end*/
-
 
 
 footer{
@@ -325,11 +331,15 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        transition: all 1000ms;
     }
 
     .article-fianriel *{
         margin: 5px;
+        margin-bottom: 15px;
+        transition: all 1000ms;
     }
+
 /*Fianriel end*/
 }
 
@@ -350,7 +360,8 @@ footer{
     #cart{
         left: 93%;
     }
-}
+
+};
 
 /*Fianriel start*/
 @media (min-height: 680px){
