@@ -165,6 +165,15 @@ button {
     margin-right: auto;
 }
 
+button:hover{
+    cursor: pointer;
+    color: white;
+    -webkit-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    -moz-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    
+}
+
 button:active {
     background-color: #8F4DB5;
     border-color: #8F4DB5;
@@ -190,11 +199,20 @@ button:active {
     transition: 1000ms;
 }
 
+
 #boton-linkcobro {
     text-decoration: none;
     background-color: #00FFF0;
     border-color: #00FFF0;
     color: rgba(0, 0, 0, 0.925);
+}
+
+#boton-linkcobro:hover{
+    cursor: pointer;
+    color: white;
+    -webkit-box-shadow: 0px 13px 51px -2px #00FFF0;
+    -moz-box-shadow: 0px 13px 51px -2px #00FFF0;
+    box-shadow: 0px 13px 51px -2px #00FFF0;
 }
 
 .contenedor-productos-carro a:link,
