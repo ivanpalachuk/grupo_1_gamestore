@@ -449,6 +449,7 @@ footer {
         margin-top: 5px;
         text-align: center;
         padding:10px;
+        padding-top: 30px;
         padding-left: 7px;
     }
 
@@ -553,7 +554,7 @@ footer {
     .requisitos-min {
         font-size: 1em;
         transition: all 1000ms;
-        padding-top: 15px;
+        padding-top: 5px;
         margin-left: 0;
     }
     
