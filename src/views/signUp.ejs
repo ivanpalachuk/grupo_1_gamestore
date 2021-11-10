@@ -3,28 +3,24 @@
     <%- include('./partials/head') %>
     <%- include('./partials/header') %>
 
-<body>
+<body class="body-fianriel">
     <main  class="main-fianriel">
         <button id="cart"><i class="fas fa-shopping-cart"></i></button>
         <form action="/registro" method="POST" class="registro-box-fianriel">
-            <h1>
-                Formulario de Registro
+            <h1 class="h1-fianriel">
+                Formulario de Registro <i class="fas fa-gamepad"></i>
             </h1>
             <br>
             <section class="section-fianriel">
                 <article class="article-fianriel"> 
                     <div>
-                        <label>Nombre</label><br>
-                        <input name="nombre" type="text" placholder="Tu Nombre" required class="input-fianriel">
-                    </div>
-
-                    <div>
-                        <label>Apellido</label><br>
-                        <input name="apellido" type="text" placholder="Tu Apellido" required class="input-fianriel">
+                        <input placeholder= 'Nombre' name="nombre" type="text" placholder="Tu Nombre" required class="input-fianriel">
                     </div>
                     <div>
-                        <label>DNI</label><br>
-                        <input name="dni" type="number" required class="input-fianriel">
+                        <input placeholder= 'Apellido' name="apellido" type="text" placholder="Tu Apellido" required class="input-fianriel">
+                    </div>
+                    <div>
+                        <input placeholder= 'DNI' name="dni" type="number" required class="input-fianriel">
                     </div>
                 </article>
 
@@ -32,25 +28,21 @@
 
                 <article class="article-fianriel">
                     <div>
-                        <label>Usuario</label><br>
-                        <input required placholder="Te dicen...." type="text" name="usuario" class="input-fianriel">
+                        <input required placeholder="Usuario" type="text" name="usuario" class="input-fianriel">
                     </div>
 
                     <div>
-                        <label>Email</label><br>
-                        <input required placholder="..@dominio." type="email" name="email" class="input-fianriel">
+                        <input required placeholder="Mail" type="email" name="email" class="input-fianriel">
                     </div>
                 </article>
                 <br>
                 <article class="article-fianriel">
 
                     <div>
-                        <label>Clave</label><br>
-                        <input required placholder="" type="password" name="clave" class="input-fianriel">
+                        <input required placeholder="Password" type="password" name="clave" class="input-fianriel">
                     </div>
                     <div>
-                        <label>Confirmar Clave</label><br>
-                        <input required placholder="" type="password" name="clave2" class="input-fianriel">
+                        <input required placeholder="Password" type="password" name="clave2" class="input-fianriel">
                     </div>
                 </article>
 
@@ -86,16 +78,13 @@
 
                 <article class="article-fianriel">
                     <div>
-                        <label>Dirección</label><br>
-                        <input type="text" name="direccion" class="input-fianriel">
+                        <input placeholder= 'Dirección' type="text" name="direccion" class="input-fianriel">
                     </div>
                     <div>
-                        <label>Numero</label><br>
-                        <input type="number" name="numero" class="input-fianriel">
+                        <input placeholder= 'Número' type="number" name="numero" class="input-fianriel">
                     </div>
                     <div>
-                        <label>C.P.</label><br>
-                        <input type="number" name="cp" class="input-fianriel">
+                        <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel">
                     </div>
                 </article>
 
@@ -110,7 +99,7 @@
 
                         
                         <input type="checkbox" name="tyno" value="nyo" id="checks-fianriel"></button>
-                        <label class="legales-fianriel">Me gustaria recibir noticias y ofertas especiales de GameStore</label>
+                        <label class="legales-fianriel">Me gustaría recibir noticias y ofertas especiales de GameStore</label>
                         
                     </div>
                 </article>
@@ -127,9 +116,8 @@
 
 
         </form>
-
     </main>
-    <%- include('./partials/footer') %> 
 </body>
+<%- include('./partials/footer') %> 
 
 </html>
