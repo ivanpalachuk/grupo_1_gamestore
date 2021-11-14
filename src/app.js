@@ -16,6 +16,7 @@ app.use(express.static(publicPath))
 const port = process.env.PORT || 4022;
 /*------------------------------------------Config-fin-----------------------------------------*/
 
+
 /*------------------------------------------Routes-ini-----------------------------------------*/
 const rutasMain = require ('./routes/main.js')
 const rutasCart = require ('./routes/cart.js')
@@ -25,7 +26,7 @@ const rutasAdmin = require ('./routes/admin.js')
 
 app.use('/', rutasMain);
 app.use('/', rutasCart);
-app.use('/', rutasProducto);
+app.use('/products', rutasProducto);
 app.use('/', rutasUser);
 app.use('/', rutasAdmin);
 /*------------------------------------------Routes-fin-----------------------------------------*/
