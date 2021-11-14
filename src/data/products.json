@@ -1,0 +1,10 @@
+{ 
+ "id": 5,
+ "name": "texto",
+ "description": "otro texto",
+ "image":"imagen?",
+ "category": "{categoria1, categoria2}",
+ 
+ "colors":"color",
+ "price":"$150"
+}

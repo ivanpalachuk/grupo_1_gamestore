@@ -17,16 +17,16 @@ const port = process.env.PORT || 4022;
 /*------------------------------------------Config-fin-----------------------------------------*/
 
 /*------------------------------------------Routes-ini-----------------------------------------*/
-const rutasMain = require ('../routes/main.js')
-const rutasCart = require ('../routes/cart.js')
-const rutasProducto = require ('../routes/product.js')
-const rutasUser = require ('../routes/user.js')
-const rutasAdmin = require ('../routes/admin.js')
+const rutasMain = require ('./routes/main.js')
+const rutasCart = require ('./routes/cart.js')
+const rutasProducto = require ('./routes/product.js')
+const rutasUser = require ('./routes/user.js')
+const rutasAdmin = require ('./routes/admin.js')
 
-app.use('/',rutasMain);
-app.use('/',rutasCart);
-app.use('/',rutasProducto);
-app.use('/',rutasUser);
+app.use('/', rutasMain);
+app.use('/', rutasCart);
+app.use('/', rutasProducto);
+app.use('/', rutasUser);
 app.use('/', rutasAdmin);
 /*------------------------------------------Routes-fin-----------------------------------------*/
 
