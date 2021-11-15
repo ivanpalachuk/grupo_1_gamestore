@@ -1,9 +1,12 @@
 * {
-    font-family: 'Lato';
     color: #d9d9d9;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-family: 'Lato';
 }
 
 .header{
@@ -20,6 +23,7 @@
 
 .img-logo-header {
     padding: 10px;
+    margin: 10px;
 }
 
 #logo-header {
@@ -308,7 +312,7 @@ footer {
 }
 
 .img-logo-footer {
-    margin: 4%;
+    margin: 5%;
 }
 
 #redes {
