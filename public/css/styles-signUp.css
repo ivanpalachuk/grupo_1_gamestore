@@ -50,10 +50,10 @@ header{
 }
 
 .main-fianriel{
-    padding-top: 100px;
+    padding-top: 70px;
     background-color: rgb(29, 26, 26);
     font-weight: bold;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     display: flex;
     justify-content: center;
     font-family: 'Lato';
