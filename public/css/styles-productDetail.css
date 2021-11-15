@@ -140,11 +140,10 @@ a:active {
 }
 
 #cart{
-    background-color: #8F4DB5;
+    background-color: black;
     width: 60px;
     height: 60px;
-    border-color: #8F4DB5;
-    border-radius: 10px;
+    border-radius: 50%;
     position: fixed;
     bottom: 10%;
     left: 80%;
@@ -152,20 +151,72 @@ a:active {
     text-align: center;
     padding-right: 3px;
     font-size: 1.5em;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    -moz-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
+    box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
 }
 
-#cart:active{
-    border-color: #FF00d6;
-    background-color: #FF00d6;
+#fas{
+    -webkit-animation:colorchange 20s infinite alternate;
+    opacity: 0.75;
 }
 
-.cart-mc:hover{
-cursor: pointer;
-color: white;
--webkit-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
--moz-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
-box-shadow: 0px 13px 51px -2px rgba(173,16,173,1);
-}
+@-webkit-keyframes colorchange {
+    0% {
+  
+      color: #8F4DB5;
+    }
+  
+    10% {
+  
+      color: #FF00d6;
+    }
+  
+    20% {
+  
+      color: #00FFF0;
+    }
+  
+    30% {
+  
+      color: #1CFF00;
+    }
+  
+    40% {
+  
+      color: #FFE500;
+    }
+  
+    50% {
+  
+      color: #8F4DB5;
+    }
+  
+    60% {
+  
+      color: #FF00d6;
+    }
+  
+    70% {
+  
+      color: #00FFF0;
+    }
+    80% {
+  
+      color: #1CFF00;
+    }
+  
+    90% {
+  
+      color: #FFE500;
+    }
+  
+    100% {
+  
+      color: #8F4DB5;
+    }
+  }
 
 .esrb {
     display: flex;
@@ -368,11 +419,10 @@ footer {
         bottom: 40%;
         width: 70px;
         height: 70px;
-        border-radius: 15px;
         bottom: 5%;
         left: 90%;
     }
-
+    
     .cart-mc{
         margin-top: 40px;
         margin-right: 40px;
