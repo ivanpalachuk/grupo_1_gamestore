@@ -169,11 +169,11 @@
     },
     {
         "id": 8,
-        "titulo": "CDMW3",
-        "price": "1000",
+        "titulo": "Resident Evil Village",
+        "price": "2500",
         "discount": "10",
-        "dificult": "Dificil",
-        "age": "C",
+        "dificult": "3",
+        "age": "M",
         "category": [
             "shooter",
             "accion"
