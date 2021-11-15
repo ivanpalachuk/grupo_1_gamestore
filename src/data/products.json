@@ -1,145 +1,184 @@
-[{ 
- "id": 0,
- "titulo": "Age of Empires",
- "price":1850,
- "descuento":15,
- "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
- "dificultad": 1 ,
- "edades": "C",
-
- "category": ["categoria1", "categoria2"],
- "plataforma" : ["plat1", "plat2"],
-
- "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
- "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
- "legal": "Una URL",
- "image":"imagen_path"
-
-},
-{ 
-    "id": 1,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 2,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 3,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 4,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 5,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 6,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-},
-{ 
-    "id": 7,
-    "titulo": "Age of Empires",
-    "price":1850,
-    "descuento":15,
-    "Caracteristicas": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
-    "dificultad": 1 ,
-    "edades": "C",
-   
-    "category": ["categoria1", "categoria2"],
-    "plataforma" : ["plat1", "plat2"],
-   
-    "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-    "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
-    "legal": "Una URL",
-    "image":"imagen_path"
-   
-}
+[
+    {
+        "id": 0,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 1,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 2,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 3,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 4,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 5,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 6,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 7,
+        "titulo": "Age of Empires",
+        "price": 1850,
+        "discount": 15,
+        "Obj_carac": "Características: - Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
+        "dificult": 1,
+        "age": "C",
+        "category": [
+            "categoria1",
+            "categoria2"
+        ],
+        "plataforma": [
+            "plat1",
+            "plat2"
+        ],
+        "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "legal": "Una URL",
+        "image": "imagen_path"
+    },
+    {
+        "id": 8,
+        "titulo": "CDMW3",
+        "price": "1000",
+        "discount": "10",
+        "dificult": "Dificil",
+        "age": "C",
+        "category": [
+            "shooter",
+            "accion"
+        ],
+        "plataforma": "to implement",
+        "image": "imagen_path"
+    }
 ]

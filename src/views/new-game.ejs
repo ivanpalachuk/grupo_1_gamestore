@@ -5,11 +5,11 @@
 
 <body class="body-new-game">
     <main class="container-m">
-        <form action="/new-game" method="POST" class="container-form">
+        <form action="/products/create" method="POST" class="container-form">
             <h1>Editar/Añadir Juego <i class="fas fa-gamepad"></i></h1>
             <div class="contenido-principal"> 
                 <div class="box-container">
-                <input placeholder= "Título" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                <input placeholder= "Título" name="titulo" type="text" placholder="Nombre del Juego" required class="input-style">
                 </div>
     
                 <div class="box-container">
@@ -44,23 +44,23 @@
                     <label class="block tittle-m" for="interes" name="interes">Categorías</label>
                     <div class="box-category">
                         <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">Shooter
+                            <input type="checkbox" name="categoryOption" class="category-option" value="shooter">Shooter
                         </label>
     
                         <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">Sports
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="sports">Sports <!--  modificar todos los check como los anteriores-->
                         </label>
     
                         <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">Acción
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="accion">Acción
                         </label>
     
                         <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">Terror
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="terror">Terror
                         </label>
     
                         <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">Estrategia
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="estrategia">Estrategia
                         </label>
                     </div>
                 </div>
