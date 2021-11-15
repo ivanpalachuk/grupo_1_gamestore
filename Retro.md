@@ -15,3 +15,13 @@
 - Continuar haciendo: comunicacion diaria.
 
 - Hacer menos: dejar las cosas para la ultima semana.
+
+### Retro Sprint 3
+
+- Comencar a hacer: Hacerlo en conjunto.
+
+- Hacer mas: Más revisiones en conjunto.
+
+- Continuar haciendo: Comunicacion diaria.
+
+- Hacer menos: dejar las cosas para la ultima semana.
