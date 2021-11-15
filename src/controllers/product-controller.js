@@ -14,7 +14,7 @@ function OpenProducts(){
 
 const productController = {
     Lista: (req,res) => {
-        res.send('lista de productos');
+        res.render('products');
     },
     PaginaCrear: (req,res) => {
         res.render('new-game');
