@@ -5,7 +5,7 @@ const productController = require ('../controllers/product-controller.js')
 router.get('/', productController.Lista);
 router.get('/create', productController.PaginaCrear);
 router.get('/:id', productController.Detail);
-router.get('/:id/edit', productController.Edit);
+router.get('/:id/edit', productController.PaginaEdit);
 
 router.post('/create', productController.Crear)
 
