@@ -16,30 +16,34 @@ const productController = {
     Lista: (req,res) => {
         res.render('products'); //mandar lista de productos
     },
-    PaginaCrear: (req,res) => {
+    PaginaCrear: (req, res) => {
         res.render('new-game');
     },
-    Detail: (req,res) => {
+    Detail: (req, res) => {
 
-        let productId= req.params.id;
+        let productId = req.params.id;
 
-        productsJson=OpenProducts();
+        productsJson = OpenProducts();
 
         let product = productsJson[productId]
 
-        res.render('productDetail', {product} );
+        res.render('productDetail', { product });
     },
+
     PaginaEdit: (req,res) => {
 
-        let productId= req.params.id;
-        productsJson=OpenProducts();
+
+        let productId = req.params.id;
+        productsJson = OpenProducts();
         let product = productsJson[productId]
 
         res.render('edit-game', {product} ); //cambiar cuando este new edit
+
+
     },
-    Crear: (req,res) => {
-        
-        productsJson=OpenProducts();
+    Crear: (req, res) => {
+
+        productsJson = OpenProducts();
 
         productoNuevo = {
             "id": productsJson[productsJson.length - 1].id + 1, //el id del ultimo producto + 1
