@@ -1,6 +1,4 @@
 /*------------------------------------------Utils-ini------------------------------------------*/
-const { debug } = require("console");                                                               //esto que hace?? es pra hacer solo log() en vez de console.log() -fianriel
-const { runMain } = require("module");                                                              //y eto?? - fianriel
 const path = require("path");
 /*------------------------------------------Utils-fin------------------------------------------*/
 
@@ -8,10 +6,13 @@ const path = require("path");
 const express = require("express");
 const app = express();
 
-app.set('view engine', 'ejs');
-
 const publicPath = path.resolve(__dirname, "../public");
-app.use(express.static(publicPath))
+const viewsPath = path.resolve(__dirname, "./views")
+
+app.set('view engine', 'ejs');
+app.set('views', viewsPath);
+
+app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const port = process.env.PORT || 4022;
@@ -19,11 +20,11 @@ const port = process.env.PORT || 4022;
 
 
 /*------------------------------------------Routes-ini-----------------------------------------*/
-const rutasMain = require ('./routes/main.js')
-const rutasCart = require ('./routes/cart.js')
-const rutasProducto = require ('./routes/product.js')
-const rutasUser = require ('./routes/user.js')
-const rutasAdmin = require ('./routes/admin.js')
+const rutasMain = require('./routes/main.js')
+const rutasCart = require('./routes/cart.js')
+const rutasProducto = require('./routes/product.js')
+const rutasUser = require('./routes/user.js')
+const rutasAdmin = require('./routes/admin.js')
 
 app.use('/', rutasMain);
 app.use('/', rutasCart);
@@ -35,6 +36,6 @@ app.use('/', rutasAdmin);
 
 /*------------------------------------------Server-ini-----------------------------------------*/
 app.listen(port, () => {
-    console.log("Servidor prueba Gamestore corriendo en puerto 4022")
-})
-/*------------------------------------------Server-fin--------------------------------------*/
+        console.log("Servidor prueba Gamestore corriendo en puerto 4022")
+    })
+    /*------------------------------------------Server-fin--------------------------------------*/
