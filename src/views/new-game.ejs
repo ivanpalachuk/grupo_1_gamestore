@@ -5,8 +5,8 @@
 
 <body class="body-new-game">
     <main class="container-m">
-        <form action="/products/create" method="POST" class="container-form">
-            <h1>Editar/Añadir Juego <i class="fas fa-gamepad"></i></h1>
+        <form action="/products/create" method="POST" class="container-form" enctype="multipart/form-data">
+            <h1>Añadir Juego <i class="fas fa-gamepad"></i></h1>
             <div class="contenido-principal"> 
                 <div class="box-container">
                 <input placeholder= "Título" name="titulo" type="text" placholder="Nombre del Juego" required class="input-style">
@@ -100,9 +100,6 @@
     
             </div>
             <div class="container-button">
-                <div class="box-button">
-                    <button type="submit" class="send-button-m">Editar Juego</button>
-                </div>
                 <div class="box-button">
                     <button type="submit" class="send-button-m">Añadir Juego</button>
                 </div>
