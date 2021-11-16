@@ -339,6 +339,10 @@ footer{
         margin-right: 15px;
         transition: all 1000ms;;
     }
+    .main-fianriel{
+        padding-top: 150px;
+        padding-bottom: 250px;
+    }
 
 };
 

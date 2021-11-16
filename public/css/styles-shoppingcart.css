@@ -541,6 +541,7 @@ footer {
         transition: all 1000ms;
     }
     .main_shopping_cart{
-        padding-bottom: 30px;
+        padding-top: 62px;
+        padding-bottom: 87px;
     }
 }
