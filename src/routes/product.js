@@ -7,6 +7,9 @@ router.get('/create', productController.PaginaCrear);
 router.get('/:id', productController.Detail);
 router.get('/:id/edit', productController.PaginaEdit);
 
-router.post('/create', productController.Crear)
+
+router.post('/create', productController.Crear);
+router.put('/:id/edit', productController.Editar);
+router.delete('/:id', productController.Delete);
 
 module.exports = router;

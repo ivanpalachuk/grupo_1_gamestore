@@ -38,4 +38,4 @@ app.use('/', rutasAdmin);
 app.listen(port, () => {
         console.log("Servidor prueba Gamestore corriendo en puerto 4022")
     })
-    /*------------------------------------------Server-fin--------------------------------------*/
+/*------------------------------------------Server-fin--------------------------------------*/
