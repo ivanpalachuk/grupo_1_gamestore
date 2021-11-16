@@ -44,6 +44,7 @@ const productController = {
     Crear: (req, res) => {
 
         productsJson = OpenProducts();
+        console.log(productsJson[productsJson.length - 1].id + 1)
 
         productoNuevo = {
             "id": productsJson[productsJson.length - 1].id + 1, //el id del ultimo producto + 1
@@ -71,7 +72,7 @@ const productController = {
             "resumen": req.body.resumen,
             "plataforma": /*plataforma*/ "to implement",
             "legal": req.body.legal,
-            "image": "imagen_path",
+            "image": req.file.filename,
             "ratingIMG": "imagenrating_path"
 
         }
