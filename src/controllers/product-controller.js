@@ -35,7 +35,7 @@ const productController = {
         productsJson=OpenProducts();
         let product = productsJson[productId]
 
-        res.render('new-game', {requiredProduct:product} ); //cambiar cuando este new edit
+        res.render('edit-game', {requiredProduct:product} ); //cambiar cuando este new edit
     },
     Crear: (req,res) => {
         
