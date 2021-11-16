@@ -64,6 +64,7 @@ const productController = {
             "storage": req.body.storage,
             "web": req.body.web,
             "category": req.body.categoryOption,
+            "resumen": req.body.resumen,
             "plataforma": /*plataforma*/ "to implement",
             "legal": req.body.legal,
             "image": "imagen_path",
