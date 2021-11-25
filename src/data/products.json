@@ -42,7 +42,7 @@
     },
     {
         "id": 2,
-        "titulo": "Nine witches: Family Disruption",
+        "titulo": "Nine witches",
         "price": 225,
         "discount": "5% off",
         "resumen": "- Una historia verdaderamente original y única (99,999999 % GARANTIZADO). - Acción y aventura para un jugador, con elementos de ingenio. - Únete al profesor Alexei Krakovitz y su leal asistente japonés, Akiro Kagasawa, en su heroica cruzada contra la Okkulte-55. - Gráficos pixelados al estilo retro. - ¡Un elenco de personajes peculiares! - Visita Sundäe, un pueblo oprimido por la Okkulte-55, en la costa noroeste de Noruega. - Habla con los muertos. ¡Una aventura tan delirante que te hará delirar hasta el delirio mismo!",
@@ -91,8 +91,8 @@
         "age": "M",
         "category": [
             "Estrategia",
-            "Indie",
-            "Shooter"
+            " Indie",
+            " Shooter"
         ],
         "plataforma": [
             "PS4", 
@@ -114,7 +114,7 @@
         "age": "T",
         "category": [
             "Indie",
-            "Estrategia"
+            " Estrategia"
         ],
         "plataforma": [
             "PS4", 
@@ -139,7 +139,7 @@
         "dificult": 1,
         "age": "E",
         "category": [
-            "Sports"
+            " Sports"
         ],
         "plataforma": [
             "PS4", 
@@ -161,7 +161,7 @@
         "age": "C",
         "category": [
             "Shooter",
-            "Estrategia"
+            " Estrategia"
         ],
         "plataforma": [
             "PS4", 
@@ -181,8 +181,8 @@
         "dificult": 3,
         "age": "M",
         "category": [
-            "shooter",
-            "accion"
+            "Shooter",
+            " Terror"
         ],
         "plataforma": [
             "PS4", 
@@ -197,10 +197,10 @@
         "price": "120",
         "discount": "12% off",
         "dificult": "Fácil",
-        "age": "C",
+        "age": "M",
         "category": [
             "Shooter",
-            "Terror"
+            " Acción"
         ],
         "plataforma": [
             "PS4", 

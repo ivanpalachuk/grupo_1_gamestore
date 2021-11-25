@@ -33,10 +33,19 @@
                                 <button class="cart-mc">Agregar al carrito <i class="fas fa-cart-plus"></i></button>
                             </div>
                             <div class="esrb">
-                                <img class="esrb-photo" src=<%=product.ratingIMG %> alt="imagen calificacion"><br>
-                                <p class="esrb-detail">
-                                    <%=product.esrb%>
-                                </p>
+                                <% switch (product.age) {
+                                    case product.age = 'E': %> 
+                                    <img class="esrb-photo" src="/public/images/ERSB-Everyone.png" alt="imagen calificacion"><br>
+                                        <% break;
+                                    
+                                    case product.age = 'M': %>
+                                    <img class="esrb-photo" src="/public/images/ESRB-Mature.png" alt="imagen calificacion"><br>
+                                    <% break;
+
+                                    case prduct.age = 'T': %>
+                                    <img class="esrb-photo" src="/public/images/ESRB-Teen.png" alt="imagen calificacion"><br>
+                                    <% break;
+                                } %> 
                             </div>
                         </div>
                     </div>
@@ -77,8 +86,7 @@
                 </section>
                 <div class="informacion-legal-developer">
                     Copyright ©
-                    <%= product.legal %>
-                        <a href= '<%= product.legal %>'></a>
+                    <a href= '<%= product.legal %>'><%= product.legal %></a>
                 </div>
                 </section>
                 <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
