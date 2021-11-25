@@ -1,10 +1,12 @@
 /*------------------------------------------Utils-ini------------------------------------------*/
 const path = require("path");
+const methodOverride = require('method-override');
 /*------------------------------------------Utils-fin------------------------------------------*/
 
 /*------------------------------------------Config-ini-----------------------------------------*/
 const express = require("express");
 const app = express();
+
 
 const publicPath = path.resolve(__dirname, "../public");
 const viewsPath = path.resolve(__dirname, "./views")
@@ -12,6 +14,7 @@ const viewsPath = path.resolve(__dirname, "./views")
 app.set('view engine', 'ejs');
 app.set('views', viewsPath);
 
+app.use(methodOverride("_method"));
 app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

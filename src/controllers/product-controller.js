@@ -12,6 +12,11 @@ function OpenProducts(){
     return productsJson;
 }
 
+function WriteProducts(products){
+    let productsString = JSON.stringify(products);
+    fs.writeFileSync(dbProductos, productsString)
+}
+
 const productController = {
     Lista: (req,res) => {
         products = OpenProducts();
@@ -116,11 +121,8 @@ const productController = {
         let productId= req.params.id;
         productsJson=OpenProducts();
 
-        productsJson.Delete(productId);
-
-        let productsString = JSON.stringify(productsJson);
-
-        fs.writeFileSync(dbProductos, productsString)
+        productsJson = productsJson.filter( (product)=>product.id!=productId )
+        WriteProducts(productsJson)
 
         res.redirect('/products');
     }
