@@ -60,6 +60,10 @@
                             </label>
 
                             <label id=category-option>
+                                <input type="checkbox" name="category-option" class="category-option">Indie
+                            </label>
+
+                            <label id=category-option>
                                 <input type="checkbox" name="category-option" class="category-option">Aventura
                             </label><br>
                         </div>
@@ -67,153 +71,25 @@
             </section>
             <section class="product-list">
                 <div class="best-seller">
+                    <% for (let index = 0; index < products.length; index++) { %>
                     <article class="game game1">
                         <div class="container-img">
                             <img class="imagen" src="/images/cod.png" alt="Call of Duty">
                         </div>
 
                         <div id= 'info' class="info">
-                            <h3 class="name">Call Of Duty</h3>
-                            <p class="category">Shooter</p>
+                            <h3 class="name"><%= products[index].titulo %></h3>
+                            <p class="category"><%= products[index].category %></p>
                             <div class="box-price">
-                                <p class="price">$1500</p>
-                                <p class="discount">15% off</p>
+                                <p class="price">$<%= products[index].price %></p>
+                                <p class="discount"><%= products[index].discount %>%</p>
                             </div>
                             <a href="#">
                                 <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
                             </a>
                         </div>
                     </article>
-                    <article class="game game2">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/fifa-22.png" alt="Fifa 22">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Fifa 22</h3>
-                            <p class="category">Deporte</p>
-                            <div class="box-price">
-                                <p class="price">$2200</p>
-                                <p class="discount">10% off</p>
-                            </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="game game3">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/age-of-empire-2.jpg" alt="Age Of Empire 2">
-                        </div>
-
-                        <div id= 'info' class="info">
-                            <h3 class="name">Age Of Empire 2</h3>
-                            <p class="category">Estrategia</p>
-                            <div class="box-price">
-                                <p class="price">$1850</p>
-                                <p class="discount">15% off</p>
-                            </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="game game4">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/motogp21.png" alt="Moto GP 21">
-                        </div>
-
-                        <div id= 'info' class="info">
-                            <h3 class="name">Moto GP 2021</h3>
-                            <p class="category">Motos</p>
-                            <div class="box-price">
-                                <p class="price">$1150</p>
-                                <p class="discount">35% off</p>
-                            </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="game game5">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/overwatch.png" alt="Overwatch">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Overwatch</h3>
-                            <p class="category">Shooter</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game 6">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/residentevil.png" alt="Resident Evil 8">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Resident Evil 8</h3>
-                            <p class="category">Terror</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game game7">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/hotline.png" alt="Hotline Miami 2">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Hotline Miami 2</h3>
-                            <p class="category">Acción</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game game8">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/limbo.png" alt="Limbo">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Limbo</h3>
-                            <p class="category">Lógica</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game game5">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/overwatch.png" alt="Overwatch">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Overwatch</h3>
-                            <p class="category">Shooter</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game 6">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/residentevil.png" alt="Resident Evil 8">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Resident Evil 8</h3>
-                            <p class="category">Terror</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game game7">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/hotline.png" alt="Hotline Miami 2">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Hotline Miami 2</h3>
-                            <p class="category">Acción</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
-                    <article class="game game8">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/limbo.png" alt="Limbo">
-                        </div>
-                        <div id= 'info' class="info">
-                            <h3 class="name">Limbo</h3>
-                            <p class="category">Lógica</p>
-                            <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                    </article>
+               <% } %>
             </section>
         </div>
         </main>

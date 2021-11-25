@@ -25,8 +25,8 @@
                             <!--  ejemplo de parametrized object  -->
                         </div>
                         <p class="precio-mc">
-                            <%= product.price %>
-                            <%= product.discount %>
+                            $<%= product.price %>
+                            <div class="discount"><%= product.discount %></div>
                         </p>
                         <div class="esrb-buy">
                             <div class="buy-mc">
@@ -62,7 +62,7 @@
                 </section>
                 </section>
                 <div class="resumen-mc">
-                    Características:
+                    Características:<br>
                     <%= product.resumen %>
                 </div>
                 <section class="version">
@@ -77,8 +77,8 @@
                 </section>
                 <div class="informacion-legal-developer">
                     Copyright ©
-                    <%= product.legal %><br>
-                        <a href=<%=product.web %>><%= product.developer %></a>
+                    <%= product.legal %>
+                        <a href= '<%= product.legal %>'></a>
                 </div>
                 </section>
                 <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
