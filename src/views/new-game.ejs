@@ -9,17 +9,17 @@
             <h1>Añadir Juego <i class="fas fa-gamepad"></i></h1>
             <div class="contenido-principal"> 
                 <div class="box-container">
-                <input placeholder= "Título" name="titulo" type="text" placholder="Nombre del Juego" required class="input-style">
+                <input placeholder= "Título" name="titulo" type="text" required class="input-style">
                 </div>
     
                 <div class="box-container">
-                    <input placeholder= "Precio" name="price" type="number" required class="input-style">
+                    <input placeholder= "Precio" name="price" type="text" required class="input-style">
                 </div>
                 <div class="box-container">
-                    <input placeholder= "Descuento" name="discount" type="number" class="input-style">
+                    <input placeholder= "Descuento" name="discount" type="text" class="input-style">
                 </div>
                 <div class="box-container">
-                    <input placeholder="Características" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                    <input placeholder="Resumen" name="resumen" type="text" required class="input-style">
                 </div>
                 <div class="box-container">
                     <label class="tittle-m block">Dificultad</label>
@@ -60,6 +60,9 @@
                         <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="estrategia">Estrategia
                         </label>
+                        <label id=category-option>
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="indie">Indie
+                        </label>
                     </div>
                 </div>
                 <div class="box-container">
@@ -87,13 +90,13 @@
                     <input class="block" type="file" name="photoGame">
                 </div>
                 <div class="box-container">
-                    <input placeholder= "Datos técnicos" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
-                </div>
-                <div class="box-container">
-                    <input placeholder= "Requisitos del sistema" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
-                </div>
-                <div class="box-container">
                     <input placeholder= "Información legal del desarrollador" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                </div>
+                <div class="box-container">
+                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10" required></textarea>
+                </div>
+                <div class="box-container">
+                    <textarea name="requisitos" placeholder="Requisitos del sistema" " cols="30" rows="10" class="text-area-style" required></textarea>
                 </div>
     
             </div>

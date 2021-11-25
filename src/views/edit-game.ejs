@@ -60,6 +60,9 @@
                         <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="estrategia">Estrategia
                         </label>
+                        <label id=category-option>
+                            <input type="checkbox" name="categoryOption" class="category-option"  value="indie">Indie
+                        </label>
                     </div>
                 </div>
                 <div class="box-container">
@@ -90,10 +93,10 @@
                     <input placeholder= "Información legal del desarrollador" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
                 </div>
                 <div class="box-container">
-                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10"></textarea>
+                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10" required></textarea>
                 </div>
                 <div class="box-container">
-                    <textarea name="requisitos" placeholder="Requisitos del sistema" value=" <%= product.requisitos %> " cols="30" rows="10" class="text-area-style"></textarea>
+                    <textarea name="requisitos" placeholder="Requisitos del sistema" value=" <%= product.requisitos %> " cols="30" rows="10" class="text-area-style" required></textarea>
                 </div>
     
             </div>
