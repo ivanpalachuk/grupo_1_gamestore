@@ -2,9 +2,8 @@
 <html lang="en">
 <%- include('./partials/head') %>
     <%- include('./partials/header') %>
-    
+    <div id="relleno"></div>
         <body>
-            
             <main class="main-mc">
                 <p>
                     <img class="img-principal-mc" src=<%= "/images/productImages/"+product.image %> alt=<%= "/images/productImages/"+product.image %> >
@@ -16,9 +15,6 @@
                             <h2>
                                 <%= product.titulo %> 
                             </h2>
-                            <h6>
-                                <%= product.developer %>
-                            </h6>
                             <!--  va a venir por parametro de caracteristicas  -->
                             <p>
                                 <%= product.plataforma %>

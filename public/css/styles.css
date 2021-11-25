@@ -36,6 +36,7 @@ footer{
 
 #relleno {
     height: 50px;
+    background-color: #0F0F0F;
 }
 
 .img-logo-header {
@@ -91,6 +92,7 @@ a:active {
 
 .img-principal-mc {
     width: 70vw;
+    height: 70vh;
     padding: 0;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -761,15 +763,23 @@ footer {
     margin: 0 auto;
     /* padding: 1rem 0; */
 }
+
+.game{
+    box-shadow: 0px 0px 10px #666;
+}
+
 .lanzamientos {
-    padding: 15px 0;
+    padding: auto;
     margin: auto;
+    text-align: center;
 }
 .img-lanzamiento {
     border-radius: 10px;
     border-color: var(--fondo);
     transition: all 450ms;
     width: 100%;
+    max-width: 70vw;
+
 }
 .img-lanzamiento:hover {
     box-shadow: 0px 0px 10px #FF00d6;
