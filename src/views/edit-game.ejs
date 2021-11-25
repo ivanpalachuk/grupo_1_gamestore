@@ -6,20 +6,20 @@
 <body class="body-new-game">
     <main class="container-m">
         <form action="/products/create" method="POST" class="container-form">
-            <h1>Editar  <i class="fas fa-gamepad"></i></h1>
+            <h1>Editar <%= product.titulo %>  <i class="fas fa-gamepad"></i></h1>
             <div class="contenido-principal"> 
                 <div class="box-container">
-                <input placeholder= "Título" name="titulo" type="text" placholder="Nombre del Juego" required class="input-style">
+                <input placeholder= "Título" name="titulo" type="text" value=" <%= product.titulo %> " required class="input-style">
                 </div>
     
                 <div class="box-container">
-                    <input placeholder= "Precio" name="price" type="number" required class="input-style">
+                    <input placeholder= "Precio" name="price" type="text" value=" <%= product.price %> " required class="input-style">
                 </div>
                 <div class="box-container">
-                    <input placeholder= "Descuento" name="discount" type="number" class="input-style">
+                    <input placeholder= "Descuento" name="discount" type="text" value=" <%= product.discount %> " class="input-style">
                 </div>
                 <div class="box-container">
-                    <input placeholder="Características" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                    <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> " required class="input-style">
                 </div>
                 <div class="box-container">
                     <label class="tittle-m block">Dificultad</label>
@@ -33,10 +33,8 @@
                     <label class="tittle-m block">Edades</label>
                     <select name="ages" class="input-style">
                         <option selected>Todas</option>
-                        <option>Mayores de 8 años</option>
-                        <option>Mayores de 13 años</option>
-                        <option>Mayores de 18 años</option>
-                        <option>Mayores de 21 años</option>
+                        <option>Adolescentes</option>
+                        <option>Adultos</option>
                     </select>
                 </div>
     
@@ -89,13 +87,13 @@
                     <input class="block" type="file" name="photoGame">
                 </div>
                 <div class="box-container">
-                    <input placeholder= "Datos técnicos" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
-                </div>
-                <div class="box-container">
-                    <input placeholder= "Requisitos del sistema" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
-                </div>
-                <div class="box-container">
                     <input placeholder= "Información legal del desarrollador" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                </div>
+                <div class="box-container">
+                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10"></textarea>
+                </div>
+                <div class="box-container">
+                    <textarea name="requisitos" placeholder="Requisitos del sistema" value=" <%= product.requisitos %> " cols="30" rows="10" class="text-area-style"></textarea>
                 </div>
     
             </div>
