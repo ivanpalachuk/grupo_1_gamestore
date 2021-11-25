@@ -12,6 +12,11 @@ function OpenProducts(){
     return productsJson;
 }
 
+function WriteProducts(products){
+    let productsString = JSON.stringify(products);
+    fs.writeFileSync(dbProductos, productsString)
+}
+
 const productController = {
     Lista: (req,res) => {
         products = OpenProducts();
@@ -47,7 +52,7 @@ const productController = {
         console.log(productsJson[productsJson.length - 1].id + 1)
 
         productoNuevo = {
-            "id": productId, 
+            "id": productId = productsJson[productsJson.length - 1].id + 1, 
             "titulo": req.body.titulo,
             "price": req.body.price,
             "discount": req.body.discount,
@@ -72,16 +77,17 @@ const productController = {
 
         let productsString = JSON.stringify(productsJson);
 
-        fs.writeFileSync(dProductbos, productsString)
+        fs.writeFileSync(dbProductos, productsString)
 
         res.redirect('/products');
     },
     Editar: (req,res) => {
 
+
         let productId= req.params.id;
         productsJson=OpenProducts();
 
-        productoNuevo = {
+        productoEditado = {
             "id": productId, 
             "titulo": req.body.titulo,
             "price": req.body.price,
@@ -115,11 +121,8 @@ const productController = {
         let productId= req.params.id;
         productsJson=OpenProducts();
 
-        productsJson.Delete(productId);
-
-        let productsString = JSON.stringify(productsJson);
-
-        fs.writeFileSync(dbProductos, productsString)
+        productsJson = productsJson.filter( (product)=>product.id!=productId )
+        WriteProducts(productsJson)
 
         res.redirect('/products');
     }

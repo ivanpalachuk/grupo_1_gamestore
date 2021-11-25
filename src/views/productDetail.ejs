@@ -2,18 +2,19 @@
 <html lang="en">
 <%- include('./partials/head') %>
     <%- include('./partials/header') %>
-
+    
         <body>
+            
             <main class="main-mc">
                 <p>
-                    <img class="img-principal-mc" src=<%=product.image %> alt="Imagen del juego">
+                    <img class="img-principal-mc" src=<%= "/images/productImages/"+product.image %> alt=<%= "/images/productImages/"+product.image %> >
                     <!-- completar cuando elaboremos imagen dinamica en controlador zar7  -->
                 </p>
                 <section class="main-descripcion-mc">
                     <div class="descripcion-esrb-buy">
                         <div class="descripcion-producto-mc">
                             <h2>
-                                <%= product.titulo %>
+                                <%= product.titulo %> 
                             </h2>
                             <h6>
                                 <%= product.developer %>
@@ -35,15 +36,15 @@
                             <div class="esrb">
                                 <% switch (product.age) {
                                     case product.age = 'E': %> 
-                                    <img class="esrb-photo" src="/public/images/ERSB-Everyone.png" alt="imagen calificacion"><br>
+                                    <img class="esrb-photo" src="/images/ERSB-Everyone.png" alt="imagen calificacion E"><br>
                                         <% break;
                                     
                                     case product.age = 'M': %>
-                                    <img class="esrb-photo" src="/public/images/ESRB-Mature.png" alt="imagen calificacion"><br>
+                                    <img class="esrb-photo" src="/images/ESRB-Mature.png" alt="imagen calificacion M"><br>
                                     <% break;
 
                                     case product.age = 'T': %>
-                                    <img class="esrb-photo" src="/public/images/ESRB-Teen.png" alt="imagen calificacion"><br>
+                                    <img class="esrb-photo" src="/images/ESRB-Teen.png" alt="imagen calificacion T"><br>
                                     <% break;
                                 } %> 
                             </div>
