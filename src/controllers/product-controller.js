@@ -52,7 +52,7 @@ const productController = {
             "discount": req.body.discount,
             "dificult": req.body.dificult,
             "age": req.body.age,
-
+            "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
             "datos_Tecnicos": req.body.datos_Tecnicos,
@@ -87,7 +87,7 @@ const productController = {
             "discount": req.body.discount,
             "dificult": req.body.dificult,
             "age": req.body.age,
-
+            "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
             "datos_Tecnicos": req.body.datos_Tecnicos,
