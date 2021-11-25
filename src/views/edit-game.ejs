@@ -86,19 +86,19 @@
                 </div>
 
                 <div class="box-container photo-game">
-                    <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen Vertical del VideoJuego</label>
+                    <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen principal</label>
+                    <input class="block" type="file" name="photoGame" value=" <%= product.image %> ">
+                    <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
                     <input class="block" type="file" name="photoGame">
-                    <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen Horizontal del VideoJuego</label>
-                    <input class="block" type="file" name="photoGame">
                 </div>
                 <div class="box-container">
-                    <input placeholder= "Información legal del desarrollador" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                    <input placeholder= "Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">
                 </div>
                 <div class="box-container">
-                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10" required></textarea>
+                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10" required><%= product.datos_Tecnicos %></textarea>
                 </div>
                 <div class="box-container">
-                    <textarea name="requisitos" placeholder="Requisitos del sistema" value=" <%= product.requisitos %> " cols="30" rows="10" class="text-area-style" required></textarea>
+                    <textarea name="requisitos" placeholder="Requisitos del sistema"  cols="30" rows="10" class="text-area-style" required><%= product.requisitos %></textarea>
                 </div>
     
             </div>

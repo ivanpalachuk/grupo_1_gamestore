@@ -70,6 +70,7 @@ const productController = {
             
             "legal": req.body.legal,
             "image": req.file.filename,
+            "image_Secundaria": req.file.filename,
 
         }
 
@@ -106,6 +107,7 @@ const productController = {
             
             "legal": req.body.legal,
             "image": req.file.filename,
+            "image_Secundaria": req.file.filename,
 
         }
 
