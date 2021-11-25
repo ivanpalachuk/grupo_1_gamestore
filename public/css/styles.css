@@ -344,13 +344,6 @@ a:active {
     max-width: 60px;
 }
 
-.esrb-detail {
-    max-width: 60px;
-    font-weight: normal;
-    font-size: 0.75em;
-    text-align: left;
-}
-
 .descripcion-producto-mc,
 .requisitos-pc,
 .tecnicos {
@@ -619,7 +612,7 @@ footer {
         height: 350px;
         width: 300px;
         margin-top: 5px;
-        text-align: center;
+        text-align: left;
         padding:10px;
         padding-top: 30px;
         padding-left: 7px;
@@ -726,7 +719,8 @@ footer {
     .requisitos-min {
         font-size: 1em;
         transition: all 1000ms;
-        padding-top: 5px;
+        padding: auto;
+        line-height: 1.7rem;
         margin-left: 0;
     }
     

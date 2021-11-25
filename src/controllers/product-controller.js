@@ -72,7 +72,7 @@ const productController = {
 
         let productsString = JSON.stringify(productsJson);
 
-        fs.writeFileSync(dbProductos, productsString)
+        fs.writeFileSync(dProductbos, productsString)
 
         res.redirect('/products');
     },

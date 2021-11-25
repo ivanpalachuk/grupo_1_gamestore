@@ -15,7 +15,7 @@
              " PC"
         ],
         "datos_Tecnicos": "1 jugador  Plataforma: PC Lanzamiento: 14/11/2019 Editor: Xbox Game Studios Género: Estrategia Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 10 64bit Procesador: Intel Core 2 Duo or AMD Athlon 64x2 5600+ Memoria: 4 GB de RAM Gráficos: NVIDIA® GeForce® GT 420 or ATI™ Radeon™ HD 6850 or Intel® HD Graphics 4000 or better with 2 GB VRAM RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 10 64bit Procesador: 2.4 Ghz i5 or greater or AMD equivalent Memoria: 8 GB de RAM Gráficos: Nvidia® GTX 650 or AMD HD 5850 or better",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 64bit, Procesador: Intel Core 2 Duo or AMD Athlon 64x2 5600+, Memoria: 4 GB de RAM, Gráficos: NVIDIA® GeForce® GT 420 or ATI™ Radeon™ HD 6850 or Intel® HD Graphics 4000 or better with 2 GB VRAM",
         "legal": "https://privacy.microsoft.com/es-ES/privacystatement",
         "image": "imagen_path"
     },
@@ -36,7 +36,7 @@
              " PS5"
         ],
         "datos_Tecnicos": "1 jugador/Multiplayer Plataforma: PS4/PC Lanzamiento: 08/11/2011 Editor: Activision Género: Shooter Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 7, Procesador: Intel i5 Quad-Core, Memoria: 1 GB de RAM, Gráficos: Intel HD 4000, DirectX: Versión 10, Almacenamiento: 2 GB de espacio disponible",
         "legal": "https://www.activision.com/es/legal/privacy-policy",
         "image": "imagen_path"
     },
@@ -56,7 +56,7 @@
              " PC"
         ],
         "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 7, Procesador: Intel i5 Quad-Core, Memoria: 1 GB de RAM, Gráficos: Intel HD 4000, DirectX: Versión 10, Almacenamiento: 2 GB de espacio disponible",
         "legal": "https://www.blowfishstudios.com/privacy",
         "image": "imagen_path"
     },
@@ -77,7 +77,7 @@
              " PS5"
         ],
         "datos_Tecnicos": "1 jugador/Multiplayer  Plataforma: PS4/PS5/PC Lanzamiento: 01/10/2021 Editor:  Electronic Arts Género: Sports Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 10 - 64-Bit Procesador: Intel Core i3-6100 @ 3.7GHz or AMD Athlon X4 880K @4GHz Memoria: 8 GB de RAM Gráficos: NVIDIA GTX 660 2GB or AMD Radeon HD 7850 2GB Almacenamiento: 50 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 10 - 64-Bit Procesador: Intel i5-3550 @ 3.40GHz or AMD FX 8150 @ 3.6GHz Memoria: 8 GB de RAM Gráficos: NVIDIA GeForce GTX 670 or AMD Radeon R9 270X Red: Conexión de banda ancha a Internet Almacenamiento: 50 GB de espacio disponible",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 - 64-Bit, Procesador: Intel Core i3-6100 @ 3.7GHz or AMD Athlon X4 880K @4GHz, Memoria: 8 GB de RAM, Gráficos: NVIDIA GTX 660 2GB or AMD Radeon HD 7850 2GB, Almacenamiento: 50 GB de espacio disponible",
         "legal": "https://www.ea.com/es-es/legal/privacy-policy",
         "image": "imagen_path"
     },
@@ -100,7 +100,7 @@
             " PS5"
         ],
         "datos_Tecnicos": "1 jugador Plataforma: PS4/PC Lanzamiento: 23/10/2012 Editor: Devolver Digital Género: Acción, Indie Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MINIMUM: OS:Microsoft® Windows® XP / Vista / 7 Processor:1.2GHz processor Memory:512 MB RAM Graphics:DirectX 8-compatible graphics card with at least 32MB of video memory DirectX®:9.0c Hard Drive:250 MB HD space Additional:Microsoft Xbox 360 Controller or Direct Input compatible controller, OpenGL 2.x or better highly recommended. RECOMMENDED: OS:Microsoft® Windows® XP / Vista / 7 Processor:1.4GHz processor or faster Memory:1 GB RAM Graphics:DirectX 8-compatible graphics card with at least 32MB of video memory DirectX®:9.0c Hard Drive:250 MB HD space Additional:Microsoft Xbox 360 Controller or Direct Input compatible controller",
+        "requisitos": "OS:Microsoft® Windows® XP / Vista, 7 Processor:1.2GHz processor, Memory:512 MB RAM, Graphics:DirectX 8-compatible graphics card with at least 32MB of video memory DirectX®:9.0c Hard Drive:250 MB HD space, Additional:Microsoft Xbox 360 Controller or Direct Input compatible controller, OpenGL 2.x or better highly recommended.",
         "legal": "https://www.devolverdigital.com/privacy-policy",
         "image": "imagen_path"
     },
@@ -147,7 +147,7 @@
             " PS5"
         ],
         "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 22/04/2021 Editor:  Milestone S.r.l. Género: Sports Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 8.1 64-Bit or later Procesador: Intel Core i5-3470, AMD FX-6350 or equivalent Memoria: 8 GB de RAM Gráficos: NVIDIA GeForce GTX 1050 with 2 GB VRAM or more, AMD Radeon HD 7950 with 2 GB VRAM or more DirectX: Versión 11 Almacenamiento: 22 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 8.1 64-Bit or later Procesador: Intel Core i7-5820K, AMD Ryzen 5 1500X or equivalent Memoria: 16 GB de RAM Gráficos: NVIDIA GeForce GTX 1060 with 6 GB VRAM or more, AMD Radeon RX 5700 with 6 GB VRAM or more DirectX: Versión 11 Almacenamiento: 22 GB de espacio disponible",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 8.1 64-Bit or later, Procesador: Intel Core i5-3470, AMD FX-6350 or equivalent, Memoria: 8 GB de RAM, Gráficos: NVIDIA GeForce GTX 1050 with 2 GB VRAM or more, AMD Radeon HD 7950 with 2 GB VRAM or more DirectX: Versión 11 Almacenamiento: 22 GB de espacio disponible",
         "legal": "https://www.milestonesrl.com/dev/privacy-policy",
         "image": "imagen_path"
     },
@@ -169,7 +169,7 @@
             " PS5"
         ],
         "datos_Tecnicos": "Multiplayer  Plataforma: PS4/PS5/PC Lanzamiento: 21/05/2018 Editor: Activision Blizzard Int'l BV Género: Shooter Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
-        "requisitos": "MÍNIMO: Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits SO: Windows 7 Procesador: Intel i5 Quad-Core Memoria: 1 GB de RAM Gráficos: Intel HD 4000 DirectX: Versión 10 Almacenamiento: 2 GB de espacio disponible RECOMENDADO: Requiere un procesador y un sistema operativo de 64 bits",
         "legal": "https://www.blizzard.com/es-es/legal/a4380ee5-5c8d-4e3b-83b7-ea26d01a9918/blizzard-entertainment-online-privacy-policy",
         "image": "imagen_path"
     },
@@ -178,6 +178,7 @@
         "titulo": "Resident Evil Village",
         "price": "2500",
         "discount": "10% off",
+        "resumen": "Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.",
         "dificult": 3,
         "age": "M",
         "category": [
@@ -189,7 +190,10 @@
             " PC",
             " PS5"
         ],
-        "image": "imagen_path"
+        "datos_Tecnicos": "Plataforma: PS4/PS5/PC, Lanzamiento: 07/05/2021, Editor: Capcom, Género: Shooter, Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
+        "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 (64 bit), Procesador: AMD Ryzen 3 1200 ／ Intel Core i5-7500, Memoria: 8 GB de RAM, Gráficos: AMD Radeon RX 560 with 4GB VRAM ／ NVIDIA GeForce GTX 1050 Ti with 4GB VRAM, DirectX: Versión 12",
+        "legal": "https://www.capcom.com/capcom/legal_privacy/legal.php",
+        "image": "residentevil.png"
     },
     {
         "id": 9,
@@ -206,7 +210,6 @@
             "PS4", 
              " PC"
         ],
-        "image": "1637083066003.png",
-        "ratingIMG": "imagenrating_path"
+        "image": "cod.jpg"
     }
 ]
