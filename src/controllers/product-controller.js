@@ -47,7 +47,7 @@ const productController = {
         console.log(productsJson[productsJson.length - 1].id + 1)
 
         productoNuevo = {
-            "id": productId, 
+            "id": productId = productsJson[productsJson.length - 1].id + 1, 
             "titulo": req.body.titulo,
             "price": req.body.price,
             "discount": req.body.discount,
@@ -72,16 +72,17 @@ const productController = {
 
         let productsString = JSON.stringify(productsJson);
 
-        fs.writeFileSync(dProductbos, productsString)
+        fs.writeFileSync(dbProductos, productsString)
 
         res.redirect('/products');
     },
     Editar: (req,res) => {
 
+
         let productId= req.params.id;
         productsJson=OpenProducts();
 
-        productoNuevo = {
+        productoEditado = {
             "id": productId, 
             "titulo": req.body.titulo,
             "price": req.body.price,

@@ -11,8 +11,8 @@
             "Estrategia"
         ],
         "plataforma": [
-            "PS4", 
-             " PC"
+            "PS4",
+            " PC"
         ],
         "datos_Tecnicos": "1 jugador  Plataforma: PC Lanzamiento: 14/11/2019 Editor: Xbox Game Studios Género: Estrategia Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
         "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 64bit, Procesador: Intel Core 2 Duo or AMD Athlon 64x2 5600+, Memoria: 4 GB de RAM, Gráficos: NVIDIA® GeForce® GT 420 or ATI™ Radeon™ HD 6850 or Intel® HD Graphics 4000 or better with 2 GB VRAM",
@@ -31,9 +31,9 @@
             "Shooter"
         ],
         "plataforma": [
-            "PS4", 
-             " PC",
-             " PS5"
+            "PS4",
+            " PC",
+            " PS5"
         ],
         "datos_Tecnicos": "1 jugador/Multiplayer Plataforma: PS4/PC Lanzamiento: 08/11/2011 Editor: Activision Género: Shooter Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
         "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 7, Procesador: Intel i5 Quad-Core, Memoria: 1 GB de RAM, Gráficos: Intel HD 4000, DirectX: Versión 10, Almacenamiento: 2 GB de espacio disponible",
@@ -52,8 +52,8 @@
             "Indie"
         ],
         "plataforma": [
-            "PS4", 
-             " PC"
+            "PS4",
+            " PC"
         ],
         "datos_Tecnicos": "1 jugador  Plataforma: PS4/PS5/PC Lanzamiento: 4/12/2020 Editor: BLOWFISH STUDIOS PTY LTD Género: Aventura Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
         "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 7, Procesador: Intel i5 Quad-Core, Memoria: 1 GB de RAM, Gráficos: Intel HD 4000, DirectX: Versión 10, Almacenamiento: 2 GB de espacio disponible",
@@ -72,9 +72,9 @@
             "Sports"
         ],
         "plataforma": [
-            "PS4", 
-             " PC",
-             " PS5"
+            "PS4",
+            " PC",
+            " PS5"
         ],
         "datos_Tecnicos": "1 jugador/Multiplayer  Plataforma: PS4/PS5/PC Lanzamiento: 01/10/2021 Editor:  Electronic Arts Género: Sports Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso.",
         "requisitos": "Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 - 64-Bit, Procesador: Intel Core i3-6100 @ 3.7GHz or AMD Athlon X4 880K @4GHz, Memoria: 8 GB de RAM, Gráficos: NVIDIA GTX 660 2GB or AMD Radeon HD 7850 2GB, Almacenamiento: 50 GB de espacio disponible",
@@ -95,7 +95,7 @@
             " Shooter"
         ],
         "plataforma": [
-            "PS4", 
+            "PS4",
             " PC",
             " PS5"
         ],
@@ -117,15 +117,17 @@
             " Estrategia"
         ],
         "plataforma": [
-            "PS4", 
+            "PS4",
             " PC"
         ],
-        "datos_Tecnicos": ["1 jugador",  
+        "datos_Tecnicos": [
+            "1 jugador",
             " Plataforma: PS4/PS5/PC",
             " Lanzamiento: 02/08/2011",
             " Editor: Playdead",
             " Categoría: Aventura, Indie",
-            " Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso."],
+            " Idiomas de pantalla: Alemán, Chino - Simplificado, Chino - Tradicional, Español, Francés (Francia), Inglés, Portugués (Brasil), Ruso."
+        ],
         "requisitos": "SO: Windows XP, Vista, 7 Procesador: 2 GHz Memoria: 512 MB de RAM Disco Duro: 150 MB de espacio libre Gráficos: Gráfica con 5 años o menos de antigüedad. Puede no funcionar con gráficas integradas y tarjetas de muy bajo presupuesto. Necesita Shader Model 3.0 Versión de DirectX®: 9.0c",
         "legal": "https://playdead.com/privacypolicy/",
         "image": "imagen_path"
@@ -142,7 +144,7 @@
             " Sports"
         ],
         "plataforma": [
-            "PS4", 
+            "PS4",
             " PC",
             " PS5"
         ],
@@ -164,7 +166,7 @@
             " Estrategia"
         ],
         "plataforma": [
-            "PS4", 
+            "PS4",
             " PC",
             " PS5"
         ],
@@ -186,7 +188,7 @@
             " Terror"
         ],
         "plataforma": [
-            "PS4", 
+            "PS4",
             " PC",
             " PS5"
         ],
@@ -207,9 +209,20 @@
             " Acción"
         ],
         "plataforma": [
-            "PS4", 
-             " PC"
+            "PS4",
+            " PC"
         ],
-        "image": "cod.jpg"
+        "image": "1637082292088.png"
+    },
+    {
+        "id": "10",
+        "titulo": "   AC3   ",
+        "price": "   50000   ",
+        "discount": "50",
+        "dificult": "Fácil",
+        "datos_Tecnicos": "",
+        "requisitos": "",
+        "resumen": "      ",
+        "image": "1637870021317.jpg"
     }
 ]
