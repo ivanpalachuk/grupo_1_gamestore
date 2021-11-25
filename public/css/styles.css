@@ -951,6 +951,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.925);
     text-align: center;
 }
+.text-area-style {
+    width: 100%;
+    color: var(--gris);
+    border-bottom: 1px solid var(--cian);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.925);
+    text-align: center;
+}
 
 .box-category {
     display: flex;
