@@ -344,13 +344,6 @@ a:active {
     max-width: 60px;
 }
 
-.esrb-detail {
-    max-width: 60px;
-    font-weight: normal;
-    font-size: 0.75em;
-    text-align: left;
-}
-
 .descripcion-producto-mc,
 .requisitos-pc,
 .tecnicos {
@@ -619,7 +612,7 @@ footer {
         height: 350px;
         width: 300px;
         margin-top: 5px;
-        text-align: center;
+        text-align: left;
         padding:10px;
         padding-top: 30px;
         padding-left: 7px;
@@ -726,7 +719,8 @@ footer {
     .requisitos-min {
         font-size: 1em;
         transition: all 1000ms;
-        padding-top: 5px;
+        padding: auto;
+        line-height: 1.7rem;
         margin-left: 0;
     }
     
@@ -945,6 +939,14 @@ footer {
 .input-style {
     width: 100%;
     height: 35px;
+    color: var(--gris);
+    border-bottom: 1px solid var(--cian);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.925);
+    text-align: center;
+}
+.text-area-style {
+    width: 100%;
     color: var(--gris);
     border-bottom: 1px solid var(--cian);
     border-radius: 5px;
@@ -1442,11 +1444,12 @@ article {
 }
 .product-filter{
     margin: 20px;
+    padding-left: 10px;
     border: solid #00FFF0 1px;
     border-radius: 5px;
     line-height: 1.5em;
     font-size: 0.75em;
-    text-align: center;
+    text-align: left;
 }
 
 .product-list article{
@@ -1498,8 +1501,8 @@ article {
         display: flex;
         justify-content: space-between;
         padding: 15px;
-        margin: auto;
         padding-top: 10px;
+        margin: auto;
         transition: all 1000ms;
     }
 
@@ -1515,6 +1518,7 @@ article {
         .filter{
             display: block;
             transition: all 1000ms;
+            padding: 0px;
         }
         
             .main-productlist{

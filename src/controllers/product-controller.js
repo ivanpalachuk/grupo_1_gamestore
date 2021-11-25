@@ -14,10 +14,8 @@ function OpenProducts(){
 
 const productController = {
     Lista: (req,res) => {
-
         products = OpenProducts();
         res.render('products',{products});
-       
     },
     PaginaCrear: (req, res) => {
         res.render('new-game');
@@ -55,7 +53,7 @@ const productController = {
             "discount": req.body.discount,
             "dificult": req.body.dificult,
             "age": req.body.age,
-
+            "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
             "datos_Tecnicos": req.body.datos_Tecnicos,
@@ -74,7 +72,7 @@ const productController = {
 
         let productsString = JSON.stringify(productsJson);
 
-        fs.writeFileSync(dbProductos, productsString)
+        fs.writeFileSync(dProductbos, productsString)
 
         res.redirect('/products');
     },
@@ -90,7 +88,7 @@ const productController = {
             "discount": req.body.discount,
             "dificult": req.body.dificult,
             "age": req.body.age,
-
+            "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
             "datos_Tecnicos": req.body.datos_Tecnicos,

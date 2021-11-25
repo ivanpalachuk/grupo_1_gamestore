@@ -25,17 +25,27 @@
                             <!--  ejemplo de parametrized object  -->
                         </div>
                         <p class="precio-mc">
-                            <%= product.price %>
+                            $<%= product.price %>
+                            <div class="discount"><%= product.discount %></div>
                         </p>
                         <div class="esrb-buy">
                             <div class="buy-mc">
                                 <button class="cart-mc">Agregar al carrito <i class="fas fa-cart-plus"></i></button>
                             </div>
                             <div class="esrb">
-                                <img class="esrb-photo" src=<%=product.ratingIMG %> alt="imagen calificacion"><br>
-                                <p class="esrb-detail">
-                                    <%=product.esrb%>
-                                </p>
+                                <% switch (product.age) {
+                                    case product.age = 'E': %> 
+                                    <img class="esrb-photo" src="/public/images/ERSB-Everyone.png" alt="imagen calificacion"><br>
+                                        <% break;
+                                    
+                                    case product.age = 'M': %>
+                                    <img class="esrb-photo" src="/public/images/ESRB-Mature.png" alt="imagen calificacion"><br>
+                                    <% break;
+
+                                    case product.age = 'T': %>
+                                    <img class="esrb-photo" src="/public/images/ESRB-Teen.png" alt="imagen calificacion"><br>
+                                    <% break;
+                                } %> 
                             </div>
                         </div>
                     </div>
@@ -53,6 +63,7 @@
                         <h4 class="h4-mc">Requisitos del sistema</h4>
                         <div class="requisitos-min">
                                 <p>
+                                    MINIMO:<br>
                                     <%= product.requisitos %>
                                 </p>
                                 
@@ -61,7 +72,7 @@
                 </section>
                 </section>
                 <div class="resumen-mc">
-                    Características:
+                    Características:<br>
                     <%= product.resumen %>
                 </div>
                 <section class="version">
@@ -76,8 +87,7 @@
                 </section>
                 <div class="informacion-legal-developer">
                     Copyright ©
-                    <%= product.legal %><br>
-                        <a href=<%=product.web %>><%= product.developer %></a>
+                    <a href= '<%= product.legal %>'><%= product.legal %></a>
                 </div>
                 </section>
                 <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
