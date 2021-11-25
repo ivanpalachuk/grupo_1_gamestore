@@ -14,7 +14,10 @@ function OpenProducts(){
 
 const productController = {
     Lista: (req,res) => {
-        res.render('products'); //mandar lista de productos
+
+        products = OpenProducts();
+        res.render('products',{products});
+       
     },
     PaginaCrear: (req, res) => {
         res.render('new-game');
