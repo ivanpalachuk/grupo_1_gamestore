@@ -87,9 +87,9 @@
 
                 <div class="box-container photo-game">
                     <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen principal</label>
-                    <input class="block" type="file" name="photoGame" value=" <%= product.image %> ">
+                    <input class="block" type="file" name="photoGame"><img id= "imageEdit" src= <%= "/images/productImages/"+product.image %> alt="<%= product.image_Secundaria %>">
                     <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
-                    <input class="block" type="file" name="photoGame">
+                    <input class="block" type="file" name="photoGame"><img id= "imageEditV" src= <%= "/images/productImages/"+ product.image_Secundaria %> alt="<%= product.image_Secundaria %>">
                 </div>
                 <div class="box-container">
                     <input placeholder= "Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">

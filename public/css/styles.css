@@ -515,7 +515,7 @@ footer {
     .main-descripcion-mc {
         margin-top: 10px;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -533,7 +533,7 @@ footer {
     }
     
     .cart-mc{
-        margin-top: 40px;
+        margin-top: 25px;
         margin-right: 40px;
     }
 
@@ -907,6 +907,20 @@ footer {
 
 
 /*----- New/Edit Game -----*/
+
+#imageEdit{
+    margin-top: 5px;
+    width: 60px;
+    height: 30px;
+}
+
+
+#imageEditV{
+    margin-top: 5px;
+    width: 40px;
+    height: 60px;
+}
+
 .body-new-game {
     font-size: 16px;
     font-family: var(--main-font);
@@ -1462,16 +1476,22 @@ article {
     text-align: left;
 }
 
+.product-list{
+    margin-right: 15px;
+}
+
 .product-list article{
     margin: 0;
     width: 100%;
+    height: 100%;
     
 }
 
 .product-list img{
     border-radius: 5px;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     align-items: center;

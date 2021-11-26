@@ -65,12 +65,12 @@
             </section>
             <section class="product-list">
                 <div class="best-seller">
-                    <% products = products.filter((producto)=>{return producto.dificult=="Fácil"}) %> 
                     <% for (let index = 0; index < products.length; index++) { %>
-                    <article class="game game1">
+                    <article class="game">
                         <div class="container-img">
-                            <!-- <img class="imagen" src=  "<%= "/images/productImages/"+products[index].image_Secundaria %>"  alt="<%= "/images/productImages/"+products[index].image %>"> -->
-                            <img class="imagen" src= "/images/productImages/cod.png"  alt= "/images/productImages/cod.png">
+                            <a href="/products/<%= products[index].id %>">
+                            <img class="imagen" src= <%= "/images/productImages/"+ products[index].image_Secundaria %>  alt= "/images/productImages/"<%= products[index].image_Secundaria %>>
+                        </a>
                         </div>
 
                         <div id= 'info' class="info">
