@@ -93,6 +93,7 @@ a:active {
 
 .img-principal-mc {
     width: 70vw;
+    max-height: 70vh;
     padding: 0;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -779,7 +780,6 @@ footer {
     transition: all 450ms;
     width: 100%;
     max-width: 70vw;
-
 }
 .img-lanzamiento:hover {
     box-shadow: 0px 0px 10px #FF00d6;
@@ -813,7 +813,12 @@ footer {
 .container-img {
     width: 80%;
     margin: 0 auto;
+    
 }
+
+.container-img img{
+    height: 250px;
+}    
 .info {
     padding: 10px 0;
     text-align: center;
