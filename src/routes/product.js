@@ -30,7 +30,7 @@ router.get('/:id/edit', productController.PaginaEdit);
 
 
 router.post('/create', fileUpload.single('photoGame'), productController.Crear);
-router.put('/:id/edit',fileUpload.single('photoGame'), productController.Editar);
+router.put('/:id/edit',fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Editar);
 router.delete('/:id', productController.Delete);
 
 module.exports = router;
