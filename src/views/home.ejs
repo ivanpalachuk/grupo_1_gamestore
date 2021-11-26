@@ -9,125 +9,59 @@
     <main class="main-home">
         <div class="container">
             <div class="lanzamientos">
+                <a href="/products/2">
                 <img class="img-lanzamiento" src="/images/productImages/family-disruption1.jpg" alt="Family Disruption">
+                </a>
             </div>
             <section class="container-bs">
-                <h2 class="tittle">Más Vendidos</h2>
+                <h2 class="tittle">Más vendidos</h2>
                 <div class="best-seller">
-                    <article class="game game1">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/cod.png" alt="Call of Duty">
-                        </div>
-
-                        <div class="info">
-                            <h3 class="name">Call Of Duty</h3>
-                            <p class="category">Shooter</p>
-                            <div class="box-price">
-                                <p class="price">$1500</p>
-                                <p class="discount">15% off</p>
-                            </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
+                    <% for (let index = 0; index < products.length; index++) { %>
+                        <article class="game">
+                            <div class="container-img">
+                                <a href="/products/<%= products[index].id %>">
+                                <img class="imagen" src= <%= "/images/productImages/"+ products[index].image_Secundaria %>  alt= "/images/productImages/"<%= products[index].image_Secundaria %>>
                             </a>
-                        </div>
-                    </article>
-                    <article class="game game2">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/fifa-22.png" alt="Fifa 22">
-                        </div>
-                        <div class="info">
-                            <h3 class="name">Fifa 22</h3>
-                            <p class="category">Deporte</p>
-                            <div class="box-price">
-                                <p class="price">$2200</p>
-                                <p class="discount">10% off</p>
                             </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="game game3">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/age-of-empire-2.jpg" alt="Age Of Empire 2">
-                        </div>
-
-                        <div class="info">
-                            <h3 class="name">Age Of Empire 2</h3>
-                            <p class="category">Estrategia</p>
-                            <div class="box-price">
-                                <p class="price">$1850</p>
-                                <p class="discount">15% off</p>
+        
+                            <div id= 'info' class="info">
+                                <h3 class="name"><%= products[index].titulo %></h3>
+                                <p class="category"><%= products[index].category %></p>
+                                <div class="box-price">
+                                    <p class="price">$<%= products[index].price %></p>
+                                    <p class="discount"><%= products[index].discount %></p>
+                                </div>
+                                <a href="#">
+                                    <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
+                                </a>
                             </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="game game4">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/motogp21.png" alt="Moto GP 21">
-                        </div>
-
-                        <div class="info">
-                            <h3 class="name">Moto GP 2021</h3>
-                            <p class="category">Motos</p>
-                            <div class="box-price">
-                                <p class="price">$1150</p>
-                                <p class="discount">35% off</p>
-                            </div>
-                            <a href="#">
-                                <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-
+                        </article>
+                   <% } %>
             </section>
             <section class="container-cs">
                 <h2 class="tittle">Próximamente</h2>
                 <div class="comming-soon">
-                    <article class="game game5">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/overwatch.png" alt="Overwatch">
-                        </div>
-                        <div class="info">
-                            <h3 class="name">Overwatch</h3>
-                            <p class="category">Shooter</p>
-                            <button class="button-comming">Estreno Noviembre</button>
-                        </div>
-                    </article>
-                    <article class="game game6">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/residentevil.png" alt="Resident Evil 8">
-                        </div>
-                        <div class="info">
-                            <h3 class="name">Resident Evil 8</h3>
-                            <p class="category">Terror</p>
-                            <button class="button-comming">Estreno Noviembre</button>
-                        </div>
-                    </article>
-                    <article class="game game7">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/hotline.png" alt="Hotline Miami 2">
-                        </div>
-                        <div class="info">
-                            <h3 class="name">Hotline Miami 2</h3>
-                            <p class="category">Acción</p>
-                            <button class="button-comming">Estreno Diciembre</button>
-                        </div>
-                    </article>
-                    <article class="game game8">
-                        <div class="container-img">
-                            <img class="imagen" src="/images/productImages/limbo.png" alt="Limbo">
-                        </div>
-                        <div class="info">
-                            <h3 class="name">Limbo</h3>
-                            <p class="category">Lógica</p>
-                            <button class="button-comming">Estreno Diciembre</button>
-                        </div>
-                    </article>
-                </div>
+                    <% for (let index = 0; index < products.length; index++) { %>
+                        <article class="game">
+                            <div class="container-img">
+                                <a href="/products/<%= products[index].id %>">
+                                <img class="imagen" src= <%= "/images/productImages/"+ products[index].image_Secundaria %>  alt= "/images/productImages/"<%= products[index].image_Secundaria %>>
+                            </a>
+                            </div>
+        
+                            <div id= 'info' class="info">
+                                <h3 class="name"><%= products[index].titulo %></h3>
+                                <p class="category"><%= products[index].category %></p>
+                                <div class="box-price">
+                                    <p class="price">$<%= products[index].price %></p>
+                                    <p class="discount"><%= products[index].discount %></p>
+                                </div>
+                                <a href="#">
+                                    <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
+                                </a>
+                            </div>
+                        </article>
+                   <% } %>
             </section>
 
 

@@ -82,6 +82,7 @@ footer{
     background-color: rgb(29, 26, 26);
     font-weight: bold;
     padding-bottom: 50px;
+    padding-top: 60px;
 }
 
 a:link,
@@ -92,12 +93,10 @@ a:active {
 
 .img-principal-mc {
     width: 70vw;
-    height: 70vh;
     padding: 0;
     border-radius: 5px;
     margin-bottom: 15px;
-    margin-top: 30px;
-    margin-left: 14vw;
+    margin-left: 14.5vw;
 }
 
 .img-principal-mc:hover {
@@ -755,7 +754,7 @@ footer {
 }
 .main-home {
     background: var(--fondo);
-    padding-top: 70px;
+    padding-top: 60px;
 }
 .container,
 .game {
@@ -772,6 +771,7 @@ footer {
     padding: auto;
     margin: auto;
     text-align: center;
+
 }
 .img-lanzamiento {
     border-radius: 10px;
@@ -1568,7 +1568,7 @@ article {
             }
             
             .product-list{
-                margin-top: 10px;
+                margin-top: 20px;
             }
             
             .h3-productlist{
