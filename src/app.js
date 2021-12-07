@@ -14,6 +14,7 @@ const viewsPath = path.resolve(__dirname, "./views")
 app.set('view engine', 'ejs');
 app.set('views', viewsPath);
 
+
 app.use(methodOverride("_method"));
 app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended: false }));
