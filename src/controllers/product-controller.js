@@ -17,6 +17,7 @@ function WriteProducts(products){
     fs.writeFileSync(dbProductos, productsString)
 }
 
+
 const productController = {
     Lista: (req,res) => {
         products = OpenProducts();
