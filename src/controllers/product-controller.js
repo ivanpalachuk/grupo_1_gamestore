@@ -70,8 +70,8 @@ const productController = {
             "resumen": req.body.resumen,
             
             "legal": req.body.legal,
-            "image": req.file.filename,
-            "image_Secundaria": req.file.filename,
+            "image": (req.files['photoGameV']?  req.files['photoGameV'][0].filename :  0),
+            "image_Secundaria": (req.files['photoGame']?  req.files['photoGame'][0].filename : 0),
 
         }
 
@@ -107,8 +107,8 @@ const productController = {
             "resumen": req.body.resumen,
             
             "legal": req.body.legal,
-            "image": req.files['photoGameV']?  req.files['photoGameV'][0].filename : 0,
-            "image_Secundaria": req.files['photoGame']?  req.files['photoGame'][0].filename : 0,
+            "image": (req.files['photoGameV']?  req.files['photoGameV'][0].filename : (productsJson[productId].image ? productsJson[productId].image : 0)),
+            "image_Secundaria": (req.files['photoGame']?  req.files['photoGame'][0].filename : (productsJson[productId].image_Secundaria ? productsJson[productId].image : 0)),
 
         }
 

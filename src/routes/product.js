@@ -29,7 +29,7 @@ router.get('/:id', productController.Detail);
 router.get('/:id/edit', productController.PaginaEdit);
 
 
-router.post('/create', fileUpload.single('photoGame'), productController.Crear);
+router.post('/create', fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Crear);
 router.put('/:id/edit',fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Editar);
 router.delete('/:id', productController.Delete);
 
