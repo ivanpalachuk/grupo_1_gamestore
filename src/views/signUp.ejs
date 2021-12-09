@@ -41,7 +41,7 @@
                     </div>
                 </article>
                 <div class="avatar">
-                    <label>Imagen de perfil:</label><br>
+                    <label class="fotoAvatar">Avatar</label><br>
                     <input type="file" name="avatar">
                     <% if (locals.errors && errors.avatar) { %>
                     <div class="text-danger">
@@ -119,7 +119,8 @@
                     <div>
                         <label>Provincia</label><br>
                         <select name="provincia" class="input-fianriel">
-                            <option selected>CABA</option>
+                            <option value="">Elegí una provincia</option>
+                            <option>CABA</option>
                             <option>Che</option>
                             <option>Como</option>
                             <option>hago</option>
@@ -172,7 +173,7 @@
 
                 <article class="article-fianriel">
                     <div>
-                        <input required type="checkbox" name="tcno" value="tyc" id="checks-fianriel"></input>
+                        <input type="checkbox" name="tcno" value="tyc" id="checks-fianriel"></input>
                         <label class="legales-fianriel">Acepto Términos y Condiciones</label>
                         <% if (locals.errors && errors.tcno) { %>
                             

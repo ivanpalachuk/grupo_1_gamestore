@@ -1638,3 +1638,20 @@ article {
         }
 
         /*----- Edit Game Fin-----*/  
+        .text-danger{
+            color: red;
+            font-size: 0.7em;
+            text-align: left;
+            margin-top: 3px;
+            font-weight: normal;
+        }
+
+        .avatar{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fotoAvatar{
+            text-align: center;
+            margin-left: 10px;
+        }
