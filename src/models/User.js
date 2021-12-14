@@ -59,9 +59,9 @@ const User = {
             id: this.generateID,
             ...userData
         }
-        allUsers.push(userData);
+        allUsers.push(newUser);
         fs.writeFileSync(dbUsers, JSON.stringify(allUsers, null, ''));
-        return true;
+        return newUser;
     
     },
 // 5. Eliminar a un usuario de la DB
