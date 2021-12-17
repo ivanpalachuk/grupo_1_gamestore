@@ -13,8 +13,13 @@
             <section class="section-fianriel">
                 <article class="article-fianriel">
                     <div>
-                        <label>Usuario / Email</label><br>
-                        <input name="nombre" type="text" placholder="Tu Nombre" class="input-fianriel">
+                        <label>Email</label><br>
+                        <input name="email" type="text" placholder="Tu Nombre" class="input-fianriel">
+                        <% if (locals.errors && errors.email) { %> 
+                            <div class= text-danger>
+                            <%= errors.email.msg  %>     
+                            </div>
+                            <% } %> 
                     </div>
                 </article>
 

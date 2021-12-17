@@ -48,20 +48,42 @@ const userController = {
          clave: bcryptjs.hashSync(req.body.clave, 10),
          clave2: bcryptjs.hashSync(req.body.clave, 10),
          avatar: req.file.filename
-     }
-     User.create(userToCreate);
-     return res.redirect('/log-in');
-    }
+        }
+        User.create(userToCreate);
+        return res.redirect('/log-in');
+        }
 
-}
-    // },
-    // loginProcess: (req,res) =>{
-    //     return res.send(req.body);
-    // }
-//profile: (req,res) => {
-//     res.render('userProfile')
-// }
-}
+
+     },
+     loginProcess: (req,res) =>{
+         let userToLogin = User.findByField('email', req.body.email);
+
+         if(userToLogin){
+             let passwordOk = bcryptjs.compareSync(req.body.clave, userToLogin.clave);
+            if(passwordOk){
+                return res.rendirect('/profile/:id');
+            }
+            return res.render('signIn', {
+                errors: {
+                    email: {
+                        msg: '* Las credenciales son inválidas'
+                    }
+                }
+            })
+         }
+
+         return res.render('signIn', {
+             errors: {
+                 email: {
+                     msg: '* Este email no se encuentra registrado'
+                 }
+             }
+         })
+     },
+        profile: (req,res) => {
+            res.render('userProfile')
+        }
+    }
 
 
 module.exports = userController;
