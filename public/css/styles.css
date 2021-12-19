@@ -487,7 +487,7 @@ footer {
     }
     .main-navbar li {
         font-family: 'Press Start 2P';
-        font-size: 0.55em;
+        font-size: 12px;
         display: inline-block;
         margin-top: 40px;
         margin-right: 10px;
@@ -658,10 +658,6 @@ footer {
 @media (min-width: 1280px) {
     .main-navbar li {
         padding-left: 25px;
-    }
-
-    .log-sign{
-        font-size: 0.85em;
     }
 
     .descripcion-producto-mc{
@@ -1333,6 +1329,15 @@ article {
 /*----- Shopping Cart Fin -----*/
 
 /*----- Sign-in/Sign-up -----*/
+.forget{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 17px;
+}
+
+.remember{
+    font-weight: normal;
+}
 .main-fianriel{
     padding-top: 70px;
     background-color: rgb(29, 26, 26);
@@ -1654,4 +1659,32 @@ article {
         .fotoAvatar{
             text-align: center;
             margin-left: 10px;
+        }
+
+        .mainUserProfile{
+            background-color: rgb(29, 26, 26);
+            font-weight: bold;
+            padding-bottom: 50px;
+            padding-top: 60px;
+            padding-left: 15px;
+        }
+
+        .img-avatar{
+            margin-top: 15px;
+            width: 220px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .imgAvatarHeader{
+            max-width: 45px;
+            max-height: 45px;
+            border-radius: 50%;
+        }
+
+        .logged{
+            margin-top: 10px;
+            font-size: 12px;
+            margin-bottom: 5px;
+            font-family: 'Press Start 2P';
         }
