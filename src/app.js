@@ -1,8 +1,13 @@
 /*------------------------------------------Utils-ini------------------------------------------*/
 const path = require("path");
 const methodOverride = require('method-override');
+const session = require('express-session');
 /*------------------------------------------Utils-fin------------------------------------------*/
+/*------------------------------------------Middlewares------------------------------------------*/
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const cookies = require ('cookie-parser');
 
+/*------------------------------------------Middlewares-fin------------------------------------------*/
 /*------------------------------------------Config-ini-----------------------------------------*/
 const express = require("express");
 const app = express();
@@ -14,7 +19,14 @@ const viewsPath = path.resolve(__dirname, "./views")
 app.set('view engine', 'ejs');
 app.set('views', viewsPath);
 
+app.use(session({
+    secret: "Shh, It's a secret",
+    resave: false,
+    saveUninitialized: false,
+}));
 
+app.use(cookies());
+app.use(userLoggedMiddleware);
 app.use(methodOverride("_method"));
 app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended: false }));
