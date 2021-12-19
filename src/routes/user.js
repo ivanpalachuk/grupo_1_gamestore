@@ -4,6 +4,8 @@ const userController = require ('../controllers/user-controller.js')
 const multer = require('multer');
 const path = require('path')
 const validations = require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 //Middleware Multer
 
@@ -21,9 +23,12 @@ const storage = multer.diskStorage({
 const uploadFile = multer ({ storage} );
 
 
-router.get('/log-in', userController.logIn);
-router.get('/sign-up', userController.signUp);
-//router.get('/profile/:userId', user.Controller.profile);
+router.get('/log-in', guestMiddleware, userController.logIn);
+router.get('/sign-up', guestMiddleware, userController.signUp);
+router.get('/profile', authMiddleware, userController.profile);
+//Log Out
+
+router.get('/log-out', userController.logOut);
 
 //Procesar registro
 router.post('/sign-up', uploadFile.single('avatar'), validations , userController.processRegister);
