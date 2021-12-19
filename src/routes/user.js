@@ -23,7 +23,7 @@ const uploadFile = multer ({ storage} );
 
 router.get('/log-in', userController.logIn);
 router.get('/sign-up', userController.signUp);
-router.get('/profile/:userId', user.Controller.profile);
+//router.get('/profile/:userId', user.Controller.profile);
 
 //Procesar registro
 router.post('/sign-up', uploadFile.single('avatar'), validations , userController.processRegister);

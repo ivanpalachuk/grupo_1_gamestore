@@ -37,7 +37,7 @@ const userController = {
          return res.render ('signUp', {
            errors: {
                usuario: {
-                   msg: 'Este usuario ya está registrado' //no está funcionando - revisar
+                   msg: 'Este usuario ya está registrado' //Funciona si solo está duplicado el usuario
                }
           },
            oldData: req.body

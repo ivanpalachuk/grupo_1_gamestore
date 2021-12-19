@@ -1,6 +1,7 @@
 
-// 4. Editar la info de un usuario
+// 4. Editar la info de un usuario - Falta
 
+const { timeStamp } = require('console');
 const { json } = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -24,6 +25,11 @@ const User = {
         users = OpenUsers();
         return users;
     },
+    // 3. Buscar a un usuario por su ID
+    
+    findAll: function(){
+        return this.getData();
+    },
     generateID: function(){
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();
@@ -33,11 +39,6 @@ const User = {
             return 1;
         }
     },
-
-    findAll: function(){
-        return this.getData();
-    },
-// 3. Buscar a un usuario por su ID
 
     findByPk: function(id){
         let allUsers = this.findAll();
@@ -56,7 +57,7 @@ const User = {
     create: function (userData){
         let allUsers = this.findAll();
         let newUser = {
-            id: this.generateID,
+            id: this.generateID(),
             ...userData
         }
         allUsers.push(newUser);
