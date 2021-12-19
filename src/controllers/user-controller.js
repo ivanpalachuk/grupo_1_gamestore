@@ -4,12 +4,13 @@ const bcryptjs = require('bcryptjs');
 
 const userController = {
 
+    signUp: (req,res) => {
+        return res.render('signUp')
+    },
+
     logIn: (req,res) => {
         res.render('signIn');
     },        
-    signUp: (req,res) => {
-        res.render('signUp')
-    },
     processRegister: (req,res) =>{
       const resultValidation = validationResult(req);
       
@@ -61,7 +62,15 @@ const userController = {
          if(userToLogin){
              let passwordOk = bcryptjs.compareSync(req.body.clave, userToLogin.clave);
             if(passwordOk){
-                return res.rendirect('/profile/:id');
+                delete userToLogin.clave;
+                delete userToLogin.clave2;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remember){
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+                }
+
+                return res.redirect('/profile');
             }
             return res.render('signIn', {
                 errors: {
@@ -81,7 +90,15 @@ const userController = {
          })
      },
         profile: (req,res) => {
-            res.render('userProfile')
+            return res.render('userProfile', {
+                user: req.session.userLogged
+            });
+        },
+
+        logOut: (req,res) => {
+            res.clearCookie('userIn');
+            req.session.destroy();
+            return res.redirect('/home');
         }
     }
 
