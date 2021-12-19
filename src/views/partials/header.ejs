@@ -15,10 +15,15 @@
         <input type="search" id="search">
             <i id="find" class="fas fa-search"></i><br>
         </div>
-            <div class="log-sign">
-                <a href="/log-in">Log in</a> / <a href="/sign-up">Sign up</a> <i  id='fas' class="fas fa-gamepad"></i>
+        <% if (locals.isLogged) { %>
+            <div class="logged">
+                <a href="/profile"><div class="userLogged"><%= locals.userLogged.usuario %><img class= "imgAvatarHeader" src="/images/avatars/<%=locals.userLogged.avatar %> "></a> / <a href= "/log-out">Log out  </a><i  id='fas' class="fas fa-gamepad"></i></div>
             </div>
-        </div>
+            <% } else { %> 
+                <div class="log-sign">
+                    <a href="/log-in">Log in</a> / <a href="/sign-up">Sign up</a> <i  id='fas' class="fas fa-gamepad"></i>
+                </div>
+        <% } %> 
     <div class= "menu-desplegable">
         <i class="fas fa-caret-square-down"></i>
     </div>
