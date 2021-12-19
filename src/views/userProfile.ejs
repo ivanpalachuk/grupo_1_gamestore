@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+    <%- include('./partials/header') %> 
+<body>
+    <main class="mainUserProfile">
+        <h2>Hola, <%= user.usuario %> !</h2>
+        <img class= "img-avatar" src="/images/avatars/<%= user.avatar  %>">
+    </main>
+</body>
+    <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
+</main>
+<%- include('./partials/footer') %> 
+</body>
+
+</html>
