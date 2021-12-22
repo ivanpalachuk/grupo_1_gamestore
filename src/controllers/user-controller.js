@@ -51,7 +51,7 @@ const userController = {
          avatar: req.file.filename
         }
         User.create(userToCreate);
-        return res.redirect('/log-in');
+        return res.redirect('/user/log-in');
         }
 
 
@@ -70,7 +70,7 @@ const userController = {
                     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
                 }
 
-                return res.redirect('/profile');
+                return res.redirect('/user/profile');
             }
             return res.render('signIn', {
                 errors: {

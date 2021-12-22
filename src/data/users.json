@@ -1,1 +1,39 @@
-[{"id":1,"nombre":" Macarena","apellido":"Bernal","dni":"12345678","usuario":"Mcsand ","email":"maqi.bernal@gmail.com","clave":"$2a$10$eQNC97zdSvqu3oYK4B9k2uK5buxfAevW/KI4XH2xv9oNCWze3WORi","clave2":"$2a$10$9p9fR5NkTSDGIUMPAvHPX.KTv8KtBbdFPHwXns9lP5EJBfAB3LRie","pais":"Argentina","provincia":"CABA","direccion":"Calle falsa","numero":"123","cp":"1234","tcno":"tyc","avatar":"1639772029662.jpg"}]
+[
+    {
+        "id": 1,
+        "nombre": " Macarena",
+        "apellido": "Bernal",
+        "dni": "12345678",
+        "usuario": "Mcsand ",
+        "email": "maqi.bernal@gmail.com",
+        "clave": "$2a$10$eQNC97zdSvqu3oYK4B9k2uK5buxfAevW/KI4XH2xv9oNCWze3WORi",
+        "clave2": "$2a$10$9p9fR5NkTSDGIUMPAvHPX.KTv8KtBbdFPHwXns9lP5EJBfAB3LRie",
+        "pais": "Argentina",
+        "provincia": "CABA",
+        "direccion": "Calle falsa",
+        "numero": "123",
+        "cp": "1234",
+        "tcno": "tyc",
+        "avatar": "1639772029662.jpg",
+        "admin": true
+    },
+    {
+        "id": 2,
+        "nombre": "Esteban",
+        "apellido": "Vazquez",
+        "dni": "41107781",
+        "usuario": "  asd",
+        "email": "esteban18498@gmail.com",
+        "clave": "$2a$10$RfwnD/ckEoCSNFE710KahOSmabQFJzsBARLrwxySwDaso53wtapGO",
+        "clave2": "$2a$10$9e.FaNogxNnPG0c5Vya/Wegmo1rNgHaxc8083Rjtzb9jPxYmF4Hvi",
+        "pais": "Alemania",
+        "provincia": "CABA",
+        "direccion": "3688 Mexico",
+        "numero": "123",
+        "cp": "1223",
+        "tcno": "tyc",
+        "tyno": "nyo",
+        "avatar": "1640135575144.PNG",
+        "admin": false
+    }
+]

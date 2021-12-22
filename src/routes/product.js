@@ -21,12 +21,15 @@ const storage = multer.diskStorage({
 })
 let fileUpload = multer({ storage});
 
+/*------------------------Midlewares----------------------------------*/
+const adminAuthMiddleware = require("../middlewares/adminAuthMiddleware")
+
 
 /*------------------------Routes-------------------------------------- */
 router.get('/', productController.Lista);
-router.get('/create',productController.PaginaCrear);
+router.get('/create',adminAuthMiddleware,productController.PaginaCrear);
 router.get('/:id', productController.Detail);
-router.get('/:id/edit', productController.PaginaEdit);
+router.get('/:id/edit', adminAuthMiddleware, productController.PaginaEdit);
 
 
 router.post('/create', fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Crear);
