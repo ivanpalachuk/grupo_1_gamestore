@@ -11,7 +11,7 @@ module.exports = [
         .isEmail().withMessage('*Este campo debe ser un correo electrónico'),
 
         // No funciona - revisar
-    // body('clave').notEmpty().withMessage('*Este campo debe estar completo').bail()
+     //body('clave').notEmpty().withMessage('*Este campo debe estar completo')//.bail()
     //              .isLength({min: 8}).withMessage('*Este campo debe contener min 8 caracteres'),
     // body('passwordConfirmation').notEmpty().withMessage('*Este campo debe estar completo').bail()
     //     .custom((value, {req}) => {
@@ -19,6 +19,7 @@ module.exports = [
     //         throw new Error('*Password confirmation does not match password');
     //       }
     //       return true;}),
+    
     body('pais').notEmpty().withMessage('*Este campo debe estar completo'),
     body('provincia').notEmpty().withMessage('*Este campo debe estar completo'),
     body('direccion').notEmpty().withMessage('*Este campo debe estar completo'),

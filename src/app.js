@@ -45,7 +45,7 @@ const rutasAdmin = require('./routes/admin.js')
 app.use('/', rutasMain);
 app.use('/', rutasCart);
 app.use('/products', rutasProducto);
-app.use('/', rutasUser);
+app.use('/user', rutasUser);
 app.use('/', rutasAdmin);
 /*------------------------------------------Routes-fin-----------------------------------------*/
 
