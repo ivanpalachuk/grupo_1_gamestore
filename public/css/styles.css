@@ -26,6 +26,8 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 3px 3px #000;
     width: 100%;
 }
 
@@ -55,7 +57,9 @@ footer{
 #search {
     display: none;
 }
-
+.logged{
+    display: none;
+}
 .log-sign {
     display: none;
     text-align: left;
@@ -64,7 +68,7 @@ footer{
 }
 
 .menu-desplegable {
-    margin-right: 5px;
+    margin-right: 0px;
     font-size: 2rem;
     margin-top: 15px;
 }
@@ -466,12 +470,19 @@ footer {
         border-radius: 3px;
         cursor: pointer;
     }
+    .logged{
+        display: block;
+        margin-top: 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
+        font-family: 'Press Start 2P';
+    }
     .log-sign {
         display: block;
         margin-top: 15px;
-        margin-right: 8px;
+        margin-right: 5px;
         font-family: 'Press Start 2P';
-        font-size: 12px;
+        font-size: 10px;
         padding-bottom: 7px;
     }
     .menu-desplegable {
@@ -487,10 +498,10 @@ footer {
     }
     .main-navbar li {
         font-family: 'Press Start 2P';
-        font-size: 12px;
+        font-size: 8px;
         display: inline-block;
         margin-top: 40px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .primer-color:hover {
         color: #FFE500;
@@ -684,7 +695,7 @@ footer {
 
     .main-navbar li {
         font-family: 'Press Start 2P';
-        font-size: 0.80em;
+        font-size: 12px;
         margin-right: 15px;
         transition: all 1000ms;
     }
@@ -775,7 +786,7 @@ footer {
     border-color: var(--fondo);
     transition: all 450ms;
     width: 100%;
-    max-width: 70vw;
+    max-width: 90vw;
 }
 .img-lanzamiento:hover {
     box-shadow: 0px 0px 10px #FF00d6;
@@ -894,6 +905,11 @@ footer {
         border-bottom: 2px solid var(--magenta);
         border-top: 2px solid var(--magenta);
     }
+
+    .img-lanzamiento{
+        max-width: 70vw;
+        }
+
 }
 
 @media (min-width: 1024px) {
@@ -1161,7 +1177,6 @@ button {
     border-color: #FF00d6;
     border-radius: 8px;
     align-items: center;
-    margin-top: 20px;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -1643,6 +1658,8 @@ article {
         }
 
         /*----- Edit Game Fin-----*/  
+
+        
         .text-danger{
             color: red;
             font-size: 0.7em;
@@ -1650,7 +1667,7 @@ article {
             margin-top: 3px;
             font-weight: normal;
         }
-
+/*----- Profile -----*/ 
         .avatar{
             display: flex;
             justify-content: space-between;
@@ -1665,15 +1682,16 @@ article {
             background-color: rgb(29, 26, 26);
             font-weight: bold;
             padding-bottom: 50px;
-            padding-top: 60px;
-            padding-left: 15px;
+            padding-top: 25px;
         }
 
         .img-avatar{
-            margin-top: 15px;
-            width: 220px;
-            height: 200px;
-            border-radius: 50%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 120px;
+            height: 100px;
+            border-radius: 10%;
+            box-shadow: 0 0 3px 3px rgb(36, 35, 35, 0.925);
         }
 
         .imgAvatarHeader{
@@ -1682,9 +1700,100 @@ article {
             border-radius: 50%;
         }
 
-        .logged{
-            margin-top: 10px;
-            font-size: 12px;
-            margin-bottom: 5px;
-            font-family: 'Press Start 2P';
+
+        .banner{
+            width: 100vw;
+            margin-left: 0;
+            padding-left: 0;
+            padding-top: 15px; 
         }
+
+        .credencial{
+            font-size: 10px;
+            width: 80vw;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 20px;
+        }
+        .datos-user{
+            margin: auto;
+        }
+        .nombre-usuario{
+            font-size: 18px;
+            font-weight: normal;
+            font-family: 'Press Start 2P' ;
+        }
+
+        .email-usuario{
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .compras{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .mis-compras{
+            background-color: rgb(36, 35, 35, 0.925);
+            padding: 5px
+            
+        }
+
+        .juegos-compras{
+            margin-top: 5px;
+        }
+
+        .botonera-download{
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .img-games-profile{
+            border-radius: 10px;
+            height: 120px;
+            width: 100px;
+            margin-left: 15px;
+        }
+
+        .p_shopping_cart{
+            padding-bottom: 5px;
+        }
+        .titulo-juego-profile{
+            font-size: 12px;
+            padding-top: 2px;
+            padding-bottom: 4px;
+        }
+
+        .next{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        @media (min-width: 768px){
+            .credencial{
+                bottom: 100px;
+                width: 60vw;
+                transition: all 1000ms;
+            }
+
+            .img-avatar{
+                width: 250px;
+                height: 200px;
+                transition: all 1000ms;
+            }
+            
+            .banner{
+                width: 100vw;
+                margin-left: 0;
+                padding-left: 0;
+                padding-top: 15px;
+            }
+        }
+
+        /*----- Profile End-----*/ 

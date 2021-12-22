@@ -2,10 +2,57 @@
 <html lang="en">
     <%- include('./partials/head') %>
     <%- include('./partials/header') %> 
-<body>
+<body class="body-user-profile">
     <main class="mainUserProfile">
-        <h2>Hola, <%= user.usuario %> !</h2>
-        <img class= "img-avatar" src="/images/avatars/<%= user.avatar  %>">
+        <img class="banner" src="/images/banner/space-invaders-color.jpg">
+        <section class="actividad">
+        <div class="credencial">
+            <img class= "img-avatar" src="/images/avatars/<%= user.avatar  %>">
+            <div class="datos-user">
+            <h2 class="nombre-usuario"><%= user.usuario %><i  id='fas' class="fas fa-gamepad"></i></h2>
+            <h5 class="email-usuario"> <%= user.email %>  <i class="far fa-edit"></i></h5>
+            </div>
+        </div>
+        <section class="compras">
+            <h3 class="mis-compras">Mis compras</h3>
+            <article class="juegos-compras">
+                <div class="titulo-descripcion">
+                    <img class="img-games-profile" src="/images/call-of-duty.jpg" alt="juego">
+                    <div class="titulo-juego-profile">Call of Duty
+                    </div>
+                    <p class="titulo-juego-profile">PS4/ PS5 / PC</p>
+                </div>
+                <div class="botonera-download">
+                    <button id="sumar-Addon"><a href="#" class="sumar-Addon">Descargar</a></button>
+                </div>
+                </article>
+                <article class="juegos-compras">
+                    <div class="titulo-descripcion">
+                        <img class="img-games-profile" src="/images/limbo-shopcart.jpg" alt="juego">
+                        <div class="titulo-juego-profile">LIMBO
+                        </div>
+                        <p class="titulo-juego-profile">PS4/ PS5 / PC</p>
+                    </div>
+                    <div class="botonera-download">
+                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Descargar</a></button>
+                    </div>
+                    </article>                
+                    <article class="juegos-compras">
+                    <div class="titulo-descripcion">
+                        <img class="img-games-profile" src="/images/productImages/nine-shopcart.jpg" alt="juego">
+                        <div class="titulo-juego-profile">Nine witches: Family disruption
+                        </div>
+                        <p class="titulo-juego-profile">PS4/ PS5 / PC</p>
+                    </div>
+                    <div class="botonera-download">
+                        <button id="sumar-Addon"><a href="#" class="sumar-Addon">Descargar</a></button>
+                    </div>
+                    </article>
+        </section>
+        <div class="next">
+        <i id='fas' class="fas fa-arrow-circle-right"></i>
+        </div>
+    </section>
     </main>
 </body>
     <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
