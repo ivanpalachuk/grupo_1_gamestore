@@ -34,4 +34,8 @@ Esperamos poder convertir a jugadores casuales en jugadores habituales, permitie
 
 - https://trello.com/b/tuVxiFcw/digital-house-gamestore
 
+### Usuario admin:
+
+- mail: maqi.bernal@gmail.com
+- contraseña: mcsand
 
