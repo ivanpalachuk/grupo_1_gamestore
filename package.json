@@ -1,30 +1,34 @@
 {
-  "name": "gurpo_1_gamerstore",
-  "version": "1.0.0",
-  "description": "Gamestore es una pagina joven, publicada en el 2021, la misma esta desarollada por jugadores experimentados para aquellos que no lo son. Este E-Commerce brinda asistencia y consejos para aquellos clientes casuales, que necesitan una guia o no saben por donde empezar en el amplio mundo de los videjuegos, en su seccion de compra, no solo podemos visualizar de manera comoda los productos sino que tambien podremos encontrar una breve reseÃ±a o consejo para poder decidir la compra.",
-  "main": "app.js",
-  "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "nodemon src/app.js ",
-      "dev": "nodemon --watch src/app.js"
-  },
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ivanpalachuk/grupo_1_gamestore.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-      "url": "https://github.com/ivanpalachuk/grupo_1_gamestore/issues"
-  },
-  "homepage": "https://github.com/ivanpalachuk/grupo_1_gamestore#readme",
-  "dependencies": {
-      "ejs": "^3.1.6",
-      "express": "^4.17.1",
-      "method-override": "^3.0.0",
-      "multer": "^1.4.3",
-      "nodemon": "^2.0.15",
-      "override": "0.0.1",
-      "path": "^0.12.7"
-  }
+    "name": "gurpo_1_gamerstore",
+    "version": "1.0.0",
+    "description": "Gamestore es una pagina joven, publicada en el 2021, la misma esta desarollada por jugadores experimentados para aquellos que no lo son. Este E-Commerce brinda asistencia y consejos para aquellos clientes casuales, que necesitan una guia o no saben por donde empezar en el amplio mundo de los videjuegos, en su seccion de compra, no solo podemos visualizar de manera comoda los productos sino que tambien podremos encontrar una breve reseÃ±a o consejo para poder decidir la compra.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/app.js ",
+        "dev": "nodemon --watch src/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ivanpalachuk/grupo_1_gamestore.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ivanpalachuk/grupo_1_gamestore/issues"
+    },
+    "homepage": "https://github.com/ivanpalachuk/grupo_1_gamestore#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.6",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "express-validator": "^6.14.0",
+        "method-override": "^3.0.0",
+        "multer": "^1.4.3",
+        "nodemon": "^2.0.15",
+        "override": "0.0.1",
+        "path": "^0.12.7"
+    }
 }
