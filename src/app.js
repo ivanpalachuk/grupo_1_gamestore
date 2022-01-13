@@ -5,7 +5,7 @@ const session = require('express-session');
 /*------------------------------------------Utils-fin------------------------------------------*/
 /*------------------------------------------Middlewares------------------------------------------*/
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-const cookies = require ('cookie-parser');
+const cookies = require('cookie-parser');
 
 /*------------------------------------------Middlewares-fin------------------------------------------*/
 /*------------------------------------------Config-ini-----------------------------------------*/
@@ -54,4 +54,7 @@ app.use('/', rutasAdmin);
 app.listen(port, () => {
         console.log("Servidor prueba Gamestore corriendo en puerto 4022")
     })
-/*------------------------------------------Server-fin--------------------------------------*/
+    /*------------------------------------------Server-fin--------------------------------------*/
+
+
+//Hola mundo//
