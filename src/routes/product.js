@@ -12,28 +12,27 @@ const multer = require('multer');
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
         folder = path.join(__dirname, "../../public/images/productImages");
-        callback(null,folder);
+        callback(null, folder);
     },
-    filename: (req,file,callback) => {
+    filename: (req, file, callback) => {
         let imageName = Date.now() + path.extname(file.originalname);
-        callback(null,imageName);
+        callback(null, imageName);
     }
 })
-let fileUpload = multer({ storage});
+let fileUpload = multer({ storage });
 
 /*------------------------Midlewares----------------------------------*/
 const adminAuthMiddleware = require("../middlewares/adminAuthMiddleware")
 
 
 /*------------------------Routes-------------------------------------- */
+router.get("/testDB", productController.Prueba);
 router.get('/', productController.Lista);
-router.get('/create',adminAuthMiddleware,productController.PaginaCrear);
+router.get('/create', adminAuthMiddleware, productController.PaginaCrear);
 router.get('/:id', productController.Detail);
 router.get('/:id/edit', adminAuthMiddleware, productController.PaginaEdit);
-
-
-router.post('/create', fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Crear);
-router.put('/:id/edit',fileUpload.fields([{name :'photoGame'},{name :'photoGameV'}]), productController.Editar);
+router.post('/create', fileUpload.fields([{ name: 'photoGame' }, { name: 'photoGameV' }]), productController.Crear);
+router.put('/:id/edit', fileUpload.fields([{ name: 'photoGame' }, { name: 'photoGameV' }]), productController.Editar);
 router.delete('/:id', productController.Delete);
 
 module.exports = router;

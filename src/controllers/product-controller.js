@@ -3,25 +3,35 @@ const path = require("path");
 const fs = require('fs');
 const { debug } = require('console');
 
+
+//Nos traemos la sintaxis de movies.db//
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
+//Aca deberiamos literalmente llamar a la tabla//
+const ProductoTEST = db.Producto
+
+
+
 let dbProductos = path.resolve(__dirname, "../data/products.json")
 let rutaUsuarios = './data/users.json'
 
-function OpenProducts(){
+function OpenProducts() {
     let products = fs.readFileSync(dbProductos)
-    let productsJson= JSON.parse(products)
+    let productsJson = JSON.parse(products)
     return productsJson;
 }
 
-function WriteProducts(products){
+function WriteProducts(products) {
     let productsString = JSON.stringify(products);
     fs.writeFileSync(dbProductos, productsString)
 }
 
 
 const productController = {
-    Lista: (req,res) => {
+    Lista: (req, res) => {
         products = OpenProducts();
-        res.render('products',{products});
+        res.render('products', { products });
     },
     PaginaCrear: (req, res) => {
         res.render('new-game');
@@ -37,14 +47,14 @@ const productController = {
         res.render('productDetail', { product });
     },
 
-    PaginaEdit: (req,res) => {
+    PaginaEdit: (req, res) => {
 
 
         let productId = req.params.id;
         productsJson = OpenProducts();
         let product = productsJson[productId]
 
-        res.render('edit-game', {product} );
+        res.render('edit-game', { product });
 
     },
     Crear: (req, res) => {
@@ -53,7 +63,7 @@ const productController = {
         console.log(productsJson[productsJson.length - 1].id + 1)
 
         productoNuevo = {
-            "id": productId = productsJson[productsJson.length - 1].id + 1, 
+            "id": productId = productsJson[productsJson.length - 1].id + 1,
             "titulo": req.body.titulo,
             "price": req.body.price,
             "discount": req.body.discount,
@@ -68,10 +78,10 @@ const productController = {
             "web": req.body.web,
             "category": req.body.categoryOption,
             "resumen": req.body.resumen,
-            
+
             "legal": req.body.legal,
-            "image": (req.files['photoGameV']?  req.files['photoGameV'][0].filename :  0),
-            "image_Secundaria": (req.files['photoGame']?  req.files['photoGame'][0].filename : 0),
+            "image": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0),
+            "image_Secundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0),
 
         }
 
@@ -83,14 +93,14 @@ const productController = {
 
         res.redirect('/products');
     },
-    Editar: (req,res) => {
+    Editar: (req, res) => {
 
 
-        let productId= req.params.id;
-        productsJson=OpenProducts();
+        let productId = req.params.id;
+        productsJson = OpenProducts();
 
         productoEditado = {
-            "id": productId, 
+            "id": productId,
             "titulo": req.body.titulo,
             "price": req.body.price,
             "discount": req.body.discount,
@@ -105,14 +115,14 @@ const productController = {
             "web": req.body.web,
             "category": req.body.categoryOption,
             "resumen": req.body.resumen,
-            
+
             "legal": req.body.legal,
-            "image": (req.files['photoGameV']?  req.files['photoGameV'][0].filename : (productsJson[productId].image ? productsJson[productId].image : 0)),
-            "image_Secundaria": (req.files['photoGame']?  req.files['photoGame'][0].filename : (productsJson[productId].image_Secundaria ? productsJson[productId].image : 0)),
+            "image": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : (productsJson[productId].image ? productsJson[productId].image : 0)),
+            "image_Secundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : (productsJson[productId].image_Secundaria ? productsJson[productId].image : 0)),
 
         }
 
-        productsJson[productId]= productoEditado;
+        productsJson[productId] = productoEditado;
 
         let productsString = JSON.stringify(productsJson);
 
@@ -120,14 +130,21 @@ const productController = {
 
         res.redirect('/products');
     },
-    Delete:(req,res) =>{
-        let productId= req.params.id;
-        productsJson=OpenProducts();
+    Delete: (req, res) => {
+        let productId = req.params.id;
+        productsJson = OpenProducts();
 
-        productsJson = productsJson.filter( (product)=>product.id!=productId )
+        productsJson = productsJson.filter((product) => product.id != productId)
         WriteProducts(productsJson)
 
         res.redirect('/products');
+    },
+    Prueba: (req, res) => {
+        console.log(".")
+        ProductoTEST.findAll().then(producto => {
+            res.send(producto)
+        })
+
     }
 
 };
