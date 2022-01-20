@@ -24,13 +24,13 @@ module.exports = (sequelize, dataTypes) => {
 
     };
     let config = {
-            tableName: "Producto",
-            timestamps: false
-        }
-        //Esta constante mediante define de sequelize, arma la BD//
+        tableName: "Producto",
+        timestamps: false
+    }
+    //Esta constante mediante define de sequelize, arma la BD//
     const Producto = sequelize.define(alias, cols, config)
 
-    Producto.associate = function(models) {
+    Producto.associate = function (models) {
         Producto.belongsTo(models.Dificultad, {
             as: "Dificultad",
             foreignKey: "idDificultad"
@@ -62,8 +62,7 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: 'idCategoria',
             timestamps: false
         })
-        return Producto
-
 
     }
+    return Producto
 }
