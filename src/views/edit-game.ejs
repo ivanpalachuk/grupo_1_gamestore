@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+<%- include('./partials/head') %>
     <%- include('./partials/header') %>
 
-<body class="body-new-game">
-    <main class="container-m">
-        <form action=<%= "/products/"+product.id+"/edit?_method=PUT" %> method="POST" class="container-form" enctype="multipart/form-data">
-            <h1>Editar <%= product.titulo %>  <i class="fas fa-gamepad"></i></h1>
-            <div class="contenido-principal"> 
-                <div class="box-container">
-                <input placeholder= "Título" name="titulo" type="text" value=" <%= product.titulo %> " required class="input-style">
-                </div>
-    
-                <div class="box-container">
-                    <input placeholder= "Precio" name="price" type="text" value=" <%= product.price %> " required class="input-style">
-                </div>
-                <div class="box-container">
-                    <input placeholder= "Descuento" name="discount" type="text" value=" <%= product.discount %> " class="input-style">
-                </div>
-                <div class="box-container">
-                    <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> " required class="input-style">
-                </div>
-                <div class="box-container">
-                    <label class="tittle-m block">Dificultad</label>
-                    <select name="dificult" class="input-style">
+        <body class="body-new-game">
+            <main class="container-m">
+                <form action=<%="/products/" +product.id+ "/edit?_method=PUT" %> method="POST" class="container-form" enctype="multipart/form-data">
+                    <h1>Editar
+                        <%= product.titulo %> <i class="fas fa-gamepad"></i></h1>
+                    <div class="contenido-principal">
+                        <div class="box-container">
+                            <input placeholder="Título" name="titulo" type="text" value=" <%= product.titulo %> " required class="input-style">
+                        </div>
+
+                        <div class="box-container">
+                            <input placeholder="Precio" name="price" type="text" value=" <%= product.price %> " required class="input-style">
+                        </div>
+                        <div class="box-container">
+                            <input placeholder="Descuento" name="discount" type="text" value=" <%= product.discount %> " class="input-style">
+                        </div>
+                        <div class="box-container">
+                            <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> " required class="input-style">
+                        </div>
+                        <div class="box-container">
+                            <label class="tittle-m block">Dificultad</label>
+                            <select name="dificult" class="input-style">
                         <option selected>Fácil</option>
                         <option>Intermedia</option>
                         <option>Dificil</option>
                     </select>
-                </div>
-                <div class="box-container">
-                    <label class="tittle-m block">Edades</label>
-                    <select name="ages" class="input-style">
+                        </div>
+                        <div class="box-container">
+                            <label class="tittle-m block">Edades</label>
+                            <select name="ages" class="input-style">
                         <option selected>Todas</option>
                         <option>Adolescentes</option>
                         <option>Adultos</option>
                     </select>
-                </div>
-                <div class="box-container">
-                    <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
-                    <div class="box-category">
-                        <label id=category-option>
+                        </div>
+                        <div class="box-container">
+                            <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
+                            <div class="box-category">
+                                <label id=category-option>
                             <input type="checkbox" name="category-option" class="category-option">PS4
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="category-option" class="category-option">PS5
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="category-option" class="category-option">PC
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="category-option" class="category-option">XBOX
                         </label>
-                    </div>
-                </div>
-                <div class="box-container">
-                    <label class="block tittle-m" for="interes" name="interes">Categorías</label>
-                    <div class="box-category">
-                        <label id=category-option>
+                            </div>
+                        </div>
+                        <div class="box-container">
+                            <label class="block tittle-m" for="interes" name="interes">Categorías</label>
+                            <div class="box-category">
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option" value="shooter">Shooter
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="sports">Sports <!--  modificar todos los check como los anteriores-->
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="accion">Acción
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="terror">Terror
                         </label>
-    
-                        <label id=category-option>
+
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="estrategia">Estrategia
                         </label>
-                        <label id=category-option>
+                                <label id=category-option>
                             <input type="checkbox" name="categoryOption" class="category-option"  value="indie">Indie
                         </label>
+                            </div>
+                        </div>
+
+                        <div class="box-container photo-game">
+                            <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen principal</label>
+                            <input class="block" type="file" name="photoGameV"><img id="imageEdit" src=< %="/images/productImages/" +product.image %> alt="
+                            <%= product.image_Secundaria %>">
+                                <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
+                                <input class="block" type="file" name="photoGame"><img id="imageEditV" src=< %="/images/productImages/" + product.image_Secundaria %> alt="
+                                <%= product.image_Secundaria %>">
+                        </div>
+                        <div class="box-container">
+                            <input placeholder="Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">
+                        </div>
+                        <div class="box-container">
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required><%= product.datos_Tecnicos %></textarea>
+                        </div>
+                        <div class="box-container">
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30" rows="10" class="text-area-style" required><%= product.requisitos %></textarea>
+                        </div>
+
                     </div>
-                </div>
+                    <div class="container-delete-button">
+                        <div class="box-button">
+                            <button type="submit" class="delete-button-m">Editar Juego</button>
+                        </div>
+                        <div class="box-button">
+                            <button type="submit" class="delete-button-m" formaction=<%="/products/" +product.id+ "?_method=DELETE" %> >Eliminar Juego</button>
+                        </div>
+                    </div>
 
-                <div class="box-container photo-game">
-                    <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen principal</label>
-                    <input class="block" type="file" name="photoGameV"><img id= "imageEdit" src= <%= "/images/productImages/"+product.image %> alt="<%= product.image_Secundaria %>">
-                    <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
-                    <input class="block" type="file" name="photoGame"><img id= "imageEditV" src= <%= "/images/productImages/"+ product.image_Secundaria %> alt="<%= product.image_Secundaria %>">
-                </div>
-                <div class="box-container">
-                    <input placeholder= "Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">
-                </div>
-                <div class="box-container">
-                    <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"  cols="30" rows="10" required><%= product.datos_Tecnicos %></textarea>
-                </div>
-                <div class="box-container">
-                    <textarea name="requisitos" placeholder="Requisitos del sistema"  cols="30" rows="10" class="text-area-style" required><%= product.requisitos %></textarea>
-                </div>
-    
-            </div>
-            <div class="container-delete-button">
-                <div class="box-button">
-                    <button type="submit" class="delete-button-m">Editar Juego</button>
-                </div>
-                <div class="box-button">
-                    <button type="submit" class="delete-button-m" formaction=<%= "/products/"+product.id+"?_method=DELETE" %> >Eliminar Juego</button>
-                </div>
-            </div>
 
-            
-        </form>
+                </form>
 
-    </main>
-    <%- include('./partials/footer') %> 
-</body>
+            </main>
+            <%- include('./partials/footer') %>
+                <script src="/js/edit-game"></script>
+        </body>
 
 </html>

@@ -7,13 +7,15 @@ const { debug } = require('console');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
+const { findAll } = require('../models/User');
 //Aca deberiamos literalmente llamar a la tabla//
 const Product = db.Producto
 
 const productController = {
     Lista: (req, res) => {
-        products = OpenProducts();
-        res.render('products', { products });
+        products = Product.findAll().then((p) => {
+            res.render('products', { products: p });
+        })
     },
     PaginaCrear: (req, res) => {
         res.render('new-game');
@@ -29,12 +31,11 @@ const productController = {
 
     PaginaEdit: (req, res) => {
 
-
         let productId = req.params.id;
-        productsJson = OpenProducts();
-        let product = productsJson[productId]
+        Product.findByPk(productId).then((p) => {
+            res.render('edit-game', { product: p })
+        })
 
-        res.render('edit-game', { product });
 
     },
     Crear: (req, res) => {
