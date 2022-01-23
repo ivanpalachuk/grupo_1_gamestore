@@ -40,20 +40,17 @@ const productController = {
     },
     Crear: (req, res) => {
 
-        productsJson = OpenProducts();
-        console.log(productsJson[productsJson.length - 1].id + 1)
-
+        console.log(req.body.dificult)
         productoNuevo = {
-            "id": productId = productsJson[productsJson.length - 1].id + 1,
             "titulo": req.body.titulo,
-            "price": req.body.price,
-            "discount": req.body.discount,
-            "dificult": req.body.dificult,
-            "age": req.body.age,
+            "precio": req.body.price,
+            "descuento": req.body.discount,
+            "Dificultad": 1,
+            "Edad": req.body.age,
             "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
-            "datos_Tecnicos": req.body.datos_Tecnicos,
+            "datosTecnicos": req.body.datos_Tecnicos,
             "requisitos": req.body.requisitos,
 
             "web": req.body.web,
@@ -61,16 +58,14 @@ const productController = {
             "resumen": req.body.resumen,
 
             "legal": req.body.legal,
-            "image": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0),
-            "image_Secundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0),
+            //"idImagenPrincipal": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0),
+            //"idImagenSecundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0),
 
         }
 
-        productsJson.push(productoNuevo);
+        Product.create(productoNuevo)
 
-        let productsString = JSON.stringify(productsJson);
 
-        fs.writeFileSync(dbProductos, productsString)
 
         res.redirect('/products');
     },
