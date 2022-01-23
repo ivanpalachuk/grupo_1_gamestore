@@ -3,30 +3,12 @@ const path = require("path");
 const fs = require('fs');
 const { debug } = require('console');
 
-
 //Nos traemos la sintaxis de movies.db//
 const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 //Aca deberiamos literalmente llamar a la tabla//
-const ProductoTEST = db.Producto
-
-
-
-let dbProductos = path.resolve(__dirname, "../data/products.json")
-let rutaUsuarios = './data/users.json'
-
-function OpenProducts() {
-    let products = fs.readFileSync(dbProductos)
-    let productsJson = JSON.parse(products)
-    return productsJson;
-}
-
-function WriteProducts(products) {
-    let productsString = JSON.stringify(products);
-    fs.writeFileSync(dbProductos, productsString)
-}
-
+const Product = db.Producto
 
 const productController = {
     Lista: (req, res) => {
@@ -39,17 +21,9 @@ const productController = {
     Detail: (req, res) => {
 
         let productId = req.params.id;
-
-        ProductoTEST.findAll({
-            where: {
-                id: productId
-            }
-        }
-        ).then((p) => {
-            console.log(p);
-            res.render('productDetail', { p })
+        Product.findByPk(productId).then((p) => {
+            res.render('productDetail', { product: p })
         })
-
 
     },
 
@@ -147,7 +121,7 @@ const productController = {
     },
     Prueba: (req, res) => {
         console.log(".")
-        ProductoTEST.findAll().then(producto => {
+        Product.findAll().then(producto => {
             res.send(producto)
         })
 

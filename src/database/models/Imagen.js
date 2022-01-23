@@ -17,7 +17,12 @@ module.exports = (sequelize, DataTypes) => {
         }
         //Esta constante mediante define de sequelize, arma la BD//
     const Imagen = sequelize.define(alias, cols, config)
-        //Retorna la BD para que este disponible para consultas//
+    Imagen.associate = function(models) {
+        Imagen.belongsTo(models.Producto, {
+            as: "ImagenPrincipal",
+            foreignKey: "idImagenPrincipal"
+        })
+    }
     return Imagen
 
 }

@@ -17,7 +17,15 @@ module.exports = (sequelize, DataTypes) => {
         }
         //Esta constante mediante define de sequelize, arma la BD//
     const Categoria = sequelize.define(alias, cols, config)
-        //Retorna la BD para que este disponible para consultas//
-    return Categoria
+    Categoria.associate = function(models) {
 
+        Categoria.belongsToMany(models.Producto, {
+            as: "Categoria",
+            through: 'CategoriaPivot',
+            foreignKey: 'idProducto',
+            otherKey: 'idCategoria'
+
+        })
+    }
+    return Categoria
 }

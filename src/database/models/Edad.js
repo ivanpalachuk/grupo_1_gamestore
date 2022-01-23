@@ -21,6 +21,11 @@ module.exports = (sequelize, DataTypes) => {
         }
         //Esta constante mediante define de sequelize, arma la BD//
     const Edad = sequelize.define(alias, cols, config)
-        //Retorna la BD para que este disponible para consultas//
+    Edad.associate = function(models) {
+        Edad.belongsTo(models.Producto, {
+            as: "Edad",
+            foreignKey: "idEdad"
+        })
+    }
     return Edad
 }
