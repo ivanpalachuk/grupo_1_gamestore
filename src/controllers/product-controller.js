@@ -40,11 +40,17 @@ const productController = {
 
         let productId = req.params.id;
 
-        productsJson = OpenProducts();
+        ProductoTEST.findAll({
+            where: {
+                id: productId
+            }
+        }
+        ).then((p) => {
+            console.log(p);
+            res.render('productDetail', { p })
+        })
 
-        let product = productsJson[productId]
 
-        res.render('productDetail', { product });
     },
 
     PaginaEdit: (req, res) => {
