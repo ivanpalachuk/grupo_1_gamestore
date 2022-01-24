@@ -49,18 +49,17 @@ module.exports = (sequelize, dataTypes) => {
         })
 
         Producto.belongsToMany(models.Plataforma, {
-            as: "Plataforma",
+            as: "Plataformas",
             through: 'PlataformaPivot',
             foreignKey: 'idProducto',
-            otherKey: 'idPlataforma',
-            timestamps: false
+            otherKey: 'idPlataforma'
         })
-        Producto.belongsToMany(models.Plataforma, {
-            as: "Categoria",
+        
+        Producto.belongsToMany(models.Categoria, {
+            as: "Categorias",
             through: 'CategoriaPivot',
             foreignKey: 'idProducto',
-            otherKey: 'idCategoria',
-            timestamps: false
+            otherKey: 'idCategoria'
         })
 
     }

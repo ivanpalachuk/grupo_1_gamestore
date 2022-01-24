@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
 
     Plataforma.associate = function(models) {
         Plataforma.belongsToMany(models.Producto, {
-            as: "Producto",
+            as: "Productos",
             through: 'PlataformaPivot',
             foreignKey: 'idPlataforma',
             otherKey: 'idProducto',

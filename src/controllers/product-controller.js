@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require('fs');
 const { debug } = require('console');
 
-//Nos traemos la sintaxis de movies.db//
+//Nos traemos la sintaxis de Sequelize//
 const db = require('../database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
@@ -32,15 +32,19 @@ const productController = {
     PaginaEdit: (req, res) => {
 
         let productId = req.params.id;
+
+
+
+
         Product.findByPk(productId,
             {
-                include : ['Dificultad','Edad','ImagenPrincipal','ImagenSecundaria']
+                include : ['Dificultad','Edad','ImagenPrincipal','ImagenSecundaria','Plataformas','Categorias']
             }).then((p) => {
             console.log("---------------------------------------")
-            console.log(p.Edad.nombre)
+            console.log(p.Plataformas[0].nombre)
             console.log("---------------------------------------")
             res.render('edit-game', { product: p })
-        })
+        }).catch((e)=>{console.log(e)})
 
 
     },

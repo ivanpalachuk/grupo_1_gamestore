@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 
     };
     let config = {
-            tableName: "Imagenes",
+            tableName: "Imagen",
             timestamps: false
         }
         //Esta constante mediante define de sequelize, arma la BD//
