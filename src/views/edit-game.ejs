@@ -34,9 +34,9 @@
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
                             <select name="ages" class="input-style" value=<%=product.idEdad %>>
-                        <option><%=product.idEdad %></option>
-                        <option><%=product.idEdad %></option>
-                        <option><%=product.idEdad %></option>
+                        <option class="ages"></option>
+                        <option class="ages"><%=product.idEdad %></option>
+                        <option class="ages"><%=product.idEdad %></option>
                     </select>
                         </div>
                         <div class="box-container">
@@ -99,7 +99,7 @@
                             <input placeholder="Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">
                         </div>
                         <div class="box-container">
-                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required><%= product.datos_Tecnicos %></textarea>
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required><%= product.datosTecnicos %></textarea>
                         </div>
                         <div class="box-container">
                             <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30" rows="10" class="text-area-style" required><%= product.requisitos %></textarea>
