@@ -22,8 +22,8 @@ module.exports = (sequelize, DataTypes) => {
         //Esta constante mediante define de sequelize, arma la BD//
     const Edad = sequelize.define(alias, cols, config)
     Edad.associate = function(models) {
-        Edad.belongsTo(models.Producto, {
-            as: "Edad",
+        Edad.hasMany(models.Producto, {
+            as: "Productos",
             foreignKey: "idEdad"
         })
     }

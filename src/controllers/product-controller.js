@@ -32,7 +32,13 @@ const productController = {
     PaginaEdit: (req, res) => {
 
         let productId = req.params.id;
-        Product.findByPk(productId).then((p) => {
+        Product.findByPk(productId,
+            {
+                include : ['Dificultad','Edad','ImagenPrincipal','ImagenSecundaria']
+            }).then((p) => {
+            console.log("---------------------------------------")
+            console.log(p.Edad.nombre)
+            console.log("---------------------------------------")
             res.render('edit-game', { product: p })
         })
 
@@ -45,7 +51,7 @@ const productController = {
             "titulo": req.body.titulo,
             "precio": req.body.price,
             "descuento": req.body.discount,
-            "Dificultad": 1,
+            "Dificultad": "1",
             "Edad": req.body.age,
             "plataforma": req.body.plataforma,
             "developer": req.body.developer,
