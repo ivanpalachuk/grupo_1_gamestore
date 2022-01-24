@@ -4,6 +4,7 @@
     <%- include('./partials/header') %>
 
         <body class="body-new-game">
+
             <main class="container-m">
                 <form action=<%="/products/" +product.id+ "/edit?_method=PUT" %> method="POST" class="container-form" enctype="multipart/form-data">
                     <h1>Editar
@@ -14,28 +15,28 @@
                         </div>
 
                         <div class="box-container">
-                            <input placeholder="Precio" name="price" type="text" value=" <%= product.price %> " required class="input-style">
+                            <input placeholder="Precio" name="price" type="text" value=" <%= product.precio %> " required class="input-style">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Descuento" name="discount" type="text" value=" <%= product.discount %> " class="input-style">
+                            <input placeholder="Descuento" name="discount" type="text" value=" <%= product.descuento %> " class="input-style">
                         </div>
                         <div class="box-container">
                             <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> " required class="input-style">
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
-                            <select name="dificult" class="input-style">
-                        <option selected>Fácil</option>
-                        <option>Intermedia</option>
+                            <select name="dificult" class="input-style" value=<%=product.idDificultad %>>
+                        <option>Fácil</option>
+                        <option><%=product.idDificultad %></option>
                         <option>Dificil</option>
                     </select>
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
-                            <select name="ages" class="input-style">
-                        <option selected>Todas</option>
-                        <option>Adolescentes</option>
-                        <option>Adultos</option>
+                            <select name="ages" class="input-style" value=<%=product.idEdad %>>
+                        <option><%=product.idEdad %></option>
+                        <option><%=product.idEdad %></option>
+                        <option><%=product.idEdad %></option>
                     </select>
                         </div>
                         <div class="box-container">
@@ -119,7 +120,8 @@
 
             </main>
             <%- include('./partials/footer') %>
-                <script src="/js/edit-game"></script>
+
+                <script src="/js/edit-game.js"></script>
         </body>
 
 </html>

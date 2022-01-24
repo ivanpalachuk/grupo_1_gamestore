@@ -14,8 +14,8 @@ module.exports = (sequelize, dataTypes) => {
         resumen: {
             type: dataTypes.TEXT
         },
-        IdDificultad: { type: dataTypes.INTEGER.UNSIGNED },
-        IdEdad: { type: dataTypes.INTEGER.UNSIGNED },
+        idDificultad: { type: dataTypes.INTEGER.UNSIGNED },
+        idEdad: { type: dataTypes.INTEGER.UNSIGNED },
         datosTecnicos: { type: dataTypes.STRING },
         requisitos: { type: dataTypes.STRING },
         legal: { type: dataTypes.STRING },

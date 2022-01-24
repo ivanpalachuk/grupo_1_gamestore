@@ -1,1 +1,1 @@
-console.log("js linkeado")
+console.log("js linkeado correctamente")
