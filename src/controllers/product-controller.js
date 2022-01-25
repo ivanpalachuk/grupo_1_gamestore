@@ -5,9 +5,6 @@ const { debug } = require('console');
 
 //Nos traemos la sintaxis de Sequelize//
 const db = require('../database/models');
-const sequelize = db.sequelize;
-const { Op } = require("sequelize");
-const { findAll } = require('../models/User');
 //Aca deberiamos literalmente llamar a la tabla//
 const Product = db.Producto
 
@@ -24,27 +21,44 @@ const productController = {
 
         let productId = req.params.id;
         Product.findByPk(productId).then((p) => {
-            res.render('productDetail', { product: p })
+            res.render('productDetail', {
+                product: p
+                /*Edades: Edades(),
+                Dificultades: Dificultad(),
+                Plataformas: Plataforma(),
+                Categorias: Categoria(),*/
+            })
         })
 
     },
 
-    PaginaEdit: (req, res) => {
+    PaginaEdit: async (req, res) => {
 
         let productId = req.params.id;
 
-
-
+        let Edades = await db.Edad.findAll()
+        let Plateaformas = await db.Plataforma.findAll()
+        let Dificultades = await db.Dificultad.findAll()
+        let Categorias = await db.Categoria.findAll()
 
         Product.findByPk(productId,
             {
-                include : ['Dificultad','Edad','ImagenPrincipal','ImagenSecundaria','Plataformas','Categorias']
+                include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
             }).then((p) => {
-            console.log("---------------------------------------")
-            console.log(p.Plataformas[0].nombre)
-            console.log("---------------------------------------")
-            res.render('edit-game', { product: p })
-        }).catch((e)=>{console.log(e)})
+                console.log("---------------------------------------")
+                //console.log(p.Plataformas[0].nombre)
+                console.log("---------------------------------------")
+                res.render('edit-game', {
+                    product: p,
+                    Edades,
+                    Plateaformas,
+                    Dificultades,
+                    Categorias
+                })
+            }).catch((e) => {
+                console.log("ERROR")
+                console.log(e)
+            })
 
 
     },
