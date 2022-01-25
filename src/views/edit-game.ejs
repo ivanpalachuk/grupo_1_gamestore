@@ -52,21 +52,11 @@
                         <div class="box-container">
                             <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
                             <div class="box-category">
-                                <label id=category-option>
-                                    <input type="checkbox" name="category-option" class="category-option">PS4
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="category-option" class="category-option">PS5
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="category-option" class="category-option">PC
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="category-option" class="category-option">XBOX
-                                </label>
+                                <% Plataformas.forEach(d => { %>
+                                    <label id=category-option>
+                                        <input type="checkbox" name="category-option" class="category-option" <%= product.Plataformas.includes(d)?"checked":"unchecked"%> ><%= d.nombre%>
+                                    </label>
+                                    <% }); %> 
                             </div>
                         </div>
                         <div class="box-container">

@@ -2,6 +2,6 @@ console.log("js linkeado correctamente")
 
 
 window.addEventListener('load', function() {
-    document.getElementsByClassName("ages").innerHTML += "test"
-    console.log(product)
+    let a = document.getElementsByClassName("ages")
+    console.log(a)
 })

@@ -37,7 +37,7 @@ const productController = {
         let productId = req.params.id;
 
         let Edades = await db.Edad.findAll()
-        let Plateaformas = await db.Plataforma.findAll()
+        let Plataformas = await db.Plataforma.findAll()
         let Dificultades = await db.Dificultad.findAll()
         let Categorias = await db.Categoria.findAll()
 
@@ -47,11 +47,17 @@ const productController = {
             }).then((p) => {
                 console.log("---------------------------------------")
                 //console.log(p.Plataformas[0].nombre)
+                console.log(Plataformas)
+                console.log(p.Plataformas)
+                Plataformas.forEach(d => {
+                    console.log(d.nombre + ' '+ p.Plataformas.includes(d.nombre))
+                    
+                });
                 console.log("---------------------------------------")
                 res.render('edit-game', {
                     product: p,
                     Edades,
-                    Plateaformas,
+                    Plataformas,
                     Dificultades,
                     Categorias
                 })
