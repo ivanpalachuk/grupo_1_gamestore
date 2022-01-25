@@ -31,32 +31,33 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
-                            <select name="dificult" class="input-style" value=<%=product.idDificultad %>>
-                                <% Dificultades.forEach(d => { %>
-                                <option>
-                                    <%=d.nombre %>
-                                </option>
-                                <% }); %> 
+                            <select name="Dificultad" class="input-style" value=<%=product.idDificultad %>>
+                                <% Dificultades.forEach(d=> { %>
+                                    <option>
+                                        <%=d.nombre %>
+                                    </option>
+                                    <% }); %>
                             </select>
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
                             <select name="ages" class="input-style" value=<%=product.idEdad %>>
-                                <% Edades.forEach(d => { %>
+                                <% Edades.forEach(d=> { %>
                                     <option>
                                         <%=d.nombre %>
                                     </option>
-                                    <% }); %> 
+                                    <% }); %>
                             </select>
                         </div>
                         <div class="box-container">
                             <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
                             <div class="box-category">
-                                <% Plataformas.forEach(d => { %>
+                                <% Plataformas.forEach(d=> { %>
                                     <label id=category-option>
-                                        <input type="checkbox" name="category-option" class="category-option" <%= product.Plataformas.includes(d)?"checked":"unchecked"%> ><%= d.nombre%>
+                                        <input type="checkbox" name="category-option" class="category-option"
+                                            <%=product.Plataformas.includes(d)?"checked":"unchecked"%> ><%=d%>
                                     </label>
-                                    <% }); %> 
+                                    <% }); %>
                             </div>
                         </div>
                         <div class="box-container">
@@ -96,13 +97,14 @@
 
                         <div class="box-container photo-game">
                             <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen principal</label>
-                            <input class="block" type="file" name="photoGameV"><img id="imageEdit" src=<
-                                %="/images/productImages/" +product.image %> alt="
-                            <%= product.image_Secundaria %>">
+                            <input class="block" type="file" name="photoGameV"><img id="imageEdit"
+                                src=<%="/images/productImages" +product.ImagenPrincipal.ruta %> alt="
+                            <%= product.ImagenPrincipal.ruta %>">
+
                                 <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
-                                <input class="block" type="file" name="photoGame"><img id="imageEditV" src=<
-                                    %="/images/productImages/" + product.image_Secundaria %> alt="
-                                <%= product.image_Secundaria %>">
+                                <input class="block" type="file" name="photoGame"><img id="imageEditV"
+                                    src=<%="/images/productImages" + product.ImagenSecundaria.ruta %> alt="
+                                <%= product.ImagenSecundaria.ruta %>">
                         </div>
                         <div class="box-container">
                             <input placeholder="Información legal del desarrollador" name="nombre" type="text"

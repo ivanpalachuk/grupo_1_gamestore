@@ -13,8 +13,8 @@ insert into provincia (id, nombre,idPais) values (5, 'San Luis',1);
 insert into imagen (id, ruta) values (1, '/');
 insert into imagen (id, ruta) values (2, '/');
 insert into imagen (id, ruta) values (3, '/');
-insert into imagen (id, ruta) values (4, '/');
-insert into imagen (id, ruta) values (5, '/');
+insert into imagen (id, ruta) values (4, '/age-of-empire-3.jpg');
+insert into imagen (id, ruta) values (5, '/age-of-empire-2.jpg');
 
 insert into categoria (id,nombre) values (1,'Estrategia');
 insert into categoria (id,nombre) values (2,'Shooter');
