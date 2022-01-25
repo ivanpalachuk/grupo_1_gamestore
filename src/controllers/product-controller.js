@@ -38,23 +38,26 @@ const productController = {
 
         let Edades = await db.Edad.findAll()
         let Plataformas = await db.Plataforma.findAll()
+        Plataformas = Plataformas.map((Plat)=>{
+            return Plat.nombre
+        })
         let Dificultades = await db.Dificultad.findAll()
         let Categorias = await db.Categoria.findAll()
+        Categorias = Categorias.map((Cat)=>{
+            return Cat.nombre
+        })
 
         Product.findByPk(productId,
             {
                 include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
             }).then((p) => {
-                console.log("---------------------------------------")
-                Plataformas = Plataformas.map((Plat)=>{
-                    return Plat.nombre
-                })
+                console.log("-----------------dataModeling----------------------")
                 p.Plataformas = p.Plataformas.map((Plat)=>{
                     return Plat.nombre
                 })
-                Plataformas.forEach(d => {
-                    console.log(p.Plataformas.includes(d))
-                });
+                p.Categorias = p.Categorias.map((Cat)=>{
+                    return Cat.nombre
+                })
                 console.log("---------------------------------------")
                 res.render('edit-game', {
                     product: p,

@@ -45,5 +45,8 @@ values(1,'Age of Empires', 299, 15, 'Te aguarda una experiencia de juego de más
 insert into usuario (id,nombre,apellido,dni,idAvatar,correo,userName,clave,clave2,idProvincia,idPais,direccion,numeroDireccion,codigoPostal,TYNO,TCNO)
 values (1, 'Ivan', 'Palachuk', 32241234,5,'ivanzar@hotmail.com','Zarseven','hash','hash2',2,1,'Alcorta',1554,7600,1,1);
 
+insert into plataformaPivot (id, idPlataforma, idProducto) values (1, 1, 1);
+insert into plataformaPivot (id, idPlataforma, idProducto) values (1, 1, 5);
 
+insert into categoriaPivot (id, idPlataforma, idProducto) values (1, 1, 1);
  
