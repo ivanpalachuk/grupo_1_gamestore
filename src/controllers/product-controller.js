@@ -14,14 +14,30 @@ const productController = {
             res.render('products', { products: p });
         })
     },
-    PaginaCrear: (req, res) => {
-        res.render('new-game');
+    PaginaCrear: async (req, res) => {
+        let Edades = await db.Edad.findAll()
+        let Plataformas = await db.Plataforma.findAll()
+        Plataformas = Plataformas.map((Plat) => {
+            return Plat.nombre
+        })
+        let Dificultades = await db.Dificultad.findAll()
+        let Categorias = await db.Categoria.findAll()
+        Categorias = Categorias.map((Cat) => {
+            return Cat.nombre
+        })
+        res.render('new-game', {Edades,
+        Plataformas,
+        Dificultades,
+        Categorias}
+        );
     },
-    Detail: (req, res) => {
+    Detail: async (req, res) => {
 
         let productId = req.params.id;
 
-        console.log(req.params.id)
+        let Edades = await db.Edad.findAll({
+            include:['Imagen']
+        })
 
         Product.findByPk(productId, {
             include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
@@ -34,6 +50,8 @@ const productController = {
             p.Categorias = p.Categorias.map((Cat) => {
                 return Cat.nombre
             })
+            p.Edad.ruta=Edades[p.Edad.id-1].Imagen.ruta
+            console.log(p.Edad.ruta)
             console.log("---------------------------------------")
             res.render('productDetail', {
                 product: p
@@ -51,7 +69,7 @@ const productController = {
         let productId = req.params.id;
 
         let Edades = await db.Edad.findAll()
-        
+
         let Plataformas = await db.Plataforma.findAll()
         Plataformas = Plataformas.map((Plat) => {
             return Plat.nombre
@@ -92,27 +110,22 @@ const productController = {
     Crear: (req, res) => {
 
         console.log(req.body.dificult)
-        productoNuevo = {
-            "titulo": req.body.titulo,
-            "precio": req.body.price,
-            "descuento": req.body.discount,
-            "Dificultad": req.body.Dificultad,
-            "Edad": req.body.Edad,
-            "plataforma": req.body.plataforma,
-            "developer": req.body.developer,
-
-            "datosTecnicos": req.body.datos_Tecnicos,
-            "requisitos": req.body.requisitos,
-
-            "web": req.body.web,
-            "category": req.body.categoryOption,
-            "resumen": req.body.resumen,
-
-            "legal": req.body.legal,
-            //"idImagenPrincipal": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0),
-            //"idImagenSecundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0),
-
-        }
+      
+            productoNuevo = {
+                "titulo": req.body.titulo,
+                "precio": req.body.price,
+                "descuento": req.body.discount,
+                "resumen": req.body.resumen,
+                //idDificultad:
+                "idEdad": req.body.Edad,
+                "plataforma": req.body.plataforma,
+                "datosTecnicos": req.body.datos_Tecnicos,
+                "requisitos": req.body.requisitos,
+                "legal": req.body.legal,
+                "idImagenPrincipal": (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0),
+                "idImagenSecundaria": (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0),
+    
+            }
 
         Product.create(productoNuevo)
 

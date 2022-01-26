@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         })
 
         Edad.belongsTo(models.Imagen, {
-            as: "Imagenes",
+            as: "Imagen",
             foreignKey: "idImagen"
         })
     }

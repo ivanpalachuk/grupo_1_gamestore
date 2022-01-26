@@ -10,9 +10,9 @@ insert into provincia (id, nombre,idPais) values (3, 'Mendoza',1);
 insert into provincia (id, nombre,idPais) values (4, 'Cordoba',1);
 insert into provincia (id, nombre,idPais) values (5, 'San Luis',1);
 
-insert into imagen (id, ruta) values (1, '/');
-insert into imagen (id, ruta) values (2, '/');
-insert into imagen (id, ruta) values (3, '/');
+insert into imagen (id, ruta) values (1, '/ESRB-Teen.png');
+insert into imagen (id, ruta) values (2, '/ESRB-Mature.png');
+insert into imagen (id, ruta) values (3, '/ERSB-Everyone.png');
 insert into imagen (id, ruta) values (4, '/age-of-empire-3.jpg');
 insert into imagen (id, ruta) values (5, '/age-of-empire-2.jpg');
 
