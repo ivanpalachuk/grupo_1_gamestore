@@ -21,10 +21,13 @@ const productController = {
 
         let productId = req.params.id;
 
+        console.log(req.params.id)
+
         Product.findByPk(productId, {
             include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
         }).then((p) => {
             console.log("-----------------dataModeling----------------------")
+            console.log(p)
             p.Plataformas = p.Plataformas.map((Plat) => {
                 return Plat.nombre
             })
@@ -34,11 +37,11 @@ const productController = {
             console.log("---------------------------------------")
             res.render('productDetail', {
                 product: p
-
             })
         }).catch((e) => {
             console.log("ERROR")
             console.log(e)
+            redirect("/")
         })
 
     },
@@ -48,6 +51,7 @@ const productController = {
         let productId = req.params.id;
 
         let Edades = await db.Edad.findAll()
+        
         let Plataformas = await db.Plataforma.findAll()
         Plataformas = Plataformas.map((Plat) => {
             return Plat.nombre
@@ -69,7 +73,6 @@ const productController = {
                 p.Categorias = p.Categorias.map((Cat) => {
                     return Cat.nombre
                 })
-
                 console.log(p);
                 console.log("---------------------------------------")
                 res.render('edit-game', {
