@@ -13,3 +13,15 @@
 ### Weekly 25/11 
 
 - Revisión tareas
+
+### Weekly 10/01 
+
+- Revisión tareas
+
+### Weekly 17/01 
+
+- Realización de tareas en conjunto
+
+### Weekly 24/01 
+
+- Revisión de lo realizado

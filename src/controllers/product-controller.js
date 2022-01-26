@@ -20,14 +20,25 @@ const productController = {
     Detail: (req, res) => {
 
         let productId = req.params.id;
-        Product.findByPk(productId).then((p) => {
+
+        Product.findByPk(productId, {
+            include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
+        }).then((p) => {
+            console.log("-----------------dataModeling----------------------")
+            p.Plataformas = p.Plataformas.map((Plat) => {
+                return Plat.nombre
+            })
+            p.Categorias = p.Categorias.map((Cat) => {
+                return Cat.nombre
+            })
+            console.log("---------------------------------------")
             res.render('productDetail', {
                 product: p
-                /*Edades: Edades(),
-                Dificultades: Dificultad(),
-                Plataformas: Plataforma(),
-                Categorias: Categoria(),*/
+
             })
+        }).catch((e) => {
+            console.log("ERROR")
+            console.log(e)
         })
 
     },
@@ -38,12 +49,12 @@ const productController = {
 
         let Edades = await db.Edad.findAll()
         let Plataformas = await db.Plataforma.findAll()
-        Plataformas = Plataformas.map((Plat)=>{
+        Plataformas = Plataformas.map((Plat) => {
             return Plat.nombre
         })
         let Dificultades = await db.Dificultad.findAll()
         let Categorias = await db.Categoria.findAll()
-        Categorias = Categorias.map((Cat)=>{
+        Categorias = Categorias.map((Cat) => {
             return Cat.nombre
         })
 
@@ -52,12 +63,14 @@ const productController = {
                 include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
             }).then((p) => {
                 console.log("-----------------dataModeling----------------------")
-                p.Plataformas = p.Plataformas.map((Plat)=>{
+                p.Plataformas = p.Plataformas.map((Plat) => {
                     return Plat.nombre
                 })
-                p.Categorias = p.Categorias.map((Cat)=>{
+                p.Categorias = p.Categorias.map((Cat) => {
                     return Cat.nombre
                 })
+
+                console.log(p);
                 console.log("---------------------------------------")
                 res.render('edit-game', {
                     product: p,
@@ -81,7 +94,7 @@ const productController = {
             "precio": req.body.price,
             "descuento": req.body.discount,
             "Dificultad": req.body.Dificultad,
-            "Edad": req.body.age,
+            "Edad": req.body.Edad,
             "plataforma": req.body.plataforma,
             "developer": req.body.developer,
 
@@ -108,12 +121,12 @@ const productController = {
 
 
         let productId = req.params.id;
-        
+
         productoEditado = {
             "titulo": req.body.titulo,
             "precio": req.body.price,
             "descuento": req.body.discount,
-            "Dificultad": "1",
+            "Dificultad": req.body.Dificultad,
             "Edad": req.body.age,
             "plataforma": req.body.plataforma,
             "developer": req.body.developer,
@@ -131,16 +144,14 @@ const productController = {
 
         }
 
+        console.log(productoEditado);
 
         res.redirect('/products');
     },
     Delete: (req, res) => {
-        let productId = req.params.id;
-        productsJson = OpenProducts();
-
-        productsJson = productsJson.filter((product) => product.id != productId)
-        WriteProducts(productsJson)
-
+        Product.destroy({
+            where: { id: req.params.id }
+        })
         res.redirect('/products');
     },
     Prueba: (req, res) => {

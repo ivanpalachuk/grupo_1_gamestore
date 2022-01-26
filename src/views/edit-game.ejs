@@ -31,9 +31,9 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
-                            <select name="Dificultad" class="input-style" value=<%=product.idDificultad %>>
+                            <select name="Dificultad" class="input-style">
                                 <% Dificultades.forEach(d=> { %>
-                                    <option>
+                                    <option  value="<%=d.nombre %>"  <%=product.Dificultad.nombre==d.nombre?"selected":" "%>> 
                                         <%=d.nombre %>
                                     </option>
                                     <% }); %>
@@ -41,10 +41,10 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
-                            <select name="ages" class="input-style" value=<%=product.idEdad %>>
+                            <select name="Edad" class="input-style" >
                                 <% Edades.forEach(d=> { %>
-                                    <option>
-                                        <%=d.nombre %>
+                                    <option  value="<%=d.nombre %>"  <%=product.Edad.nombre==d.nombre?"selected":" "%>> 
+                                        <%=d.nombre%>
                                     </option>
                                     <% }); %>
                             </select>
