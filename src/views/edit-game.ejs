@@ -6,28 +6,23 @@
         <body class="body-new-game">
 
             <main class="container-m">
-                <form action=<%="/products/" +product.id+ "/edit?_method=PUT" %> method="POST" class="container-form"
-                    enctype="multipart/form-data">
+                <form action=<%="/products/" +product.id+ "/edit?_method=PUT" %> method="POST" class="container-form" enctype="multipart/form-data">
                     <h1>Editar
                         <%= product.titulo %> <i class="fas fa-gamepad"></i>
                     </h1>
                     <div class="contenido-principal">
                         <div class="box-container">
-                            <input placeholder="Título" name="titulo" type="text" value=" <%= product.titulo %> "
-                                required class="input-style">
+                            <input placeholder="Título" name="titulo" type="text" value=" <%= product.titulo %> " required class="input-style">
                         </div>
 
                         <div class="box-container">
-                            <input placeholder="Precio" name="price" type="text" value=" <%= product.precio %> "
-                                required class="input-style">
+                            <input placeholder="Precio" name="price" type="text" value=" <%= product.precio %> " required class="input-style">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Descuento" name="discount" type="text"
-                                value=" <%= product.descuento %> " class="input-style">
+                            <input placeholder="Descuento" name="discount" type="text" value=" <%= product.descuento %> " class="input-style">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> "
-                                required class="input-style">
+                            <input placeholder="Resumen" name="resumen" type="text" value=" <%= product.resumen %> " required class="input-style">
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
@@ -41,7 +36,7 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
-                            <select name="Edad" class="input-style" >
+                            <select name="Edad" class="input-style">
                                 <% Edades.forEach(d=> { %>
                                     <option  value="<%=d.nombre %>"  <%=product.Edad.nombre==d.nombre?"selected":" "%>> 
                                         <%=d.nombre%>
@@ -97,26 +92,21 @@
 
                         <div class="box-container photo-game">
                             <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen principal</label>
-                            <input class="block" type="file" name="photoGameV"><img id="imageEdit"
-                                src=<%="/images/productImages" +product.ImagenPrincipal.ruta %> alt="
+                            <input class="block" type="file" name="photoGameV"><img id="imageEdit" src=<%="/images/productImages" +product.ImagenPrincipal.ruta %> alt="
                             <%= product.ImagenPrincipal.ruta %>">
 
                                 <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
-                                <input class="block" type="file" name="photoGame"><img id="imageEditV"
-                                    src=<%="/images/productImages" + product.ImagenSecundaria.ruta %> alt="
+                                <input class="block" type="file" name="photoGame"><img id="imageEditV" src=<%="/images/productImages" + product.ImagenSecundaria.ruta %> alt="
                                 <%= product.ImagenSecundaria.ruta %>">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Información legal del desarrollador" name="nombre" type="text"
-                                value=" <%= product.legal %> " required class="input-style">
+                            <input placeholder="Información legal del desarrollador" name="nombre" type="text" value=" <%= product.legal %> " required class="input-style">
                         </div>
                         <div class="box-container">
-                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style"
-                                cols="30" rows="10" required><%= product.datosTecnicos %></textarea>
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required><%= product.datosTecnicos %></textarea>
                         </div>
                         <div class="box-container">
-                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30" rows="10"
-                                class="text-area-style" required><%= product.requisitos %></textarea>
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30" rows="10" class="text-area-style" required><%= product.requisitos %></textarea>
                         </div>
 
                     </div>
@@ -125,8 +115,7 @@
                             <button type="submit" class="delete-button-m">Editar Juego</button>
                         </div>
                         <div class="box-button">
-                            <button type="submit" class="delete-button-m" formaction=<%="/products/"
-                                +product.id+ "?_method=DELETE" %> >Eliminar Juego</button>
+                            <button type="submit" class="delete-button-m" formaction=<%="/products/" +product.id+ "?_method=DELETE" %> >Eliminar Juego</button>
                         </div>
                     </div>
 
