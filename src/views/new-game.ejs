@@ -43,10 +43,10 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Plataforma</label>
-                            <select name="Plataforma" class="input-style">
+                            <select name="Plataforma" class="input-style" multiple>
                                 <% Plataformas.forEach(d=> { %>
-                                    <option  value="<%=d.id%>"> 
-                                        <%=d.nombre %>
+                                    <option  value="<%=d%>"> 
+                                        <%=d %>
                                     </option>
                                     <% }); %>
                             </select>
@@ -54,10 +54,10 @@
 
                         <div class="box-container">
                             <label class="tittle-m block">Categorias</label>
-                            <select name="Categoria" class="input-style">
+                            <select name="Categoria" class="input-style" multiple>
                                 <% Categorias.forEach(d=> { %>
-                                    <option  value="<%=d.id %>"> 
-                                        <%=d.nombre%>
+                                    <option  value="<%=d %>"> 
+                                        <%=d%>
                                     </option>
                                     <% }); %>
                             </select>
