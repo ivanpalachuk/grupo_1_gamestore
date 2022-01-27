@@ -58,44 +58,23 @@
                         <div class="box-container">
                             <label class="block tittle-m" for="interes" name="interes">Categorías</label>
                             <div class="box-category">
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="shooter">Shooter
-                                </label>
+                                <% Categorias.forEach(d=> { %>
+                                    <label id=category-option>
+                                        <input type="checkbox" name="category-option" class="category-option"
+                                            <%=product.Categorias.includes(d)?"checked":"unchecked"%> ><%=d%>
+                                    </label>
+                                    <% }); %>
 
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="sports">Sports
-                                    <!--  modificar todos los check como los anteriores-->
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="accion">Acción
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="terror">Terror
-                                </label>
-
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="estrategia">Estrategia
-                                </label>
-                                <label id=category-option>
-                                    <input type="checkbox" name="categoryOption" class="category-option"
-                                        value="indie">Indie
-                                </label>
+                                        </label>
                             </div>
                         </div>
 
                         <div class="box-container photo-game">
-                            <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen principal</label>
+                            <label class="block tittle-m" for="photoGameV" name="fotoUser">Imagen Vertical del VideoJuego</label>
                             <input class="block" type="file" name="photoGameV"><img id="imageEdit" src=<%="/images/productImages" +product.ImagenPrincipal.ruta %> alt="
                             <%= product.ImagenPrincipal.ruta %>">
 
-                                <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen secundaria</label>
+                                <label class="block tittle-m" for="photoGame" name="fotoUser">Imagen Horizontal del VideoJuego</label>
                                 <input class="block" type="file" name="photoGame"><img id="imageEditV" src=<%="/images/productImages" + product.ImagenSecundaria.ruta %> alt="
                                 <%= product.ImagenSecundaria.ruta %>">
                         </div>

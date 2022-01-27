@@ -23,11 +23,13 @@
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
-                            <select name="dificult" class="input-style">
-                        <option selected>Fácil</option>
-                        <option>Intermedia</option>
-                        <option>Dificil</option>
-                    </select>
+                            <select name="Dificultad" class="input-style">
+                                <% Dificultades.forEach(d=> { %>
+                                    <option  value="<%=d.id%>"> 
+                                        <%=d.nombre %>
+                                    </option>
+                                    <% }); %>
+                            </select>
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Edades</label>
@@ -40,51 +42,25 @@
                             </select>
                         </div>
                         <div class="box-container">
-                            <label class="block tittle-m" for="interes" name="interes">Plataforma</label>
-                            <div class="box-category">
-                                <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">PS4
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">PS5
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">PC
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="category-option" class="category-option">XBOX
-                        </label>
-                            </div>
+                            <label class="tittle-m block">Plataforma</label>
+                            <select name="Plataforma" class="input-style">
+                                <% Plataformas.forEach(d=> { %>
+                                    <option  value="<%=d.id%>"> 
+                                        <%=d.nombre %>
+                                    </option>
+                                    <% }); %>
+                            </select>
                         </div>
+
                         <div class="box-container">
-                            <label class="block tittle-m" for="interes" name="interes">Categorías</label>
-                            <div class="box-category">
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option" value="shooter">Shooter
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option"  value="sports">Sports <!--  modificar todos los check como los anteriores-->
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option"  value="accion">Acción
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option"  value="terror">Terror
-                        </label>
-
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option"  value="estrategia">Estrategia
-                        </label>
-                                <label id=category-option>
-                            <input type="checkbox" name="categoryOption" class="category-option"  value="indie">Indie
-                        </label>
-                            </div>
+                            <label class="tittle-m block">Categorias</label>
+                            <select name="Categoria" class="input-style">
+                                <% Categorias.forEach(d=> { %>
+                                    <option  value="<%=d.id %>"> 
+                                        <%=d.nombre%>
+                                    </option>
+                                    <% }); %>
+                            </select>
                         </div>
 
                         <div class="box-container photo-game">
@@ -94,27 +70,27 @@
                             <input class="block" type="file" name="photoGameV">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Información legal del desarrollador" name="nombre" type="text" placholder="Nombre del Juego" required class="input-style">
+                            <input placeholder="Información legal del desarrollador" name="legal" type="text" placholder="Nombre del Juego" required class="input-style">
                         </div>
                         <div class="box-container">
                             <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required></textarea>
                         </div>
                         <div class="box-container">
-                            <textarea name="requisitos" placeholder="Requisitos del sistema" " cols="30 " rows="10 " class="text-area-style " required></textarea>
-                </div>
-    
-            </div>
-            <div class="container-button ">
-                <div class="box-button ">
-                    <button type="submit " class="send-button-m ">Añadir Juego</button>
-                </div>
-            </div>
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " required></textarea>
+                        </div>
 
-            
-        </form>
+                    </div>
+                    <div class="container-button ">
+                        <div class="box-button ">
+                            <button type="submit " class="send-button-m ">Añadir Juego</button>
+                        </div>
+                    </div>
 
-    </main>
-    <%- include('./partials/footer') %> 
-</body>
+
+                </form>
+
+            </main>
+            <%- include('./partials/footer') %>
+        </body>
 
 </html>
