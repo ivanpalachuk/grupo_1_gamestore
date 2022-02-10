@@ -6,7 +6,7 @@
 <body class="body-fianriel">
     <main  class="main-fianriel">
         <button id="cart"><i class="fas fa-shopping-cart"></i></button>
-        <form action="/user/sign-up" method="POST" class="registro-box-fianriel" enctype="multipart/form-data">
+        <form action="/user/sign-up" method="POST" class="registro-box-fianriel" enctype="multipart/form-data" id="form">
             <h1 class="h1-fianriel">
                 Formulario de Registro <i class="fas fa-gamepad"></i>
             </h1>
@@ -14,84 +14,60 @@
             <section class="section-fianriel">
                 <article class="article-fianriel"> 
                     <div>
-                        <input placeholder= 'Nombre' name="nombre" type="text" placholder="Tu Nombre" class="input-fianriel" class="form-control <%= locals.errors && errors.nombre ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.nombre : null  %> ">
-                         <% if (locals.errors && errors.nombre) { %>                            
+                        <input placeholder= 'Nombre' name="nombre" type="text" placholder="Tu Nombre" class="input-fianriel" id="name">                            
                             <div class="text-danger">
-                                <%= errors.nombre.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                     <div>
-                        <input placeholder= 'Apellido' name="apellido" type="text" placholder="Tu Apellido" class="input-fianriel" class="form-control <%= locals.errors && errors.apellido ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.apellido : null  %> ">
-                        <% if (locals.errors && errors.apellido) { %>
+                        <input placeholder= 'Apellido' name="apellido" type="text" placholder="Tu Apellido" class="input-fianriel" id="apellido">
                             
-                            <div class="text-danger">
-                                <%= errors.apellido.msg %> 
+                            <div class="text-danger" id="text-danger-name">
                             </div>  
-                            <% } %>
                     </div>
                     <div>
-                        <input placeholder= 'DNI' name="dni" type="number" class="input-fianriel" class="form-control <%= locals.errors && errors.dni ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.dni : null  %> ">
-                        <% if (locals.errors && errors.dni) { %>
+                        <input placeholder= 'DNI' name="dni" type="number" class="input-fianriel" id="dni">
                             
                             <div class="text-danger">
-                                <%= errors.dni.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                 </article>
                 <div class="avatar">
                     <label class="fotoAvatar">Avatar</label><br>
-                    <input type="file" name="avatar">
-                    <% if (locals.errors && errors.avatar) { %>
+                    <input type="file" name="avatar" id="avatar">
                     <div class="text-danger">
-                        <%= errors.avatar.msg %> 
                     </div>  
-                    <% } %>
                 </div>
                 <br>
 
                 <article class="article-fianriel">
                     <div>
-                        <input placeholder="Usuario" type="text" name="usuario" class="input-fianriel" class="form-control <%= locals.errors && errors.usuario ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.usuario : null  %> ">
-                        <% if (locals.errors && errors.usuario) { %>
+                        <input placeholder="Usuario" type="text" name="usuario" class="input-fianriel" id="user">
                             
                             <div class="text-danger">
-                                <%= errors.usuario.msg %> 
                             </div>  
-                            <% } %>
                     </div>
 
                     <div>
-                        <input placeholder="Mail" type="email" name="email" class="input-fianriel" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.email : null  %> ">
-                        <% if (locals.errors && errors.email) { %>
+                        <input placeholder="Mail" type="email" name="email" class="input-fianriel" id="email">
                             
                             <div class="text-danger">
-                                <%= errors.email.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                 </article>
                 <br>
                 <article class="article-fianriel">
 
                     <div>
-                        <input placeholder="Password" type="password" name="clave" class="input-fianriel" class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null  %> ">
-                        <% if (locals.errors && errors.password) { %>
+                        <input placeholder="Password" type="password" name="clave" id="password">
                             
                             <div class="text-danger">
-                                <%= errors.password.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                     <div>
-                        <input placeholder="Password" type="password" name="clave2" class="input-fianriel" class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null  %> " >
-                        <% if (locals.errors && errors.password) { %>
+                        <input placeholder="Password" type="password" name="clave2" class="input-fianriel" id="repassword" >
                             
                             <div class="text-danger">
-                                <%= errors.password.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                 </article>
 
@@ -141,31 +117,22 @@
 
                 <article class="article-fianriel">
                     <div>
-                        <input placeholder= 'Dirección' type="text" name="direccion" class="input-fianriel" class="form-control <%= locals.errors && errors.direccion ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.direccion : null  %> ">
-                        <% if (locals.errors && errors.direccion) { %>
+                        <input placeholder= 'Dirección' type="text" name="direccion" class="input-fianriel" id="direccion">
                             
                             <div class="text-danger">
-                                <%= errors.direccion.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                     <div>
-                        <input placeholder= 'Número' type="number" name="numero" class="input-fianriel" class="form-control <%= locals.errors && errors.numero ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.numero : null  %> ">
-                        <% if (locals.errors && errors.numero) { %>
+                        <input placeholder= 'Número' type="number" name="numero" class="input-fianriel" id="numero">
                             
                             <div class="text-danger">
-                                <%= errors.numero.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                     <div>
-                        <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel" class="form-control <%= locals.errors && errors.cp ? 'is-invalid' : null  %> " value="<%= locals.oldData ? oldData.cp : null  %> ">
-                        <% if (locals.errors && errors.cp) { %>
+                        <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel" id="cp">
                             
                             <div class="text-danger">
-                                <%= errors.cp.msg %> 
                             </div>  
-                            <% } %>
                     </div>
                 </article>
 
@@ -205,6 +172,7 @@
         </form>
         <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
     </main>
+    <script src="/js/validationSignUp.js"></script>
     <%- include('./partials/footer') %> 
 </body>
 
