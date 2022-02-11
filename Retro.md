@@ -45,3 +45,13 @@
 - Continuar haciendo: Comunicacion diaria.
 
 - Hacer menos: dejar las cosas para la ultima semana.
+
+### Retro Sprint 5
+
+- Comencar a hacer: Dividir mejor las tareas y más reuniones.
+
+- Hacer mas: Más revisiones en conjunto.
+
+- Continuar haciendo: Comunicación diaria.
+
+- Hacer menos: Empezar tarde el sprint.
