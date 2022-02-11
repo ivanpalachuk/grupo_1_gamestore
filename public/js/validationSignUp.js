@@ -16,11 +16,10 @@ window.addEventListener('load', function(){
     let numero = document.querySelector('#numero')
     let cp = document.querySelector('#cp')
     let button = document.querySelector('#button')
-    let repasswordError = document.querySelector('#repasswordError')
     let textDangerName = document.querySelector('#text-danger-name')
 
 name.addEventListener('focus', function(){
-        textDangerName.innerHTML = 'El nombre debe tener al menos 2 caracteres';
+        textDangerName.innerHTML = '*El nombre debe tener al menos 2 caracteres';
     })
 name.addEventListener('change', function(){
     textDangerName.style.display = 'none';
@@ -28,7 +27,7 @@ name.addEventListener('change', function(){
 
 name.addEventListener('blur', function(){
     if (name.value.length == ""){
-        alert('Este campo debe estar completo');
+        textDangerName.innerHTML('*Este campo debe estar completo');
     };
 })
 
