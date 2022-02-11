@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
     let textDangerName = document.querySelector('#text-danger-name')
 
 name.addEventListener('focus', function(){
-        textDangerName.innerHTML = <small>El nombre debe tener al menos 2 caracteres</small>;
+        textDangerName.innerHTML = 'El nombre debe tener al menos 2 caracteres';
     })
 name.addEventListener('change', function(){
     textDangerName.style.display = 'none';
@@ -51,13 +51,13 @@ form.addEventListener("submit", function(e){
     if(errores.length > 0){
         e.preventDefault();
 
-        let error = document.querySelector("error")
+        //let error = document.querySelector("error")
 
-        for (let index = 0; index < errores.length; index++) {
+        //for (let index = 0; index < errores.length; index++) {
             
 
             
-        }
+        //}
     }
 
     })
