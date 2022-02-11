@@ -1,4 +1,5 @@
-import validator from 'validator';
+const validator = require("validator")
+import swal from 'sweetalert';
 
 window.addEventListener('load', function(){
     let form = document.querySelector('#form')
@@ -26,7 +27,7 @@ name.addEventListener('change', function(){
 })
 
 name.addEventListener('blur', function(){
-    if (name.value.length < 2){
+    if (name.value.length == ""){
         alert('Este campo debe estar completo');
     };
 })
@@ -41,6 +42,10 @@ form.addEventListener("submit", function(e){
         if (email.value.length < 2 ){
         errores.push = 'Este campo debe estar completo';
     }
+    if(validator.isEmail(email.value)){
+        errores.push = 'El mail debe ser válido'
+    }
+
         if (password.value.length < 8 ){
         errores.push = 'Este campo debe estar completo';
     }
@@ -58,9 +63,17 @@ form.addEventListener("submit", function(e){
 
             
         //}
-    }
+    } else {
+            swal({
+            title:'¡Usuario creado!',
+            text: user.value + ", tu usuario fue creado",
+            type:'success'
+            })
+            
+            };
+        }
 
-    })
+    )
 
 })
 
