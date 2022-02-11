@@ -1,4 +1,5 @@
 const {body} = require('express-validator');
+const path = require('path')
 
 module.exports = [
     body('nombre').notEmpty().withMessage('*Este campo debe estar completo').bail()
@@ -11,7 +12,7 @@ module.exports = [
         .notEmpty().withMessage('*Este campo debe estar completo').bail()
         .isEmail().withMessage('*Este campo debe ser un correo electrónico'),
 
-        // No funciona - revisar
+         //No funciona - revisar
     body('clave').notEmpty().withMessage('*Este campo debe estar completo').bail()
                   .isLength({min: 8}).withMessage('*Este campo debe contener min 8 caracteres'),
     // body('passwordConfirmation').notEmpty().withMessage('*Este campo debe estar completo').bail()
@@ -29,13 +30,13 @@ module.exports = [
     body('tcno').notEmpty().withMessage('*Debes aceptar los términos y condiciones'),
     body('avatar').custom((value, {req}) => {
     let file = req.file;
-    let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg'];
+    let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.PNG'];
 
     if (!file){
         throw new Error ('*Tienes que subir una imagen');
     } else{
         let fileExtension = path.extname(file.originalname);
-        if(acceptedExtensions.includes(fileExtension)){
+        if(!acceptedExtensions.includes(fileExtension)){
             throw new Error ('*Las extensiones permitidas son .JPG, .JPEG, .PNG y .GIF');
         }
     }

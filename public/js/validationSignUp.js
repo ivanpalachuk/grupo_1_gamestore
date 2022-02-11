@@ -1,7 +1,7 @@
 const validator = require("validator")
 import swal from 'sweetalert';
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     let form = document.querySelector('#form')
 
     let name = document.querySelector('#name')
@@ -18,61 +18,67 @@ window.addEventListener('load', function(){
     let button = document.querySelector('#button')
     let textDangerName = document.querySelector('#text-danger-name')
 
-name.addEventListener('focus', function(){
+    name.addEventListener('focus', function () {
         textDangerName.innerHTML = '*El nombre debe tener al menos 2 caracteres';
     })
-name.addEventListener('change', function(){
-    textDangerName.style.display = 'none';
-})
+    name.addEventListener('change', function () {
+        textDangerName.style.display = 'none';
+    })
 
-name.addEventListener('blur', function(){
-    if (name.value.length == ""){
-        textDangerName.innerHTML('*Este campo debe estar completo');
-    };
-})
+    name.addEventListener('blur', function () {
+        if (name.value.length == "") {
+            textDangerName.innerHTML('*Este campo debe estar completo');
+        };
+    })
 
-form.addEventListener("submit", function(e){
+    form.addEventListener("submit", function (e) {
 
-    let errores = [];
+        let errores = [];
 
-    if (name.value.length < 2){
-        errores.push = 'Este campo debe estar completo';
-    }
-        if (email.value.length < 2 ){
-        errores.push = 'Este campo debe estar completo';
-    }
-    if(validator.isEmail(email.value)){
-        errores.push = 'El mail debe ser válido'
-    }
-
-        if (password.value.length < 8 ){
-        errores.push = 'Este campo debe estar completo';
-    }
-        if (repassword.value.length < 8 ){
-        errores.push = 'Este campo debe estar completo';
-    }
-
-    if(errores.length > 0){
-        e.preventDefault();
-
-        //let error = document.querySelector("error")
-
-        //for (let index = 0; index < errores.length; index++) {
-            
-
-            
-        //}
-    } else {
-            swal({
-            title:'¡Usuario creado!',
-            text: user.value + ", tu usuario fue creado",
-            type:'success'
-            })
-            
-            };
+        if (name.value.length < 2) {
+            errores.push = 'Este campo debe estar completo';
+        }
+        if (email.value.length < 2) {
+            errores.push = 'Este campo debe estar completo';
+        }
+        if (validator.isEmail(email.value)) {
+            errores.push = 'El mail debe ser válido'
         }
 
+        if (password.value.length < 8) {
+            errores.push = 'Este campo debe estar completo';
+        }
+        if (repassword.value.length < 8) {
+            errores.push = 'Este campo debe estar completo';
+        }
+
+        if (errores.length > 0) {
+            e.preventDefault();
+
+            let errorList = document.querySelector("error")
+
+            errores.forEach(error => {
+                errorList.innerHTML += `<li>${error}<li/>`
+            })
+
+            //for (let index = 0; index < errores.length; index++) {
+
+
+
+            //}
+        } else {
+            swal({
+                title: '¡Usuario creado!',
+                text: user.value + ", tu usuario fue creado",
+                type: 'success'
+            })
+
+        };
+        
+    }
+
     )
+
 
 })
 
