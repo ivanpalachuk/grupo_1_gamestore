@@ -25,3 +25,15 @@
 ### Weekly 24/01 
 
 - Revisión de lo realizado
+
+### Weekly 31/01
+
+- Completar backlog
+
+### Weekly 07/01 
+
+- Realización de tareas en conjunto
+
+### Weekly 14/01 
+
+- Revisión de tareas
