@@ -22,7 +22,8 @@ const storage = multer.diskStorage({
 let fileUpload = multer({ storage });
 
 /*------------------------Midlewares----------------------------------*/
-const adminAuthMiddleware = require("../middlewares/adminAuthMiddleware")
+const adminAuthMiddleware = require("../middlewares/adminAuthMiddleware");
+const validateProductMiddleware = require("../middlewares/validateProductMiddleware");
 
 
 /*------------------------Routes-------------------------------------- */
@@ -31,7 +32,7 @@ router.get('/', productController.Lista);
 router.get('/create', adminAuthMiddleware, productController.PaginaCrear);
 router.get('/:id', productController.Detail);
 router.get('/:id/edit', adminAuthMiddleware, productController.PaginaEdit);
-router.post('/create', fileUpload.fields([{ name: 'photoGame' }, { name: 'photoGameV' }]), productController.Crear);
+router.post('/create', fileUpload.fields([{ name: 'photoGame' }, { name: 'photoGameV' }]), validateProductMiddleware, productController.Crear);
 router.put('/:id/edit', fileUpload.fields([{ name: 'photoGame' }, { name: 'photoGameV' }]), productController.Editar);
 router.delete('/:id', productController.Delete);
 

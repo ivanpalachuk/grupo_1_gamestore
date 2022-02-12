@@ -143,6 +143,10 @@ a:active {
     max-width: 75vw;
 }
 
+#errorList {
+    list-style: none;
+}
+
 .buy-mc {
     flex-wrap: wrap;
 }
@@ -1394,7 +1398,7 @@ article {
     height: 35px;
 }
 
-#checks-fianriel{
+.checks-fianriel{
     width: 10px;
     height: 10px;
 }

@@ -123,13 +123,13 @@
                             </div>  
                     </div>
                     <div>
-                        <input placeholder= 'Número' type="number" name="numero" class="input-fianriel" id="numero" value="<%= locals.oldData ? oldData.numero : null  %> ">
+                        <input placeholder= 'Número' type="number" name="numero" class="input-fianriel" id="numero" value="<%= locals.oldData ? oldData.numero : null  %>">
                             
                             <div class="text-danger">
                             </div>  
                     </div>
                     <div>
-                        <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel" id="cp" value="<%= locals.oldData ? oldData.cp : null  %> ">
+                        <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel" id="cp" value="<%= locals.oldData ? oldData.cp : null  %>">
                             
                             <div class="text-danger">
                             </div>  
@@ -140,7 +140,7 @@
 
                 <article class="article-fianriel">
                     <div>
-                        <input type="checkbox" name="tcno" value="tyc" id="checks-fianriel"></input>
+                        <input type="checkbox" name="tcno" value="tyc" class="checks-fianriel"></input>
                         <label class="legales-fianriel">Acepto Términos y Condiciones</label>
                         <% if (locals.errors && errors.tcno) { %>
                             
@@ -152,11 +152,16 @@
                         <br>
 
                         
-                        <input type="checkbox" name="tyno" value="nyo" id="checks-fianriel"></button>
+                        <input type="checkbox" name="tyno" value="nyo" class="checks-fianriel"></button>
                         <label class="legales-fianriel">Me gustaría recibir noticias y ofertas especiales de GameStore</label>
                         
                     </div>
                 </article>
+
+                <ul id="errorList">
+
+
+                </ul>
 
                 <br>
 
@@ -173,7 +178,6 @@
         <a href="/shopping-cart"><button id="cart"><i class="fas fa-shopping-cart"></i></button></a>
     </main>
     <script src="/js/validationSignUp.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <%- include('./partials/footer') %> 
 </body>
 

@@ -1,13 +1,10 @@
-const validator = require("validator")
-import swal from 'sweetalert';
-
 window.addEventListener('load', function () {
     let form = document.querySelector('#form')
 
     let name = document.querySelector('#name')
     let apellido = document.querySelector('#apellido')
     let dni = document.querySelector('#dni')
-    let avatar = document.querySelector('#avatar')
+    let avatar = document.getElementById('avatar')
     let user = document.querySelector('#user')
     let email = document.querySelector('#email')
     let password = document.querySelector('#password')
@@ -26,36 +23,55 @@ window.addEventListener('load', function () {
     })
 
     name.addEventListener('blur', function () {
-        if (name.value.length == "") {
-            textDangerName.innerHTML('*Este campo debe estar completo');
+        if (!name.value.length) {
+            textDangerName.innerHTML = '*Este campo debe estar completo';
         };
     })
 
     form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        console.log("lindo boton")
 
         let errores = [];
 
         if (name.value.length < 2) {
-            errores.push = 'Este campo debe estar completo';
+            errores.push('Tu nombre es muy corto');
         }
-        if (email.value.length < 2) {
-            errores.push = 'Este campo debe estar completo';
-        }
-        if (validator.isEmail(email.value)) {
-            errores.push = 'El mail debe ser válido'
+        
+        if (apellido.value.length < 2) {
+            errores.push('Tu Apellido es muy corto');
         }
 
+        
+        if (email.value.length < 2) {
+            errores.push('Tu mail es muy corto');
+        } else {
+            if (!ValidateEmail(email.value)) {
+                errores.push('El mail debe ser válido')
+            }
+        }
+
+        if (!ValidateExtension(avatar.value)) {
+            errores.push('El archivo a adjuntar no es una imagen');
+        }
+
+
         if (password.value.length < 8) {
-            errores.push = 'Este campo debe estar completo';
+            console.log("contraseña colta")
+            errores.push('Tu contraseña debe ser mayor a 8 digitos');
         }
         if (repassword.value.length < 8) {
-            errores.push = 'Este campo debe estar completo';
+            errores.push('La segunda contraseña tambien debe ser mayor a 8 digitos');
         }
+
+        console.log(errores)
 
         if (errores.length > 0) {
             e.preventDefault();
 
-            let errorList = document.querySelector("error")
+            let errorList = document.querySelector("#errorList")
+            errorList.innerHTML = ""
+
 
             errores.forEach(error => {
                 errorList.innerHTML += `<li>${error}<li/>`
@@ -67,14 +83,14 @@ window.addEventListener('load', function () {
 
             //}
         } else {
-            swal({
+            /*swal({
                 title: '¡Usuario creado!',
                 text: user.value + ", tu usuario fue creado",
                 type: 'success'
-            })
+            })*/
 
         };
-        
+
     }
 
     )
@@ -82,4 +98,17 @@ window.addEventListener('load', function () {
 
 })
 
+function ValidateEmail(input) {
+    if (input.includes('@')) {
+        if (input.slice(-4) == ".com")
+            return true
+    }
+    return false;
+}
 
+function ValidateExtension(input) {
+    let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg', '.PNG'];
+        if ( acceptedExtensions.includes(input.slice(-4)) )
+            return true
+    return false;
+}

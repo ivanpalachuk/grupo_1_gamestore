@@ -1,7 +1,7 @@
 const { json } = require('express');
 const path = require("path");
 const fs = require('fs');
-const { debug } = require('console');
+const { validationResult } = require('express-validator');
 
 //Nos traemos la sintaxis de Sequelize//
 const db = require('../database/models');
@@ -13,7 +13,6 @@ const productController = {
         Product.findAll({
             include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
         }).then((products) => {
-            console.log("-----------------dataModeling----------------------")
             products.forEach(p => {
             if (p.Plataformas) {
                 p.Plataformas = p.Plataformas.map((Plat) => {
@@ -32,9 +31,6 @@ const productController = {
                 p.ImagenSecundaria = p.ImagenSecundaria.ruta
             }
 
-            console.log("---------------------------------------")
-            
-                console.log(p.ImagenPrincipal)
             });
 
 
@@ -137,6 +133,17 @@ const productController = {
     Crear: (req, res) => {
 
 
+        console.log('DEjame CREAR UN PRODUCTO')
+        const resultValidation = validationResult(req);
+
+
+        if (resultValidation.errors.length > 0) {
+            console.log('tenes algo mal, revisa')
+            console.log(resultValidation.mapped())
+            return res.redirect('/products/create'
+            );
+        }
+
         productoNuevo = {
             "titulo": req.body.titulo,
             "precio": req.body.price,
@@ -144,9 +151,9 @@ const productController = {
             "resumen": req.body.resumen,
             "idDificultad": req.body.Dificultad,
             "idEdad": req.body.Edad,
-            "Plataformas": req.body.Plataforma.map((p)=>{
+            /*"Plataformas": req.body.Plataforma.map((p)=>{
                 return{"nombre":p, "id":1}
-            }),
+            }),*/
             "Categorias": req.body.Categoria,
             "datosTecnicos": req.body.datos_Tecnicos,
             "requisitos": req.body.requisitos,
@@ -158,9 +165,8 @@ const productController = {
                 ruta: '/'+(req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
             }
         }
-        console.log(productoNuevo)
         Product.create(productoNuevo,{
-            include:['ImagenPrincipal','ImagenSecundaria','PlataformaPivot', 'Categorias']
+            include:['ImagenPrincipal','ImagenSecundaria', 'Categorias']
         }).catch((e) => {
             console.log("ERROR")
             console.log(e)
