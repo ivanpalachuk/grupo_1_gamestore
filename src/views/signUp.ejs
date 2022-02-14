@@ -21,21 +21,22 @@
                     </div>
                     <div>
                         <input placeholder= 'Apellido' name="apellido" type="text" placholder="Tu Apellido" class="input-fianriel" id="apellido" value="<%= locals.oldData ? oldData.apellido : null  %>">
-                            
+                        <br>
                             <div class="text-danger" id="text-danger-last-name">
                             </div>  
                     </div>
                     <div>
                         <input placeholder= 'DNI' name="dni" type="number" class="input-fianriel" id="dni" value="<%= locals.oldData ? oldData.dni : null  %>">
-                            
-                            <div class="text-danger">
-                            </div>  
+                        <br>
+                            <small class="text-danger" id="text-danger-dni">
+                            </small>  
                     </div>
                 </article>
                 <div class="avatar">
                     <label class="fotoAvatar">Avatar</label><br>
                     <input type="file" name="avatar" id="avatar">
-                    <div class="text-danger">
+                    <br>
+                    <div class="text-danger" id="text-danger-avatar">
                     </div>  
                 </div>
                 <br>
@@ -43,15 +44,15 @@
                 <article class="article-fianriel">
                     <div>
                         <input placeholder="Usuario" type="text" name="usuario" class="input-fianriel" id="user" value="<%= locals.oldData ? oldData.usuario : null  %>">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-user">
                             </div>  
                     </div>
 
                     <div>
                         <input placeholder="Mail" type="email" name="email" class="input-fianriel" id="email" value="<%= locals.oldData ? oldData.email : null  %>">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-mail">
                             </div>  
                     </div>
                 </article>
@@ -60,14 +61,14 @@
 
                     <div>
                         <input placeholder="Password" type="password" name="clave" id="password">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-password">
                             </div>  
                     </div>
                     <div>
                         <input placeholder="Password" type="password" name="clave2" class="input-fianriel" id="repassword" >
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-password">
                             </div>  
                     </div>
                 </article>
@@ -119,20 +120,20 @@
                 <article class="article-fianriel">
                     <div>
                         <input placeholder= 'Dirección' type="text" name="direccion" class="input-fianriel" id="direccion" value="<%= locals.oldData ? oldData.direccion : null  %>">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-adress">
                             </div>  
                     </div>
                     <div>
                         <input placeholder= 'Número' type="number" name="numero" class="input-fianriel" id="numero" value="<%= locals.oldData ? oldData.numero : null  %>">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-number">
                             </div>  
                     </div>
                     <div>
                         <input placeholder= 'C.P.' type="number" name="cp" class="input-fianriel" id="cp" value="<%= locals.oldData ? oldData.cp : null  %>">
-                            
-                            <div class="text-danger">
+                        <br>
+                            <div class="text-danger" id="text-danger-cp">
                             </div>  
                     </div>
                 </article>

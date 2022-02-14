@@ -9,17 +9,26 @@
                     <h1>Añadir Juego <i class="fas fa-gamepad"></i></h1>
                     <div class="contenido-principal">
                         <div class="box-container">
-                            <input placeholder="Título" name="titulo" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.titulo : null  %>">
+                            <input placeholder="Título" name="titulo" type="text" required class="input-style" id="titulo" value="<%= locals.oldData ? oldData.titulo : null  %>">
+                            <br>                           
+                            <small class="text-danger" id="text-danger-titulo">
+                            </small>  
                         </div>
 
                         <div class="box-container">
-                            <input placeholder="Precio" name="price" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.price : null  %>">
+                            <input placeholder="Precio" name="price" type="text" required class="input-style" id="precio"  value="<%= locals.oldData ? oldData.price : null  %>">
+                            <br>                           
+                            <small class="text-danger" id="text-danger-precio">
+                            </small>
                         </div>
                         <div class="box-container">
-                            <input placeholder="Descuento" name="discount" type="text" class="input-style"  value="<%= locals.oldData ? oldData.discount : null  %>">
+                            <input placeholder="Descuento" name="discount" type="text" class="input-style" id="descuento" value="<%= locals.oldData ? oldData.discount : null  %>">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Resumen" name="resumen" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.resumen : null  %>">
+                            <input placeholder="Resumen" name="resumen" type="text" required class="input-style" id="resumen" value="<%= locals.oldData ? oldData.resumen : null  %>">
+                            <br>                           
+                            <small class="text-danger" id="text-danger-resumen">
+                            </small>  
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
@@ -70,16 +79,32 @@
                             <input class="block" type="file" name="photoGameV">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Información legal del desarrollador" name="legal" type="text" placholder="Nombre del Juego" required class="input-style" value="<%= locals.oldData ? oldData.legal : null  %>">
+                            <input placeholder="Información legal del desarrollador" name="legal" type="text" placholder="Nombre del Juego" required id="legal" class="input-style" value="<%= locals.oldData ? oldData.legal : null  %>">
+                            <br>                           
+                            <small class="text-danger" id="text-danger-legal">
+                            </small>  
                         </div>
                         <div class="box-container">
-                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required value="<%= locals.oldData ? oldData.datos_Tecnicos : null  %>"></textarea>
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required id="datosTecnicos" value="<%= locals.oldData ? oldData.datos_Tecnicos : null  %>"></textarea>
+                            <br>                           
+                            <small class="text-danger" id="text-danger-tecnicos">
+                            </small>  
                         </div>
                         <div class="box-container">
-                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " required value="<%= locals.oldData ? oldData.requisitos : null  %>"></textarea>
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " id="requisitos" required value="<%= locals.oldData ? oldData.requisitos : null  %>"></textarea>
+                            <br>                           
+                            <small class="text-danger" id="text-danger-requisitos">
+                            </small>  
                         </div>
 
                     </div>
+                    <ul id="errorList">
+
+
+                    </ul>
+    
+                    <br>
+
                     <div class="container-button ">
                         <div class="box-button ">
                             <button type="submit " class="send-button-m ">Añadir Juego</button>
@@ -92,5 +117,5 @@
             </main>
             <%- include('./partials/footer') %>
         </body>
-
+        <script src="/js/validationNewGame.js"></script>
 </html>
