@@ -9,23 +9,23 @@
                     <h1>Añadir Juego <i class="fas fa-gamepad"></i></h1>
                     <div class="contenido-principal">
                         <div class="box-container">
-                            <input placeholder="Título" name="titulo" type="text" required class="input-style">
+                            <input placeholder="Título" name="titulo" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.titulo : null  %>">
                         </div>
 
                         <div class="box-container">
-                            <input placeholder="Precio" name="price" type="text" required class="input-style">
+                            <input placeholder="Precio" name="price" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.price : null  %>">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Descuento" name="discount" type="text" class="input-style">
+                            <input placeholder="Descuento" name="discount" type="text" class="input-style"  value="<%= locals.oldData ? oldData.discount : null  %>">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Resumen" name="resumen" type="text" required class="input-style">
+                            <input placeholder="Resumen" name="resumen" type="text" required class="input-style"  value="<%= locals.oldData ? oldData.resumen : null  %>">
                         </div>
                         <div class="box-container">
                             <label class="tittle-m block">Dificultad</label>
                             <select name="Dificultad" class="input-style">
                                 <% Dificultades.forEach(d=> { %>
-                                    <option  value="<%=d.id%>"> 
+                                    <option  value="<%=d.id%>" <%= locals.oldData && (d.id == oldData.Dificultad) ? 'selected' : null %> > 
                                         <%=d.nombre %>
                                     </option>
                                     <% }); %>
@@ -35,7 +35,7 @@
                             <label class="tittle-m block">Edades</label>
                             <select name="Edad" class="input-style">
                                 <% Edades.forEach(d=> { %>
-                                    <option  value="<%=d.id %>"> 
+                                    <option  value="<%=d.id %>" <%= locals.oldData && (d.id == oldData.Edad) ? 'selected' : null %>> 
                                         <%=d.nombre%>
                                     </option>
                                     <% }); %>
@@ -70,13 +70,13 @@
                             <input class="block" type="file" name="photoGameV">
                         </div>
                         <div class="box-container">
-                            <input placeholder="Información legal del desarrollador" name="legal" type="text" placholder="Nombre del Juego" required class="input-style">
+                            <input placeholder="Información legal del desarrollador" name="legal" type="text" placholder="Nombre del Juego" required class="input-style" value="<%= locals.oldData ? oldData.legal : null  %>">
                         </div>
                         <div class="box-container">
-                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required></textarea>
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required value="<%= locals.oldData ? oldData.datos_Tecnicos : null  %>"></textarea>
                         </div>
                         <div class="box-container">
-                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " required></textarea>
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " required value="<%= locals.oldData ? oldData.requisitos : null  %>"></textarea>
                         </div>
 
                     </div>

@@ -8,28 +8,43 @@ const db = require('../database/models');
 //Aca deberiamos literalmente llamar a la tabla//
 const Product = db.Producto
 
+async function  preChargeValues() {
+    let Edades = await db.Edad.findAll()
+    let Plataformas = await db.Plataforma.findAll()
+    Plataformas = Plataformas.map((Plat) => {
+        return Plat.nombre
+    })
+    let Dificultades = await db.Dificultad.findAll()
+    let Categorias = await db.Categoria.findAll()
+    Categorias = Categorias.map((Cat) => {
+        return Cat.nombre
+    })
+    return { Edades, Plataformas, Categorias, Dificultades }
+}
+
+
 const productController = {
     Lista: (req, res) => {
         Product.findAll({
             include: ['Dificultad', 'Edad', 'ImagenPrincipal', 'ImagenSecundaria', 'Plataformas', 'Categorias']
         }).then((products) => {
             products.forEach(p => {
-            if (p.Plataformas) {
-                p.Plataformas = p.Plataformas.map((Plat) => {
-                    return Plat.nombre
-                })
-            }
-            if (p.Categorias) {
-                p.Categorias = p.Categorias.map((Cat) => {
-                    return Cat.nombre
-                })
-            }
-            if (p.ImagenPrincipal) {
-                p.ImagenPrincipal = p.ImagenPrincipal.ruta
-            }
-            if (p.ImagenSecundaria) {
-                p.ImagenSecundaria = p.ImagenSecundaria.ruta
-            }
+                if (p.Plataformas) {
+                    p.Plataformas = p.Plataformas.map((Plat) => {
+                        return Plat.nombre
+                    })
+                }
+                if (p.Categorias) {
+                    p.Categorias = p.Categorias.map((Cat) => {
+                        return Cat.nombre
+                    })
+                }
+                if (p.ImagenPrincipal) {
+                    p.ImagenPrincipal = p.ImagenPrincipal.ruta
+                }
+                if (p.ImagenSecundaria) {
+                    p.ImagenSecundaria = p.ImagenSecundaria.ruta
+                }
 
             });
 
@@ -38,16 +53,15 @@ const productController = {
         })
     },
     PaginaCrear: async (req, res) => {
-        let Edades = await db.Edad.findAll()
-        let Plataformas = await db.Plataforma.findAll()
-        Plataformas = Plataformas.map((Plat) => {
-            return Plat.nombre
-        })
-        let Dificultades = await db.Dificultad.findAll()
-        let Categorias = await db.Categoria.findAll()
-        Categorias = Categorias.map((Cat) => {
-            return Cat.nombre
-        })
+
+        let values = await preChargeValues()
+        let Edades=values.Edades
+        let Plataformas=values.Plataformas
+        let Dificultades=values.Dificultades
+        let Categorias=values.Categorias
+
+        console.log(values)
+
         res.render('new-game', {
             Edades,
             Plataformas,
@@ -130,7 +144,7 @@ const productController = {
 
 
     },
-    Crear: (req, res) => {
+    Crear: async (req, res) => {
 
 
         console.log('DEjame CREAR UN PRODUCTO')
@@ -140,8 +154,24 @@ const productController = {
         if (resultValidation.errors.length > 0) {
             console.log('tenes algo mal, revisa')
             console.log(resultValidation.mapped())
-            return res.redirect('/products/create'
-            );
+
+            let values = await preChargeValues()
+            let Edades=values.Edades
+            let Plataformas=values.Plataformas
+            let Dificultades=values.Dificultades
+            let Categorias=values.Categorias
+    
+            res.render('new-game', {
+                Edades,
+                Plataformas,
+                Dificultades,
+                Categorias,
+
+                errors: resultValidation.mapped(),
+                oldData: req.body
+
+            });
+
         }
 
         productoNuevo = {
@@ -159,14 +189,14 @@ const productController = {
             "requisitos": req.body.requisitos,
             "legal": req.body.legal,
             "ImagenPrincipal": {
-                ruta: '/'+(req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
+                ruta: '/' + (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
             },
             "ImagenSecundaria": {
-                ruta: '/'+(req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
+                ruta: '/' + (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
             }
         }
-        Product.create(productoNuevo,{
-            include:['ImagenPrincipal','ImagenSecundaria', 'Categorias']
+        Product.create(productoNuevo, {
+            include: ['ImagenPrincipal', 'ImagenSecundaria', 'Categorias']
         }).catch((e) => {
             console.log("ERROR")
             console.log(e)
