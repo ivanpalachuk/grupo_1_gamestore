@@ -14,9 +14,17 @@ window.addEventListener('load', function () {
     let cp = document.querySelector('#cp')
     let button = document.querySelector('#button')
     let textDangerName = document.querySelector('#text-danger-name')
+    let textDangerLastName = document.querySelector('#text-danger-last-name')
+    let textDangerDni = document.querySelector('#text-danger-dni')
+    let textDangerUser = document.querySelector('#text-danger-user')
+    let textDangerMail = document.querySelector('#text-danger-mail')
+    let textDangerPassword = document.querySelector('#text-danger-password')
+    let textDangerAdress = document.querySelector('#text-danger-adress')
+    let textDangerNumber = document.querySelector('#text-danger-number')
+    let textDangerCp = document.querySelector('#text-danger-cp')
 
     name.addEventListener('focus', function () {
-        textDangerName.innerHTML = '*El nombre debe tener al menos 2 caracteres';
+        textDangerName.innerHTML = '*Tu nombre debe tener al menos 2 caracteres';
     })
     name.addEventListener('change', function () {
         textDangerName.style.display = 'none';
@@ -28,18 +36,122 @@ window.addEventListener('load', function () {
         };
     })
 
+    apellido.addEventListener('focus', function () {
+        textDangerLastName.innerHTML = '*El apellido debe tener al menos 2 caracteres';
+    })
+    apellido.addEventListener('change', function () {
+        textDangerLastName.style.display = 'none';
+    })
+
+    apellido.addEventListener('blur', function () {
+        if (!apellido.value.length) {
+            textDangerLastName.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    dni.addEventListener('focus', function () {
+        textDangerDni.innerHTML = '*Este campo debe estar completo';
+    })
+    dni.addEventListener('change', function () {
+        textDangerDni.style.display = 'none';
+    })
+
+    dni.addEventListener('blur', function () {
+        if (dni.value == 0) {
+            textDangerDni.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    
+    user.addEventListener('focus', function () {
+        textDangerUser.innerHTML = '*Este campo debe estar completo';
+    })
+    user.addEventListener('change', function () {
+        textDangerUser.style.display = 'none';
+    })
+
+    user.addEventListener('blur', function () {
+        if (!user.value.length) {
+            textDangerUser.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    email.addEventListener('focus', function () {
+        textDangerMail.innerHTML = '*Tu mail debe ser válido';
+    })
+    email.addEventListener('change', function () {
+        textDangerMail.style.display = 'none';
+    })
+
+    email.addEventListener('blur', function () {
+        if (!email.value.length) {
+            textDangerMail.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    password.addEventListener('focus', function () {
+        textDangerPassword.innerHTML = '*Tu contraseña debe tener al menos 8 caracteres';
+    })
+    password.addEventListener('change', function () {
+        textDangerPassword.style.display = 'none';
+    })
+
+    password.addEventListener('blur', function () {
+        if (!password.value.length) {
+            textDangerPassword.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    direccion.addEventListener('focus', function () {
+        textDangerAdress.innerHTML = '*Este campo debe estar completo';
+    })
+    direccion.addEventListener('change', function () {
+        textDangerAdress.style.display = 'none';
+    })
+
+    direccion.addEventListener('blur', function () {
+        if (!direccion.value.length) {
+            textDangerAdress.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    numero.addEventListener('focus', function () {
+        textDangerNumber.innerHTML = '*Este campo debe estar completo';
+    })
+    numero.addEventListener('change', function () {
+        textDangerNumber.style.display = 'none';
+    })
+
+    numero.addEventListener('blur', function () {
+        if (numero.value == 0) {
+            textDangerNumber.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
+    cp.addEventListener('focus', function () {
+        textDangerCp.innerHTML = '*Este campo debe estar completo';
+    })
+    cp.addEventListener('change', function () {
+        textDangerCp.style.display = 'none';
+    })
+
+    cp.addEventListener('blur', function () {
+        if (name.value == 0) {
+            textDangerCp.innerHTML = '*Este campo debe estar completo';
+        };
+    })
+
     form.addEventListener("submit", function (e) {
         e.preventDefault();
-        console.log("lindo boton")
 
         let errores = [];
 
         if (name.value.length < 2) {
-            errores.push('Tu nombre es muy corto');
+            errores.push('*Tu nombre debe tener al menos 2 caractéres');
         }
         
         if (apellido.value.length < 2) {
-            errores.push('Tu Apellido es muy corto');
+            errores.push('*Tu Apellido debe tener al menos 2 caractéres');
         }
 
         
@@ -57,11 +169,10 @@ window.addEventListener('load', function () {
 
 
         if (password.value.length < 8) {
-            console.log("contraseña colta")
             errores.push('Tu contraseña debe ser mayor a 8 digitos');
         }
         if (repassword.value.length < 8) {
-            errores.push('La segunda contraseña tambien debe ser mayor a 8 digitos');
+            errores.push('La segunda contraseña también debe ser mayor a 8 digitos');
         }
 
         console.log(errores)
