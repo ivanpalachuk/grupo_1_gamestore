@@ -32,6 +32,7 @@ window.addEventListener('load', function () {
 
     name.addEventListener('blur', function () {
         if (!name.value.length) {
+            textDangerName.style.display = 'unset';
             textDangerName.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -45,6 +46,7 @@ window.addEventListener('load', function () {
 
     apellido.addEventListener('blur', function () {
         if (!apellido.value.length) {
+            textDangerLastName.style.display = 'unset';
             textDangerLastName.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -58,6 +60,7 @@ window.addEventListener('load', function () {
 
     dni.addEventListener('blur', function () {
         if (dni.value == 0) {
+            textDangerDni.style.display = 'unset';
             textDangerDni.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -72,6 +75,7 @@ window.addEventListener('load', function () {
 
     user.addEventListener('blur', function () {
         if (!user.value.length) {
+            textDangerUser.style.display = 'unset';
             textDangerUser.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -85,6 +89,7 @@ window.addEventListener('load', function () {
 
     email.addEventListener('blur', function () {
         if (!email.value.length) {
+            textDangerMail.style.display = 'unset';
             textDangerMail.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -98,6 +103,7 @@ window.addEventListener('load', function () {
 
     password.addEventListener('blur', function () {
         if (!password.value.length) {
+            textDangerPassword.style.display = 'unset';
             textDangerPassword.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -111,6 +117,7 @@ window.addEventListener('load', function () {
 
     direccion.addEventListener('blur', function () {
         if (!direccion.value.length) {
+            textDangerAdress.style.display = 'unset';
             textDangerAdress.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -124,6 +131,7 @@ window.addEventListener('load', function () {
 
     numero.addEventListener('blur', function () {
         if (numero.value == 0) {
+            textDangerNumber.style.display = 'unset';
             textDangerNumber.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -137,6 +145,7 @@ window.addEventListener('load', function () {
 
     cp.addEventListener('blur', function () {
         if (name.value == 0) {
+            textDangerCp.style.display = 'unset';
             textDangerCp.innerHTML = '*Este campo debe estar completo';
         };
     })

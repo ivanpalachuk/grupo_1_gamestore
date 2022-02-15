@@ -38,6 +38,7 @@ window.addEventListener('load', function () {
 
     precio.addEventListener('blur', function () {
         if (precio.value == 0) {
+            textDangerPrecio.style.display = 'unset';
             textDangerPrecio.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -65,6 +66,7 @@ window.addEventListener('load', function () {
 
     legal.addEventListener('blur', function () {
         if (!legal.value.length) {
+            textDangerLegal.style.display = 'unset';
             textDangerLegal.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -78,6 +80,7 @@ window.addEventListener('load', function () {
 
     tecnicos.addEventListener('blur', function () {
         if (!tecnicos.value.length) {
+            textDangerTecnicos.style.display = 'unset';
             textDangerTecnicos.innerHTML = '*Este campo debe estar completo';
         };
     })
@@ -91,6 +94,7 @@ window.addEventListener('load', function () {
 
     requisitos.addEventListener('blur', function () {
         if (!requisitos.value.length) {
+            textDangerRequisitos.style.display = 'unset';
             textDangerRequisitos.innerHTML = '*Este campo debe estar completo';
         };
     })
