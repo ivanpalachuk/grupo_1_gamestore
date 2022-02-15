@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
     let textDangerTecnicos = document.querySelector('#text-danger-tecnicos')
     let textDangerRequisitos = document.querySelector('#text-danger-requisitos')
 
-
+    
     titulo.addEventListener('focus', function () {
         textDangerTitulo.innerHTML = '*El titulo debe tener al menos 2 caracteres';
     })
@@ -23,8 +23,9 @@ window.addEventListener('load', function () {
     })
 
     titulo.addEventListener('blur', function () {
-        if (!titulo.value.length) {
-            textDangerTitulo.innerHTML = '*Este campo debe estar completo';
+        if (titulo.value.length<2) {
+            textDangerTitulo.style.display = 'unset';
+            textDangerTitulo.innerHTML = '*El titulo debe tener al menos 2 caracteres';
         };
     })
     
@@ -49,7 +50,8 @@ window.addEventListener('load', function () {
     })
 
     resumen.addEventListener('blur', function () {
-        if (precio.value.length < 20) {
+        if (resumen.value.length < 20) {
+            textDangerResumen.style.display = 'unset';
             textDangerResumen.innerHTML = '*Este campo debe tener al menos 20 caracteres';
         };
     })
@@ -95,7 +97,7 @@ window.addEventListener('load', function () {
 
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
+
 
         let errores = [];
 

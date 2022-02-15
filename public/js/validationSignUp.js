@@ -142,7 +142,7 @@ window.addEventListener('load', function () {
     })
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
+
 
         let errores = [];
 

@@ -5,7 +5,7 @@
 
         <body class="body-new-game">
             <main class="container-m">
-                <form action="/products/create" method="POST" class="container-form" enctype="multipart/form-data">
+                <form action="/products/create" method="POST" class="container-form" enctype="multipart/form-data" id="form">
                     <h1>Añadir Juego <i class="fas fa-gamepad"></i></h1>
                     <div class="contenido-principal">
                         <div class="box-container">
@@ -85,13 +85,13 @@
                             </small>  
                         </div>
                         <div class="box-container">
-                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required id="datosTecnicos" value="<%= locals.oldData ? oldData.datos_Tecnicos : null  %>"></textarea>
+                            <textarea name="datos_Tecnicos" placeholder="Datos técnicos" class="text-area-style" cols="30" rows="10" required id="datosTecnicos" ><%= locals.oldData ? oldData.datos_Tecnicos : null  %></textarea>
                             <br>                           
                             <small class="text-danger" id="text-danger-tecnicos">
                             </small>  
                         </div>
                         <div class="box-container">
-                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " id="requisitos" required value="<%= locals.oldData ? oldData.requisitos : null  %>"></textarea>
+                            <textarea name="requisitos" placeholder="Requisitos del sistema" cols="30 " rows="10 " class="text-area-style " id="requisitos" required ><%= locals.oldData ? oldData.requisitos : null  %></textarea>
                             <br>                           
                             <small class="text-danger" id="text-danger-requisitos">
                             </small>  
