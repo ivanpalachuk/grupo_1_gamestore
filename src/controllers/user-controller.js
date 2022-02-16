@@ -1,6 +1,9 @@
-const User = require('../models/User');
-const { validationResult } = require('express-validator');
+const db = require('../database/models/');
+const User = db.Usuario;
 const bcryptjs = require('bcryptjs');
+const path = require('path');
+const { validationResult } = require('express-validator');
+
 
 const userController = {
 
@@ -13,7 +16,7 @@ const userController = {
     },
     processRegister: (req, res) => {
 
-        console.log('DEjame registrar')
+        console.log('Dejame registrar')
         const resultValidation = validationResult(req);
 
 
@@ -26,8 +29,8 @@ const userController = {
             });
         }
 
-        let userInDbEmail = User.findByField('email', req.body.email);
-        let userInDbUsuario = User.findByField('usuario', req.body.usuario);
+        let userInDbEmail = User.findByField('email', req.body.email);//realizar la busqueda en sequelize
+        let userInDbUsuario = User.findByField('usuario', req.body.usuario);//realizar la busqueda sequelize
 
         if (userInDbEmail) {
             console.log('ya te registraste pelotudo')
@@ -61,6 +64,40 @@ const userController = {
 
 
     },
+
+        /*create: (req, res) => {
+      //En esta variable guardo lo enviado desde la ruta, con respecto a los errores encontrados en la carga de los datos por parte del usuario
+      let errors = validationResult(req);
+      //return res.send(errors);
+      //Aquí determino si hay ó no errores encontrados
+      if(!errors.isEmpty()) {
+        return res.render(path.resolve(__dirname, '../views/usuarios/registro'), {
+          errors: errors.errors,  old: req.body
+        });
+      } 
+      //Si todo marcha sobre ruedas, entonces 
+      // Generamos el usuario a partir de los datos del request
+      // - Ignoramos repassword, ya que no nos interesa guardarla
+      // - Hasheamos la contraseña
+
+      let user = {
+        firstName:req.body.first_name,
+        lastName: req.body.last_name,
+        email:req.body.email,
+        password: bcrypt.hashSync(req.body.password, 10),
+        provincia: Number(req.body.provincia),
+        avatar: req.file ? req.file.filename : '',
+        role: 1
+      };
+
+      User
+      .create(user)
+      .then((storedUser) => {
+          return  res.redirect('/login');
+      })
+      .catch(error => console.log(error));
+    },*/
+
     loginProcess: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
 

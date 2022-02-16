@@ -17,7 +17,13 @@ module.exports = (sequelize, DataTypes) => {
         }
         //Esta constante mediante define de sequelize, arma la BD//
     const Provincia = sequelize.define(alias, cols, config)
-        //Retorna la BD para que este disponible para consultas//
+      
+    Provincia.associate = function(models) {
+        Provincia.hasMany(models.Usuario, {
+            as: "Usuario",
+            foreignKey: "idProvincia"
+        })
+    }
     return Provincia
 
 }
