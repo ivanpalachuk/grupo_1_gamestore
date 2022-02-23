@@ -7,10 +7,10 @@
         <img class="banner" src="/images/banner/space-invaders-color.jpg">
         <section class="actividad">
         <div class="credencial">
-            <img class= "img-avatar" src="/images/avatars/<%= user.avatar  %>">
+            <img class= "img-avatar" src="/images/avatars/<%= user.avatar.ruta  %>">
             <div class="datos-user">
-            <h2 class="nombre-usuario"><%= user.usuario %><i  id='fas' class="fas fa-gamepad"></i></h2>
-            <h5 class="email-usuario"> <%= user.email %>  <i class="far fa-edit"></i></h5>
+            <h2 class="nombre-usuario"><%= user.userName %><i  id='fas' class="fas fa-gamepad"></i></h2>
+            <h5 class="email-usuario"> <%= user.correo %>  <i class="far fa-edit"></i></h5>
             </div>
         </div>
         <section class="compras">

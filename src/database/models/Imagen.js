@@ -32,6 +32,13 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: "idImagen"
         })
 
+        Imagen.hasMany(models.Usuario, {
+            as: "Usuario",
+            foreignKey: "idAvatar"
+        })
+
+
+
     }
     return Imagen
 

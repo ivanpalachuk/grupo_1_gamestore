@@ -1,4 +1,3 @@
-
 // 4. Editar la info de un usuario - Falta
 
 const { timeStamp } = require('console');

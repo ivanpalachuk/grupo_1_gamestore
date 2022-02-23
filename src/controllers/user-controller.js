@@ -1,8 +1,9 @@
 const db = require('../database/models/');
-const User = db.Usuario;
+const Users = db.Usuario;
 const bcryptjs = require('bcryptjs');
 const path = require('path');
 const { validationResult } = require('express-validator');
+const User = require("../models/User")
 
 
 const userController = {
@@ -14,7 +15,7 @@ const userController = {
     logIn: (req, res) => {
         res.render('signIn');
     },
-    processRegister: (req, res) => {
+    processRegister: async (req, res) => {
 
         console.log('Dejame registrar')
         const resultValidation = validationResult(req);
@@ -29,8 +30,21 @@ const userController = {
             });
         }
 
-        let userInDbEmail = User.findByField('email', req.body.email);//realizar la busqueda en sequelize
-        let userInDbUsuario = User.findByField('usuario', req.body.usuario);//realizar la busqueda sequelize
+
+        let userInDbEmail = await Users.findOne({ where: { correo: req.body.email } }).catch((e) => {
+            console.log("ERROR")
+            console.log(e)
+        })
+        console.log(userInDbEmail)
+
+        let userInDbUsuario = await Users.findOne({ where: { userName: req.body.usuario } }).catch((e) => {
+            console.log("ERROR")
+            console.log(e)
+        })
+        console.log(userInDbUsuario)
+
+        //let userInDbEmail = User.findByField('email', req.body.email);//realizar la busqueda en sequelize
+        //let userInDbUsuario = User.findByField('usuario', req.body.usuario);//realizar la busqueda sequelize
 
         if (userInDbEmail) {
             console.log('ya te registraste pelotudo')
@@ -53,53 +67,44 @@ const userController = {
             });
         } else {
             let userToCreate = {
-                ...req.body,
-                clave: bcryptjs.hashSync(req.body.clave, 10),
-                clave2: bcryptjs.hashSync(req.body.clave, 10),
-                avatar: req.file.filename
+                nombre: req.body.nombre,
+                apellido: req.body.apellido,
+                dni: req.body.dni,
+                avatar: {
+                    ruta: '/' + (req.file ? req.file.filename : 0)
+                },
+                correo: req.body.email,
+                userName: req.body.usuario,
+                clave: bcryptjs.hashSync(req.body.clave, 5),
+                //idPais: req.body.pais,
+                //idProvincia: req.body.provincia,
+                direccion: req.body.direccion,
+                codigoPostal: req.body.cp,
+                numeroDireccion: req.body.numero,
+                tcno: req.body.tcno,
+                tyno: req.body.tyno
             }
-            User.create(userToCreate);
+            console.log(req.file)
+
+            await Users.create(userToCreate, {
+                include: ["avatar"]
+            }).catch((e) => {
+                console.log("ERROR")
+                console.log(e)
+            });
+
+
             return res.redirect('/user/log-in');
         }
-
-
     },
 
-        /*create: (req, res) => {
-      //En esta variable guardo lo enviado desde la ruta, con respecto a los errores encontrados en la carga de los datos por parte del usuario
-      let errors = validationResult(req);
-      //return res.send(errors);
-      //Aquí determino si hay ó no errores encontrados
-      if(!errors.isEmpty()) {
-        return res.render(path.resolve(__dirname, '../views/usuarios/registro'), {
-          errors: errors.errors,  old: req.body
-        });
-      } 
-      //Si todo marcha sobre ruedas, entonces 
-      // Generamos el usuario a partir de los datos del request
-      // - Ignoramos repassword, ya que no nos interesa guardarla
-      // - Hasheamos la contraseña
 
-      let user = {
-        firstName:req.body.first_name,
-        lastName: req.body.last_name,
-        email:req.body.email,
-        password: bcrypt.hashSync(req.body.password, 10),
-        provincia: Number(req.body.provincia),
-        avatar: req.file ? req.file.filename : '',
-        role: 1
-      };
+    loginProcess: async (req, res) => {
+        let userToLogin = await Users.findOne({ where: { correo: req.body.email }, include: ["avatar"] }).catch((e) => {
+            console.log("ERROR")
+            console.log(e)
+        })
 
-      User
-      .create(user)
-      .then((storedUser) => {
-          return  res.redirect('/login');
-      })
-      .catch(error => console.log(error));
-    },*/
-
-    loginProcess: (req, res) => {
-        let userToLogin = User.findByField('email', req.body.email);
 
         if (userToLogin) {
             let passwordOk = bcryptjs.compareSync(req.body.clave, userToLogin.clave);

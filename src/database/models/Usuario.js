@@ -20,8 +20,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             unique: true
         },
-        clave1: { type: DataTypes.STRING },
-        clave2: { type: DataTypes.STRING },
+        clave: { type: DataTypes.STRING },
         idPais: { type: DataTypes.INTEGER },
         idProvincia: { type: DataTypes.INTEGER },
         direccion: { type: DataTypes.STRING },
@@ -32,13 +31,13 @@ module.exports = (sequelize, DataTypes) => {
 
     };
     let config = {
-            tableName: "Usuario",
-            timestamps: false
-        }
-        //Esta constante mediante define de sequelize, arma la BD//
+        tableName: "Usuario",
+        timestamps: false
+    }
+    //Esta constante mediante define de sequelize, arma la BD//
     const Usuario = sequelize.define(alias, cols, config)
 
-     Usuario.associate = function(models) {
+    Usuario.associate = function (models) {
         Usuario.belongsTo(models.Pais, {
             as: "Pais",
             foreignKey: "idPais"
@@ -47,9 +46,16 @@ module.exports = (sequelize, DataTypes) => {
             as: "Provincia",
             foreignKey: "idProvincia"
         })
+        Usuario.belongsTo(models.Imagen, {
+            as: "avatar",
+            foreignKey: "idAvatar"
+        })
+        
     }
-     
-        //Retorna la BD para que este disponible para consultas//
+
+
+
+    //Retorna la BD para que este disponible para consultas//
     return Usuario
 
 }
