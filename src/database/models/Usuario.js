@@ -22,7 +22,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         clave: { type: DataTypes.STRING },
         idPais: { type: DataTypes.INTEGER },
-        idProvincia: { type: DataTypes.INTEGER },
         direccion: { type: DataTypes.STRING },
         numeroDireccion: { type: DataTypes.INTEGER },
         codigoPostal: { type: DataTypes.INTEGER },
@@ -42,15 +41,11 @@ module.exports = (sequelize, DataTypes) => {
             as: "Pais",
             foreignKey: "idPais"
         })
-        Usuario.belongsTo(models.Provincia, {
-            as: "Provincia",
-            foreignKey: "idProvincia"
-        })
         Usuario.belongsTo(models.Imagen, {
             as: "avatar",
             foreignKey: "idAvatar"
         })
-        
+
     }
 
 

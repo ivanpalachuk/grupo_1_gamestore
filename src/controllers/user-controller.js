@@ -4,12 +4,21 @@ const bcryptjs = require('bcryptjs');
 const path = require('path');
 const { validationResult } = require('express-validator');
 const User = require("../models/User")
+const fetch = (url) => import('node-fetch').then(({ default: fetch }) => fetch(url));
 
+function apiCall(url, handler) {
+    fetch(url)
+        .then(response => response.json())
+        .then(data => handler(data))
+        .catch(e => console.log(e))
+}
 
 const userController = {
 
     signUp: (req, res) => {
-        return res.render('signUp')
+
+        apiCall("https://restcountries.com/v2/all?fields=name,numericCode", data => res.render("signUp", { data: data }))
+
     },
 
     logIn: (req, res) => {
@@ -48,23 +57,24 @@ const userController = {
 
         if (userInDbEmail) {
             console.log('ya te registraste pelotudo')
-            return res.render('signUp', {
-                errors: {
+            return apiCall("https://restcountries.com/v2/all?fields=name,numericCode", data => res.render("signUp", {
+                data, errors: {
                     email: {
                         msg: 'Este email ya está registrado'
                     }
                 },
                 oldData: req.body
-            });
-        } else if (userInDbUsuario) {
-            return res.render('signUp', {
-                errors: {
+            }))
+        }
+        else if (userInDbUsuario) {
+            return apiCall("https://restcountries.com/v2/all?fields=name,numericCode", data => res.render("signUp", {
+                data, errors: {
                     usuario: {
-                        msg: 'Este usuario ya está registrado' //Funciona si solo está duplicado el usuario
+                        msg: 'Este usuario ya está registrado'
                     }
                 },
                 oldData: req.body
-            });
+            }))
         } else {
             let userToCreate = {
                 nombre: req.body.nombre,
@@ -76,8 +86,7 @@ const userController = {
                 correo: req.body.email,
                 userName: req.body.usuario,
                 clave: bcryptjs.hashSync(req.body.clave, 5),
-                //idPais: req.body.pais,
-                //idProvincia: req.body.provincia,
+                idPais: req.body.pais,
                 direccion: req.body.direccion,
                 codigoPostal: req.body.cp,
                 numeroDireccion: req.body.numero,
