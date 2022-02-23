@@ -1353,7 +1353,9 @@ article {
     font-weight: normal;
     padding-left: 17px;
 }
-
+.centrado{
+    margin: 0 auto;
+}
 .remember{
     font-weight: normal;
 }
@@ -1675,6 +1677,8 @@ article {
         .avatar{
             display: flex;
             justify-content: space-between;
+            margin: 0 auto;
+            padding: 15px;
         }
 
         .fotoAvatar{
