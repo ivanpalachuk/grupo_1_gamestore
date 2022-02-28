@@ -1,0 +1,21 @@
+{
+    "count": 1,
+    "countByCategory": {
+        "Estrategia": 1,
+        "Shooter": 0,
+        "INDIE": 0,
+        "Sport": 0,
+        "Terror": 0
+    },
+    "products": [
+        {
+            "id": 1,
+            "name": "Age of Empires",
+            "description": "Te aguarda una experiencia de juego de más de 200 horas que abarca todo un milenio de la historia humana! Juega en línea para desafiar a otros jugadores en tu empresa por dominar el mundo con 35 civilizaciones diferentes. Asimismo, ¡puedes experimentar nuevas civilizaciones y campañas con el DLC Señores de Occidente! Las actualizaciones más recientes abarcan el modo Batalla campal, soporte continuo para el Editor de escenarios, la función Partida rápida para librar partidas sociales con mayor facilidad, mejoras en la IU del juego ¡y mucho más! Traza tu camino hacia la grandeza con la llamativa y cautivadora remasterización de uno de los juegos de estrategia más queridos de todos los tiempos.",
+            "categories": [
+                "Estrategia"
+            ],
+            "detail": "http://localhost:4022/api/product/1"
+        }
+    ]
+}
