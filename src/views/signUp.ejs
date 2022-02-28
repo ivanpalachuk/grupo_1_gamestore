@@ -90,7 +90,7 @@
                             <option value="">Elegí un país</option>
                             <% let countries = data %>
                             <% for (const oneCountry of countries) { %>  
-                            <option value="<%= oneCountry.numericCode %>" <%= locals.oldData && (oneCountry.numericCode === oldData.pais) ? 'selected' : null %>><%= oneCountry.name %></option>
+                            <option value="<%= oneCountry.alpha3Code %>" <%= locals.oldData && (oneCountry.numericCode === oldData.pais) ? 'selected' : null %>><%= oneCountry.name %></option>
                             <% } %>
                         </select>
                         <% if (locals.errors && errors.pais) { %>

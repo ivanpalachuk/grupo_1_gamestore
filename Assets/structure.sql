@@ -1,16 +1,5 @@
 CREATE DATABASE gamestore_db;
 
-create table gamestore_db.pais (
-id INT unsigned  primary key AUTO_increment,
-nombre VARCHAR(30) not null );
-
-create table gamestore_db.provincia(
-id INT unsigned  primary key AUTO_increment,
-nombre VARCHAR(30) not null,
-idPais int unsigned,
-foreign key (idPais) references pais(id));
-
-
 create table gamestore_db.plataforma(
 id INT unsigned  primary key AUTO_increment,
 nombre VARCHAR(30) not null );
@@ -63,16 +52,13 @@ correo varchar(255) unique,
 userName varchar(255) unique, 
 clave  varchar(255),
 clave2 varchar(255),
-idProvincia int unsigned,
-idPais int unsigned,
+idPais varchar(255),
 direccion varchar(255),
 numeroDireccion int unsigned,
 codigoPostal int,
-TYNO bool,
-TCNO bool,
-foreign key (idAvatar) references imagen(id),
-foreign key (idProvincia) references provincia(id),
-foreign key (idPais) references pais(id)
+TYNO boolean,
+TCNO boolean,
+foreign key (idAvatar) references imagen(id)
 );
 
 

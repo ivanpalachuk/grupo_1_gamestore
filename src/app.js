@@ -41,12 +41,14 @@ const rutasCart = require('./routes/cart.js')
 const rutasProducto = require('./routes/product.js')
 const rutasUser = require('./routes/user.js')
 const rutasAdmin = require('./routes/admin.js')
+const rutasApi = require('./routes/api.js')
 
 app.use('/', rutasMain);
 app.use('/', rutasCart);
 app.use('/products', rutasProducto);
 app.use('/user', rutasUser);
 app.use('/', rutasAdmin);
+app.use('/api', rutasApi);
 /*------------------------------------------Routes-fin-----------------------------------------*/
 
 

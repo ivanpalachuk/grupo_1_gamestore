@@ -17,7 +17,7 @@ const userController = {
 
     signUp: (req, res) => {
 
-        apiCall("https://restcountries.com/v2/all?fields=name,numericCode", data => res.render("signUp", { data: data }))
+        apiCall("https://restcountries.com/v2/all?fields=name,alpha3Code", data => res.render("signUp", { data: data }))
 
     },
 
@@ -26,12 +26,10 @@ const userController = {
     },
     processRegister: async (req, res) => {
 
-        console.log('Dejame registrar')
         const resultValidation = validationResult(req);
 
-
+        //Validacion express validator
         if (resultValidation.errors.length > 0) {
-            console.log('tenes algo mal, revisa')
             console.log(resultValidation.mapped())
             return res.render('signUp', {
                 errors: resultValidation.mapped(),
@@ -39,24 +37,21 @@ const userController = {
             });
         }
 
-
+        //let userInDbEmail = User.findByField('email', req.body.email);
+        //let userInDbUsuario = User.findByField('usuario', req.body.usuario);
+ 
         let userInDbEmail = await Users.findOne({ where: { correo: req.body.email } }).catch((e) => {
             console.log("ERROR")
             console.log(e)
         })
-        console.log(userInDbEmail)
 
         let userInDbUsuario = await Users.findOne({ where: { userName: req.body.usuario } }).catch((e) => {
             console.log("ERROR")
             console.log(e)
         })
-        console.log(userInDbUsuario)
 
-        //let userInDbEmail = User.findByField('email', req.body.email);//realizar la busqueda en sequelize
-        //let userInDbUsuario = User.findByField('usuario', req.body.usuario);//realizar la busqueda sequelize
 
         if (userInDbEmail) {
-            console.log('ya te registraste pelotudo')
             return apiCall("https://restcountries.com/v2/all?fields=name,numericCode", data => res.render("signUp", {
                 data, errors: {
                     email: {

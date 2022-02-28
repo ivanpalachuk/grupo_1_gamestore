@@ -10,14 +10,14 @@ const Product = db.Producto
 
 async function  preChargeValues() {
     let Edades = await db.Edad.findAll()
-    let Plataformas = await db.Plataforma.findAll()
-    Plataformas = Plataformas.map((Plat) => {
-        return Plat.nombre
+    let Plataformas = await db.Plataforma.findAll().catch((e) => {
+        console.log("ERROR")
+        console.log(e)
     })
     let Dificultades = await db.Dificultad.findAll()
-    let Categorias = await db.Categoria.findAll()
-    Categorias = Categorias.map((Cat) => {
-        return Cat.nombre
+    let Categorias = await db.Categoria.findAll().catch((e) => {
+        console.log("ERROR")
+        console.log(e)
     })
     return { Edades, Plataformas, Categorias, Dificultades }
 }
@@ -161,7 +161,7 @@ const productController = {
             let Dificultades=values.Dificultades
             let Categorias=values.Categorias
     
-            res.render('new-game', {
+            return res.render('new-game', {
                 Edades,
                 Plataformas,
                 Dificultades,
@@ -174,6 +174,10 @@ const productController = {
 
         }
 
+        console.log("----esto----")
+        console.log(req.body.Categoria)
+        console.log("----esto----")
+
         productoNuevo = {
             "titulo": req.body.titulo,
             "precio": req.body.price,
@@ -184,7 +188,7 @@ const productController = {
             /*"Plataformas": req.body.Plataforma.map((p)=>{
                 return{"nombre":p, "id":1}
             }),*/
-            "Categorias": req.body.Categoria,
+            /*"Categorias": req.body.Categoria,*/
             "datosTecnicos": req.body.datos_Tecnicos,
             "requisitos": req.body.requisitos,
             "legal": req.body.legal,

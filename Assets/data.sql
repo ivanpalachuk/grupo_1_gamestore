@@ -1,14 +1,3 @@
-insert into pais (id, nombre) values (1, 'Argentina');
-insert into pais (id, nombre) values (2, 'Brazil');
-insert into pais (id, nombre) values (3, 'Uruguay');
-insert into pais (id, nombre) values (4, 'España');
-insert into pais (id, nombre) values (5, 'Peru');
-
-insert into provincia (id, nombre,idPais) values (1, 'CABA',1);
-insert into provincia (id, nombre,idPais) values (2, 'Buenos Aires',1);
-insert into provincia (id, nombre,idPais) values (3, 'Mendoza',1);
-insert into provincia (id, nombre,idPais) values (4, 'Cordoba',1);
-insert into provincia (id, nombre,idPais) values (5, 'San Luis',1);
 
 insert into imagen (id, ruta) values (1, '/ESRB-Teen.png');
 insert into imagen (id, ruta) values (2, '/ESRB-Mature.png');
@@ -42,8 +31,8 @@ values(1,'Age of Empires', 299, 15, 'Te aguarda una experiencia de juego de más
 'Requiere un procesador y un sistema operativo de 64 bits, SO: Windows 10 64bit, Procesador: Intel Core 2 Duo or AMD Athlon 64x2 5600+, Memoria: 4 GB de RAM, Gráficos: NVIDIA® GeForce® GT 420 or ATI™ Radeon™ HD 6850 or Intel® HD Graphics 4000 or better with 2 GB VRAM',
 'https://privacy.microsoft.com/es-ES/privacystatement',4,5);
 
-insert into usuario (id,nombre,apellido,dni,idAvatar,correo,userName,clave,clave2,idProvincia,idPais,direccion,numeroDireccion,codigoPostal,TYNO,TCNO)
-values (1, 'Ivan', 'Palachuk', 32241234,5,'ivanzar@hotmail.com','Zarseven','hash','hash2',2,1,'Alcorta',1554,7600,1,1);
+insert into usuario (id,nombre,apellido,dni,idAvatar,correo,userName,clave,clave2,idPais,direccion,numeroDireccion,codigoPostal,TYNO,TCNO)
+values (1, 'Ivan', 'Palachuk', 32241234,5,'ivanzar@hotmail.com','Zarseven','hash','hash2',"ARG",'Alcorta',1554,7600,1,1);
 
 insert into plataformaPivot (id, idPlataforma, idProducto) values (1, 1, 1);
 insert into plataformaPivot (id, idPlataforma, idProducto) values (2, 5, 1);

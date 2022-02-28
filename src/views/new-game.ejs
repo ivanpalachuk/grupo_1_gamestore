@@ -54,8 +54,8 @@
                             <label class="tittle-m block">Plataforma</label>
                             <select name="Plataforma" class="input-style" multiple>
                                 <% Plataformas.forEach(d=> { %>
-                                    <option  value="<%=d%>"> 
-                                        <%=d %>
+                                    <option  value="<%=d.id%>"> 
+                                        <%=d.nombre %>
                                     </option>
                                     <% }); %>
                             </select>
@@ -65,8 +65,8 @@
                             <label class="tittle-m block">Categorias</label>
                             <select name="Categoria" class="input-style" multiple>
                                 <% Categorias.forEach(d=> { %>
-                                    <option  value="<%=d %>"> 
-                                        <%=d%>
+                                    <option  value="<%=d.id %>"> 
+                                        <%=d.nombre%>
                                     </option>
                                     <% }); %>
                             </select>
