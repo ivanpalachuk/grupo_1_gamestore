@@ -46,7 +46,7 @@
 
 - Hacer menos: dejar las cosas para la ultima semana.
 
-### Retro Sprint 5
+### Retro Sprint 6
 
 - Comencar a hacer: Dividir mejor las tareas y más reuniones.
 
@@ -55,3 +55,13 @@
 - Continuar haciendo: Comunicación diaria.
 
 - Hacer menos: Empezar tarde el sprint.
+
+### Retro Sprint 7
+
+- Comencar a hacer: Dividir mejor las tareas y más reuniones.
+
+- Hacer mas: Más revisiones en conjunto.
+
+- Continuar haciendo: Comunicación diaria.
+
+- Hacer menos: Mala organización del tiempo de trabajo.
