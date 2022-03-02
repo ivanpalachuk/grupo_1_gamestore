@@ -9,7 +9,7 @@
             <main class="main-home">
                 <div class="container">
                     <div class="lanzamientos">
-                        <a href="/products/2">
+                        <a href="/products/6">
                             <img class="img-lanzamiento" src="/images/productImages/family-disruption1.jpg" alt="Family Disruption">
                         </a>
                     </div>
@@ -20,23 +20,20 @@
                                 <article class="game">
                                     <div class="container-img">
                                         <a href="/products/<%= products[index].id %>">
-                                            <img class="imagen" src=< %="/images/productImages/" + products[index].image_Secundaria %> alt= "/images/productImages/"
-                                            <%= products[index].image_Secundaria %>>
+                                            <img class="imagen" src= <%= "/images/productImages/"+ products[index].ImagenSecundaria %>  alt= "/images/productImages/"<%= products[index].ImagenSecundaria %>>
                                         </a>
                                     </div>
                                     <div id='info' class="info">
                                         <h3 class="name">
                                             <%= products[index].titulo %>
                                         </h3>
-                                        <p class="category">
-                                            <%= products[index].category %>
-                                        </p>
+                                        
                                         <div class="box-price">
                                             <p class="price">$
-                                                <%= products[index].price %>
+                                                <%= products[index].precio %>
                                             </p>
                                             <p class="discount">
-                                                <%= products[index].discount %>
+                                                <%= "-" + products[index].descuento+"%" %>
                                             </p>
                                         </div>
                                         <a href="#">
@@ -53,8 +50,8 @@
                                 <article class="game">
                                     <div class="container-img">
                                         <a href="/products/<%= products[index].id %>">
-                                            <img class="imagen" src=< %="/images/productImages/" + products[index].image_Secundaria %> alt= "/images/productImages/"
-                                            <%= products[index].image_Secundaria %>>
+                                            <img class="imagen" src= <%= "/images/productImages/"+ products[index].ImagenSecundaria %>  alt= "/images/productImages/"<%= products[index].ImagenSecundaria %>>
+                                            
                                         </a>
                                     </div>
 
@@ -67,10 +64,10 @@
                                         </p>
                                         <div class="box-price">
                                             <p class="price">$
-                                                <%= products[index].price %>
+                                                <%= products[index].precio %>
                                             </p>
                                             <p class="discount">
-                                                <%= products[index].discount %>
+                                                <%=(products[index].descuento>0)?"-" + products[index].descuento+"%":"" %>
                                             </p>
                                         </div>
                                         <a href="#">

@@ -196,7 +196,7 @@ const productController = {
                 ruta: '/' + (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
             },
             "ImagenSecundaria": {
-                ruta: '/' + (req.files['photoGameV'] ? req.files['photoGameV'][0].filename : 0)
+                ruta: '/' + (req.files['photoGame'] ? req.files['photoGame'][0].filename : 0)
             }
         }
         Product.create(productoNuevo, {

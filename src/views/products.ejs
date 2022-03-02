@@ -75,10 +75,10 @@
 
                         <div id= 'info' class="info">
                             <h3 class="name"><%= products[index].titulo %></h3>
-                            <p class="category"><%= products[index].category %></p>
+                            <p class="category"><%= products[index].Categorias %></p>
                             <div class="box-price">
-                                <p class="price">$<%= products[index].price %></p>
-                                <p class="discount"><%= products[index].discount %></p>
+                                <p class="price">$<%= products[index].precio %></p>
+                                <p class="discount"><%=  (products[index].descuento>0)?"-" + products[index].descuento+"%":"" %></p>
                             </div>
                             <a href="#">
                                 <button class="button">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
